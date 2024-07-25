@@ -50,32 +50,61 @@ function App() {
   const data = [
     {
       name: "flexipay-rewards-api",
-      aws: "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_bc_cashback_user_enabled_get",
+      lambdas: [
+        "fp_bc_cashback_user_enabled_get",
+        "billing_bill_public_event_sink",
+        "healthcheck_get",
+        "line_of_credit_db_stream_receiver",
+        "rewards_get",
+        "rewards_user_post",
+        "rewards_user_enabled_get",
+      ],
     },
     {
       name: "uk-borrower-platform-rewards",
+    },
+    {
+      name: "flexipay-billing-mock",
+    },
+    {
+      name: "flexipay-rewards-end-to-end",
+    },
+    {
+      name: "flexipay-pricing-api",
+    },
+    {
+      name: "flexipay-pricing-api-end-to-end",
+    },
+    {
+      name: "flexipay-rewards-and-pricing-shared",
+    },
+    {
+      name: "rewards-and-pricing-db-migrator",
+    },
+    {
+      name: "msk-cluster-uat",
     },
   ];
 
   const links = [
     {
+      name: "Pricing extraction",
+      url: "https://confluence.fundingcircle.com/display/RP/Pricing+extraction",
+    },
+    {
       name: "OKTA",
       url: "https://fundingcircle.okta.com/app/UserHome?session_hint=AUTHENTICATED",
     },
     {
-      name: "Jira",
-      url: "https://fundingcircle.atlassian.net/jira/software/c/projects/API/boards/46",
-    },
-    {
-      name: "New Jira",
-      url: "https://fundingcircle.atlassian.net/jira/software/c/projects/RAP/boards/715/backlog",
+      name: "Jira Board",
+      url: "https://fundingcircle.atlassian.net/jira/software/c/projects/RAP/boards/715",
     },
     {
       name: "Gmail",
       url: "https://mail.google.com/mail/u/0/#inbox",
     },
     {
-      name: "Confluence",
+      name: "Confluence (RAP)",
       url: "https://confluence.fundingcircle.com/display/RP/Rewards+And+Pricing+Home",
     },
     {
