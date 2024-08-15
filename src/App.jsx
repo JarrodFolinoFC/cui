@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import { Table, Space, Button } from "antd";
 import {
@@ -7,84 +7,54 @@ import {
   CiCircleOutlined,
 } from "@ant-design/icons";
 
-function App() {
-  const columns = [
-    {
-      title: "Name",
-      dataIndex: "name",
-      key: "links",
-      render: (text) => <h4>{text}</h4>,
-    },
-    {
-      title: "Links",
-      dataIndex: "name",
-      key: "links",
-      render: (text) => (
-        <Space>
-          <a href={`https://github.com/FundingCircle/${text}`} target="_new">
-            <GithubOutlined />
-          </a>
-          <a
-            href={`https://github.com/FundingCircle/${text}/pulls`}
-            target="_new"
-          >
-            <PullRequestOutlined />
-          </a>
-          <a
-            href={`https://drone.fc-ops.com/FundingCircle/${text}`}
-            target="_new"
-          >
-            <CiCircleOutlined />
-          </a>
-        </Space>
-      ),
-    },
-    {
-      title: "AWS",
-      dataIndex: "aws",
-      key: "aws",
-      render: (text) => <a>{text}</a>,
-    },
-  ];
+import MyTable from "./MyTable";
+const columns = [
+  // {
+  //   title: "Name",
+  //   dataIndex: "name",
+  //   key: "links",
+  //   render: (text) => <h4>{text}</h4>,
+  // },
+  // {
+  //   title: "Links",
+  //   dataIndex: "name",
+  //   key: "links",
+  //   render: (text) => (
+  //     <Space>
+  //       <a href={`https://github.com/FundingCircle/${text}`} target="_new">
+  //         <GithubOutlined />
+  //       </a>
+  //       <a
+  //         href={`https://github.com/FundingCircle/${text}/pulls`}
+  //         target="_new"
+  //       >
+  //         <PullRequestOutlined />
+  //       </a>
+  //       <a
+  //         href={`https://drone.fc-ops.com/FundingCircle/${text}`}
+  //         target="_new"
+  //       >
+  //         <CiCircleOutlined />
+  //       </a>
+  //     </Space>
+  //   ),
+  // },
+  // {
+  //   title: "AWS",
+  //   dataIndex: "aws",
+  //   key: "aws",
+  //   render: (text) => <a>{text}</a>,
+  // },
+];
 
-  const data = [
-    {
-      name: "flexipay-rewards-api",
-      lambdas: [
-        "fp_bc_cashback_user_enabled_get",
-        "billing_bill_public_event_sink",
-        "healthcheck_get",
-        "line_of_credit_db_stream_receiver",
-        "rewards_get",
-        "rewards_user_post",
-        "rewards_user_enabled_get",
-      ],
-    },
-    {
-      name: "uk-borrower-platform-rewards",
-    },
-    {
-      name: "flexipay-billing-mock",
-    },
-    {
-      name: "flexipay-rewards-end-to-end",
-    },
-    {
-      name: "flexipay-pricing-api",
-    },
-    {
-      name: "flexipay-pricing-api-end-to-end",
-    },
-    {
-      name: "flexipay-rewards-and-pricing-shared",
-    },
-    {
-      name: "rewards-and-pricing-db-migrator",
-    },
-    {
-      name: "msk-cluster-uat",
-    },
-  ];
+function App() {
+  // const [data, setData] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5173/data.json")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data));
+  // });
 
   const links = [
     {
@@ -130,7 +100,7 @@ function App() {
           </a>
         </Button>
       ))}
-      <Table columns={columns} dataSource={data} />
+      <MyTable />
     </>
   );
 }

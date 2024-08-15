@@ -1,16 +1,13 @@
-import os
 import json
+import os
 
 directory = "/Users/jarrod.folino/Dev/sharks/rap"
 
 repos = [
-    {
-        "name": "flexipay-rewards-api",
-        "lambda_prefix": "fp_rewards_api_"
-    },
-    {
-        "name": "uk-borrower-platform-rewards"
-    },
+    {"name": "flexipay-rewards-api", "lambda_prefix": "fp_rewards_api_"},
+    {"name": "flexipay-pricing-api", "lambda_prefix": "fp_pricing_api_"},
+    {"name": "flexipay-rewards-and-pricing-shared", "lambda_prefix": "fp_shared_"},
+    {"name": "uk-borrower-platform-rewards"},
     {
         "name": "flexipay-billing-mock",
     },
@@ -18,13 +15,7 @@ repos = [
         "name": "flexipay-rewards-end-to-end",
     },
     {
-        "name": "flexipay-pricing-api",
-    },
-    {
         "name": "flexipay-pricing-api-end-to-end",
-    },
-    {
-        "name": "flexipay-rewards-and-pricing-shared",
     },
     {
         "name": "rewards-and-pricing-db-migrator",
@@ -47,7 +38,6 @@ def get_folders_in_directory(directory_path):
                         yield item.name + "_get"
                     else:
                         yield item.name
-# https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/
 
 
 def generate_cwlog_url(repo):
@@ -59,7 +49,9 @@ def generate_cwlog_url(repo):
         handlers_directory = f"{directory}/{repo_name}/handlers"
         lambdas = get_folders_in_directory(handlers_directory)
         for lambda_name in lambdas:
-            logs[f"{lambda_prefix}{lambda_name}"] = f"{lambda_cwlogs_url}{lambda_prefix}{lambda_name}"
+            logs[f"{lambda_prefix}{lambda_name}"] = (
+                f"{lambda_cwlogs_url}{lambda_prefix}{lambda_name}"
+            )
 
     return logs
 

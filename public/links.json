@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Pricing extraction",
+    "url": "https://confluence.fundingcircle.com/display/RP/Pricing+extraction"
+  },
+  {
+    "name": "OKTA",
+    "url": "https://fundingcircle.okta.com/app/UserHome?session_hint=AUTHENTICATED"
+  },
+  {
+    "name": "Jira Board",
+    "url": "https://fundingcircle.atlassian.net/jira/software/c/projects/RAP/boards/715"
+  },
+  {
+    "name": "Gmail",
+    "url": "https://mail.google.com/mail/u/0/#inbox"
+  },
+  {
+    "name": "Confluence (RAP)",
+    "url": "https://confluence.fundingcircle.com/display/RP/Rewards+And+Pricing+Home"
+  },
+  {
+    "name": "OD",
+    "url": "https://diameter.fundingcircle.tech/?path=/docs/welcome-diameter--docs"
+  },
+  {
+    "name": "FC repos",
+    "url": "https://github.com/orgs/FundingCircle/repositories"
+  },
+  {
+    "name": "Calendar 2",
+    "url": "https://calendar.google.com/calendar/u/0/r"
+  },
+  {
+    "name": "Rewards HB",
+    "url": "https://app.honeybadger.io/projects/126121"
+  },
+  {
+    "name": "SSH Tech",
+    "url": "https://confluence.fundingcircle.com/display/RP/Tech"
+  }
+]
