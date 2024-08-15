@@ -28,7 +28,7 @@
     "url": "https://github.com/orgs/FundingCircle/repositories"
   },
   {
-    "name": "Calendar 2",
+    "name": "Calendar",
     "url": "https://calendar.google.com/calendar/u/0/r"
   },
   {
@@ -38,5 +38,13 @@
   {
     "name": "SSH Tech",
     "url": "https://confluence.fundingcircle.com/display/RP/Tech"
+  },
+  {
+    "name": "Chat GPT",
+    "url": "https://chatgpt.com"
+  },
+  {
+    "name": "Grafana (Staging)",
+    "url": "https://grafana.fc-staging.co.uk/?orgId=1"
   }
 ]

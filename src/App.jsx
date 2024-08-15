@@ -1,105 +1,39 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import { Table, Space, Button } from "antd";
-import {
-  GithubOutlined,
-  PullRequestOutlined,
-  CiCircleOutlined,
-} from "@ant-design/icons";
+import { Card, Tag, Flex } from "antd";
 
 import MyTable from "./MyTable";
-const columns = [
-  // {
-  //   title: "Name",
-  //   dataIndex: "name",
-  //   key: "links",
-  //   render: (text) => <h4>{text}</h4>,
-  // },
-  // {
-  //   title: "Links",
-  //   dataIndex: "name",
-  //   key: "links",
-  //   render: (text) => (
-  //     <Space>
-  //       <a href={`https://github.com/FundingCircle/${text}`} target="_new">
-  //         <GithubOutlined />
-  //       </a>
-  //       <a
-  //         href={`https://github.com/FundingCircle/${text}/pulls`}
-  //         target="_new"
-  //       >
-  //         <PullRequestOutlined />
-  //       </a>
-  //       <a
-  //         href={`https://drone.fc-ops.com/FundingCircle/${text}`}
-  //         target="_new"
-  //       >
-  //         <CiCircleOutlined />
-  //       </a>
-  //     </Space>
-  //   ),
-  // },
-  // {
-  //   title: "AWS",
-  //   dataIndex: "aws",
-  //   key: "aws",
-  //   render: (text) => <a>{text}</a>,
-  // },
-];
+import DynamoDbCard from "./DynamoDbCard";
+import AwsAccounts from "./AwsAccounts";
+import Repos from "./Repos";
 
 function App() {
-  // const [data, setData] = useState([]);
+  const [links, setLinks] = useState([]);
 
-  // useEffect(() => {
-  //   fetch("http://localhost:5173/data.json")
-  //     .then((res) => res.json())
-  //     .then((data) => setData(data));
-  // });
-
-  const links = [
-    {
-      name: "Pricing extraction",
-      url: "https://confluence.fundingcircle.com/display/RP/Pricing+extraction",
-    },
-    {
-      name: "OKTA",
-      url: "https://fundingcircle.okta.com/app/UserHome?session_hint=AUTHENTICATED",
-    },
-    {
-      name: "Jira Board",
-      url: "https://fundingcircle.atlassian.net/jira/software/c/projects/RAP/boards/715",
-    },
-    {
-      name: "Gmail",
-      url: "https://mail.google.com/mail/u/0/#inbox",
-    },
-    {
-      name: "Confluence (RAP)",
-      url: "https://confluence.fundingcircle.com/display/RP/Rewards+And+Pricing+Home",
-    },
-    {
-      name: "OD",
-      url: "https://diameter.fundingcircle.tech/?path=/docs/welcome-diameter--docs",
-    },
-    {
-      name: "FC repos",
-      url: "https://github.com/orgs/FundingCircle/repositories",
-    },
-    {
-      name: "Calendar",
-      url: "https://calendar.google.com/calendar/u/0/r",
-    },
-  ];
+  useEffect(() => {
+    fetch("http://localhost:5173/links.json")
+      .then((res) => res.json())
+      .then((data) => setLinks(data));
+  });
 
   return (
     <>
-      {links.map((link) => (
-        <Button key={link.name}>
-          <a target="_blank" href={link.url}>
-            {link.name}
-          </a>
-        </Button>
-      ))}
+      <Card title="Links" style={{ width: "100%" }}>
+        {links.map((link) => {
+          return (
+            <Tag>
+              <a href={link.url} target={link.name}>
+                {link.name}
+              </a>
+            </Tag>
+          );
+        })}
+      </Card>
+      <Repos />
+      <Flex gap="middle">
+        <AwsAccounts />
+        <DynamoDbCard />
+      </Flex>
       <MyTable />
     </>
   );

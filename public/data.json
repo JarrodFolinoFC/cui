@@ -1,54 +1,221 @@
-{
-  "flexipay-rewards-api": {
-    "logs": {
-      "fp_rewards_api_rewards_redeem_post": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_redeem_post",
-      "fp_rewards_api_healthcheck_get": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_healthcheck_get",
-      "fp_rewards_api_rewards_get": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_get",
-      "fp_rewards_api_billing_bill_public_event_sink": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_billing_bill_public_event_sink",
-      "fp_rewards_api_rewards_user_enabled_get": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_enabled_get",
-      "fp_rewards_api_rewards_user": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user"
-    },
-    "lambdas": {
-      "fp_rewards_api_rewards_redeem_post": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_redeem_post",
-      "fp_rewards_api_healthcheck_get": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_healthcheck_get",
-      "fp_rewards_api_rewards_get": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_get",
-      "fp_rewards_api_billing_bill_public_event_sink": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_billing_bill_public_event_sink",
-      "fp_rewards_api_rewards_user_enabled_get": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_enabled_get",
-      "fp_rewards_api_rewards_user": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user"
-    }
+[
+  {
+    "name": "flexipay-rewards-api",
+    "cwlogs": [
+      {
+        "name": "fp_rewards_api_rewards_user_enabled_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_enabled_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_enabled_get"
+      },
+      {
+        "name": "fp_rewards_api_billing_bill_public_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_billing_bill_public_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_billing_bill_public_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_loc_active_db_stream",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_rewards_api_rewards_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_redeem_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_redeem_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_redeem_post"
+      },
+      {
+        "name": "fp_rewards_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_healthcheck_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_healthcheck_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_patch",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_patch"
+      }
+    ],
+    "lambdas": [
+      {
+        "name": "fp_rewards_api_rewards_user_enabled_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_enabled_get"
+      },
+      {
+        "name": "fp_rewards_api_billing_bill_public_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_billing_bill_public_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_rewards_api_rewards_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_redeem_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_redeem_post"
+      },
+      {
+        "name": "fp_rewards_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_healthcheck_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_patch"
+      }
+    ],
+    "prs": [],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api"
+      },
+      {
+        "name": "Pulls",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pulls"
+      },
+      {
+        "name": "CI",
+        "link": "https://drone.fc-ops.com/FundingCircle/flexipay-rewards-api"
+      }
+    ]
   },
-  "flexipay-pricing-api": {
-    "logs": {
-      "fp_pricing_api_pricing_user": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_user",
-      "fp_pricing_api_healthcheck_get": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_healthcheck_get",
-      "fp_pricing_api_repayment_details_get": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_repayment_details_get"
-    },
-    "lambdas": {
-      "fp_pricing_api_pricing_user": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user",
-      "fp_pricing_api_healthcheck_get": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_healthcheck_get",
-      "fp_pricing_api_repayment_details_get": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_repayment_details_get"
-    }
+  {
+    "name": "flexipay-pricing-api",
+    "cwlogs": [
+      {
+        "name": "fp_pricing_api_repayment_details_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_repayment_details_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_repayment_details_get"
+      },
+      {
+        "name": "fp_pricing_api_pricing_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_user_loc_active_db_stream",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_pricing_api_pricing_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_user_patch",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_patch"
+      },
+      {
+        "name": "fp_pricing_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_healthcheck_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_healthcheck_get"
+      }
+    ],
+    "lambdas": [
+      {
+        "name": "fp_pricing_api_repayment_details_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_repayment_details_get"
+      },
+      {
+        "name": "fp_pricing_api_pricing_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_pricing_api_pricing_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_patch"
+      },
+      {
+        "name": "fp_pricing_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_healthcheck_get"
+      }
+    ],
+    "prs": [],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api"
+      },
+      {
+        "name": "Pulls",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pulls"
+      },
+      {
+        "name": "CI",
+        "link": "https://drone.fc-ops.com/FundingCircle/flexipay-pricing-api"
+      }
+    ]
   },
-  "flexipay-rewards-and-pricing-shared": {
-    "logs": {
-      "fp_shared_drawdown_builder_post": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_shared_drawdown_builder_post",
-      "fp_shared_customer_builder_post": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_shared_customer_builder_post",
-      "fp_shared_mock_line_of_credit_app_approved_event_sink": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_shared_mock_line_of_credit_app_approved_event_sink",
-      "fp_shared_line_of_credit_sink": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_shared_line_of_credit_sink",
-      "fp_shared_mock_line_of_credit_app_completed_event_sink": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_shared_mock_line_of_credit_app_completed_event_sink"
-    },
-    "lambdas": {
-      "fp_shared_drawdown_builder_post": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_shared_drawdown_builder_post",
-      "fp_shared_customer_builder_post": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_shared_customer_builder_post",
-      "fp_shared_mock_line_of_credit_app_approved_event_sink": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_shared_mock_line_of_credit_app_approved_event_sink",
-      "fp_shared_line_of_credit_sink": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_shared_line_of_credit_sink",
-      "fp_shared_mock_line_of_credit_app_completed_event_sink": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_shared_mock_line_of_credit_app_completed_event_sink"
-    }
-  },
-  "uk-borrower-platform-rewards": { "logs": {}, "lambdas": {} },
-  "flexipay-billing-mock": { "logs": {}, "lambdas": {} },
-  "flexipay-rewards-end-to-end": { "logs": {}, "lambdas": {} },
-  "flexipay-pricing-api-end-to-end": { "logs": {}, "lambdas": {} },
-  "rewards-and-pricing-db-migrator": { "logs": {}, "lambdas": {} },
-  "msk-cluster-uat": { "logs": {}, "lambdas": {} }
-}
+  {
+    "name": "flexipay-rewards-and-pricing-shared",
+    "cwlogs": [
+      {
+        "name": "fp_rap_shared_customer_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_customer_builder_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_customer_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_app_completed_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_mock_line_of_credit_app_completed_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_completed_event_sink"
+      },
+      {
+        "name": "fp_rap_shared_drawdown_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_drawdown_builder_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_drawdown_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_app_approved_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_mock_line_of_credit_app_approved_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_approved_event_sink"
+      },
+      {
+        "name": "fp_rap_shared_line_of_credit_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_line_of_credit_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_line_of_credit_sink"
+      }
+    ],
+    "lambdas": [
+      {
+        "name": "fp_rap_shared_customer_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_customer_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_app_completed_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_completed_event_sink"
+      },
+      {
+        "name": "fp_rap_shared_drawdown_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_drawdown_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_app_approved_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_approved_event_sink"
+      },
+      {
+        "name": "fp_rap_shared_line_of_credit_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_line_of_credit_sink"
+      }
+    ],
+    "prs": [
+      {
+        "name": "[RAP-50] Use enum style for DBTables and KafkaTopics Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/29"
+      },
+      {
+        "name": "[RAP-50] Process transactions UAT Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/28"
+      }
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared"
+      },
+      {
+        "name": "Pulls",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pulls"
+      },
+      {
+        "name": "CI",
+        "link": "https://drone.fc-ops.com/FundingCircle/flexipay-rewards-and-pricing-shared"
+      }
+    ]
+  }
+]
