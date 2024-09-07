@@ -1,0 +1,800 @@
+{
+  "query": {
+    "original": "nodejs express",
+    "show_strict_warning": false,
+    "altered": "node js express",
+    "is_navigational": true,
+    "is_news_breaking": false,
+    "spellcheck_off": false,
+    "country": "us",
+    "bad_results": false,
+    "should_fallback": false,
+    "postal_code": "",
+    "city": "",
+    "header_country": "",
+    "more_results_available": true,
+    "state": ""
+  },
+  "mixed": {
+    "type": "mixed",
+    "main": [
+      { "type": "web", "index": 0, "all": false },
+      { "type": "web", "index": 1, "all": false },
+      { "type": "videos", "all": true },
+      { "type": "web", "index": 2, "all": false },
+      { "type": "web", "index": 3, "all": false },
+      { "type": "web", "index": 4, "all": false },
+      { "type": "web", "index": 5, "all": false },
+      { "type": "web", "index": 6, "all": false },
+      { "type": "web", "index": 7, "all": false },
+      { "type": "web", "index": 8, "all": false },
+      { "type": "web", "index": 9, "all": false },
+      { "type": "web", "index": 10, "all": false },
+      { "type": "web", "index": 11, "all": false },
+      { "type": "web", "index": 12, "all": false },
+      { "type": "web", "index": 13, "all": false },
+      { "type": "web", "index": 14, "all": false },
+      { "type": "web", "index": 15, "all": false },
+      { "type": "web", "index": 16, "all": false },
+      { "type": "web", "index": 17, "all": false },
+      { "type": "web", "index": 18, "all": false },
+      { "type": "web", "index": 19, "all": false }
+    ],
+    "top": [],
+    "side": []
+  },
+  "type": "search",
+  "videos": {
+    "type": "videos",
+    "results": [
+      {
+        "type": "video_result",
+        "url": "https://www.youtube.com/watch?v=Oe421EPjeBE",
+        "title": "Node.js and Express.js - Full Course",
+        "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+        "video": {},
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "youtube.com",
+          "hostname": "www.youtube.com",
+          "favicon": "https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v",
+          "path": "› watch"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/qI8Knj_SM4SjdeTny208hIrs56rWIq-e-pv1wNFS9PI/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9P/ZTQyMUVQamVCRS9o/cWRlZmF1bHQuanBn"
+        }
+      },
+      {
+        "type": "video_result",
+        "url": "https://www.youtube.com/watch?v=CnH3kAXSrmU",
+        "title": "Express Crash Course - YouTube",
+        "description": "Get started with the most popular web framework for Node.js.Code from Video:https://github.com/bradtraversy/express-crash/Node.js Crash Course:https://www.yo...",
+        "age": "May 7, 2024",
+        "page_age": "2024-05-07T13:00:11",
+        "video": {},
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "youtube.com",
+          "hostname": "www.youtube.com",
+          "favicon": "https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v",
+          "path": "› watch"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/64m-9ZNqiBEwwpCtZnujnm6Ve4dJ-FOpKFWsTLI1QLY/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9D/bkgza0FYU3JtVS9t/YXhyZXNkZWZhdWx0/LmpwZw"
+        }
+      },
+      {
+        "type": "video_result",
+        "url": "https://www.youtube.com/watch?v=jivyItmsu18",
+        "title": "Introduction to Express JS | Express & Node.js Tutorials for ...",
+        "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+        "video": {},
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "youtube.com",
+          "hostname": "www.youtube.com",
+          "favicon": "https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v",
+          "path": "› watch"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/QVnK2WuHq2ql2rUKTUtDmwG1FuKxzqzK6sReiyIeWp4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9q/aXZ5SXRtc3UxOC9o/cWRlZmF1bHQuanBn"
+        }
+      },
+      {
+        "type": "video_result",
+        "url": "https://www.youtube.com/watch?v=ekRpc5YgVZU",
+        "title": "Node.js and Express.js - Complete Course for Beginners ...",
+        "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+        "video": {},
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "youtube.com",
+          "hostname": "www.youtube.com",
+          "favicon": "https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v",
+          "path": "› watch"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/zMk7p_buMqc8hY98Ws9e4x1fmDf_xoWE2GtYVr8m4fk/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9l/a1JwYzVZZ1ZaVS9o/cWRlZmF1bHQuanBn"
+        }
+      },
+      {
+        "type": "video_result",
+        "url": "https://www.youtube.com/watch?v=V8ePZHOjRQo",
+        "title": "Learn Node.JS & Express.JS [Beginner Tutorial]",
+        "description": "Enjoy the videos and music you love, upload original content, and share it all with friends, family, and the world on YouTube.",
+        "video": {},
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "youtube.com",
+          "hostname": "www.youtube.com",
+          "favicon": "https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v",
+          "path": "› watch"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/FLFwmBgn8I72Cx3Fue_bquSABrKuXNyMk2Cz9lNBNaE/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9W/OGVQWkhPalJRby9o/cWRlZmF1bHQuanBn"
+        }
+      }
+    ],
+    "mutated_by_goggles": false
+  },
+  "web": {
+    "type": "search",
+    "results": [
+      {
+        "title": "Express - Node.js web application framework",
+        "url": "http://expressjs.com/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Express</strong> is a minimal and flexible <strong>Node</strong>.<strong>js</strong> web application framework that provides a robust set of features for web and mobile applications.",
+        "page_age": "2022-04-29T00:00:00",
+        "profile": {
+          "name": "Expressjs",
+          "url": "http://expressjs.com/",
+          "long_name": "expressjs.com",
+          "img": "https://imgs.search.brave.com/sFAukgJD-nbgqVp-6HA0hWnCXZ9QoE2guQ5ygS-ZowU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2Y4YmU0NGQ3/ODQyMGE1YzhiZjZi/NTI1MzAzNDkzY2Rk/NmI2YzcyNGU1M2Fl/NjZmZDhlMWIyY2Y1/M2Q2ODExMS9leHBy/ZXNzanMuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "meta_url": {
+          "scheme": "http",
+          "netloc": "expressjs.com",
+          "hostname": "expressjs.com",
+          "favicon": "https://imgs.search.brave.com/sFAukgJD-nbgqVp-6HA0hWnCXZ9QoE2guQ5ygS-ZowU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2Y4YmU0NGQ3/ODQyMGE1YzhiZjZi/NTI1MzAzNDkzY2Rk/NmI2YzcyNGU1M2Fl/NjZmZDhlMWIyY2Y1/M2Q2ODExMS9leHBy/ZXNzanMuY29tLw",
+          "path": ""
+        },
+        "age": "April 29, 2022",
+        "cluster_type": "generic",
+        "cluster": [
+          {
+            "title": "Express \"Hello World\" example",
+            "url": "https://expressjs.com/en/starter/hello-world.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "This is powered by RunKit, which ... complete <strong>Node</strong> environment that runs in your web browser. Below are instructions for running the same app on your local machine. RunKit is a third-party service not affiliated with the <strong>Express</strong> project. First create a directory named myapp, change to it and run npm init. Then, install <strong>express</strong> as a dependency, as per the installation guide. In the myapp directory, create a file named app.<strong>js</strong> and copy the ...",
+            "family_friendly": true
+          },
+          {
+            "title": "Express multer middleware",
+            "url": "https://expressjs.com/en/resources/middleware/multer.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "Multer is a <strong>node</strong>.<strong>js</strong> middleware for handling multipart/form-data, which is primarily used for uploading files.",
+            "family_friendly": true
+          },
+          {
+            "title": "Performance Best Practices Using Express in Production",
+            "url": "https://expressjs.com/en/advanced/best-practice-performance.html",
+            "is_source_local": false,
+            "is_source_both": false,
+            "description": "For a detailed comparison of these two libraries, see the StrongLoop blog post Comparing Winston and Bunyan <strong>Node</strong>.<strong>js</strong> Logging. <strong>Node</strong> apps crash when they encounter an uncaught exception. Not handling exceptions and taking appropriate actions will make your <strong>Express</strong> app crash and go offline.",
+            "family_friendly": true
+          }
+        ]
+      },
+      {
+        "title": "Express/Node introduction - Learn web development | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "We&#x27;ll outline the main features, and show you some of the main building blocks of an <strong>Express</strong> application (although at this point you won&#x27;t yet have a development environment in which to test it). <strong>Node</strong> (or more formally <strong>Node</strong>.<strong>js</strong>) is an open-source, cross-platform runtime environment that allows ...",
+        "page_age": "2024-07-26T08:15:04",
+        "profile": {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction",
+          "long_name": "developer.mozilla.org",
+          "img": "https://imgs.search.brave.com/4tUMaE-wrDFe-VfOV22wfV58-Q6q7X3MRdR7gVojXzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2EzZDA1YmEz/N2E0NWUwMzEyMjg2/NjY1Y2ZmMTNkYWM1/MDdjZjhjMGI5MGZh/NDRhMTFkYmM3ODE2/NDUwODY1MS9kZXZl/bG9wZXIubW96aWxs/YS5vcmcv"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "developer.mozilla.org",
+          "hostname": "developer.mozilla.org",
+          "favicon": "https://imgs.search.brave.com/4tUMaE-wrDFe-VfOV22wfV58-Q6q7X3MRdR7gVojXzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2EzZDA1YmEz/N2E0NWUwMzEyMjg2/NjY1Y2ZmMTNkYWM1/MDdjZjhjMGI5MGZh/NDRhMTFkYmM3ODE2/NDUwODY1MS9kZXZl/bG9wZXIubW96aWxs/YS5vcmcv",
+          "path": "› en-US  › docs  › Learn  › Server-side  › Express_Nodejs  › Introduction"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/GxtzDV4l9rIe_Swm6Rd8yUGjpEbQigZCu8K282ME50U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kZXZl/bG9wZXIubW96aWxs/YS5vcmcvbWRuLXNv/Y2lhbC1zaGFyZS5j/ZDZjNGE1YS5wbmc",
+          "original": "https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png",
+          "logo": false
+        },
+        "age": "July 26, 2024"
+      },
+      {
+        "title": "r/node on Reddit: Node.js + Express.js, or Node.js alone?",
+        "url": "https://www.reddit.com/r/node/comments/1affl6i/nodejs_expressjs_or_nodejs_alone/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "31 votes, 47 comments. So I wanted to learn <strong>Node</strong>.<strong>Js</strong> thoroughly and recently I’ve been learning <strong>Node</strong>.<strong>js</strong> from online tutorial and it seems they are…",
+        "page_age": "2024-01-31T11:17:41",
+        "profile": {
+          "name": "Reddit",
+          "url": "https://www.reddit.com/r/node/comments/1affl6i/nodejs_expressjs_or_nodejs_alone/",
+          "long_name": "reddit.com",
+          "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "qa",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "reddit.com",
+          "hostname": "www.reddit.com",
+          "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+          "path": "  › r/node  › node.js + express.js, or node.js alone?"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/_yEFi6wjkaImcVnkeFkSEvxc4lKQebSfNYPHzw7_z_4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/YWZmbDZp",
+          "original": "https://share.redd.it/preview/post/1affl6i",
+          "logo": false
+        },
+        "age": "January 31, 2024"
+      },
+      {
+        "title": "Express.js Tutorial - GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/express-js/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Express</strong>.<strong>js</strong> is a small framework that works on top of <strong>Node</strong>.<strong>js</strong> web server functionality to simplify its APIs and add helpful new features.",
+        "page_age": "2024-07-15T18:55:05",
+        "profile": {
+          "name": "GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/express-js/",
+          "long_name": "geeksforgeeks.org",
+          "img": "https://imgs.search.brave.com/bGE5KD5Za34la_MeOAt7584d1aXRWEQopsXEQyAALPw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjBhOGQ3MmNi/ZWE5N2EwMmZjYzA1/ZTI0ZTFhMGUyMTE0/MGM0ZTBmMWZlM2Y2/Yzk2ODMxZTRhYTBi/NDdjYTE0OS93d3cu/Z2Vla3Nmb3JnZWVr/cy5vcmcv"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "geeksforgeeks.org",
+          "hostname": "www.geeksforgeeks.org",
+          "favicon": "https://imgs.search.brave.com/bGE5KD5Za34la_MeOAt7584d1aXRWEQopsXEQyAALPw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjBhOGQ3MmNi/ZWE5N2EwMmZjYzA1/ZTI0ZTFhMGUyMTE0/MGM0ZTBmMWZlM2Y2/Yzk2ODMxZTRhYTBi/NDdjYTE0OS93d3cu/Z2Vla3Nmb3JnZWVr/cy5vcmcv",
+          "path": "› express-js"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/C20sP3lQQMOa7qke8Mt1oEklIS1UAN_GErjry43ZAy4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyNDA3MTUx/MjQ2NDEvRXhwcmVz/c2pzLXR1dG9yaWFs/LndlYnA",
+          "original": "https://media.geeksforgeeks.org/wp-content/uploads/20240715124641/Expressjs-tutorial.webp",
+          "logo": false
+        },
+        "age": "July 15, 2024"
+      },
+      {
+        "title": "Node.js - Express Framework",
+        "url": "https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "It is possible to develop a web application with core <strong>Node</strong>.<strong>js</strong> features. However, all the low level manipulations of HTTP request and responses have to be tediously handled. The web application frameworks take care of these common tasks, allowing the developer to concentrate on the business logic of the application. A web framework such as <strong>Express</strong>...",
+        "page_age": "2021-10-01T00:00:00",
+        "profile": {
+          "name": "Tutorialspoint",
+          "url": "https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm",
+          "long_name": "tutorialspoint.com",
+          "img": "https://imgs.search.brave.com/_u2wtU6bOIAscdllAGUiT_rMLNOBT91-4a6WufN36f0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjcyYjAzYmVl/ODU4MzZiMjJiYTFh/MjJhZDNmNWE4YzA5/MDgyYTZhMDg3NTYw/M2NiY2NiZTUxN2I5/MjU1MWFmMS93d3cu/dHV0b3JpYWxzcG9p/bnQuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "tutorialspoint.com",
+          "hostname": "www.tutorialspoint.com",
+          "favicon": "https://imgs.search.brave.com/_u2wtU6bOIAscdllAGUiT_rMLNOBT91-4a6WufN36f0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjcyYjAzYmVl/ODU4MzZiMjJiYTFh/MjJhZDNmNWE4YzA5/MDgyYTZhMDg3NTYw/M2NiY2NiZTUxN2I5/MjU1MWFmMS93d3cu/dHV0b3JpYWxzcG9p/bnQuY29tLw",
+          "path": "› nodejs  › nodejs_express_framework.htm"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/-BEBPzK6t44nGiiOKKfmDlB7t44BRwlqy5nRE0tulR4/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/dHV0b3JpYWxzcG9p/bnQuY29tL2ltYWdl/cy90cF9sb2dvXzQz/Ni5wbmc",
+          "original": "https://www.tutorialspoint.com/images/tp_logo_436.png",
+          "logo": true
+        },
+        "age": "October 1, 2021"
+      },
+      {
+        "title": "GitHub - expressjs/express: Fast, unopinionated, minimalist web framework for node.",
+        "url": "https://github.com/expressjs/express",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Node</strong>.<strong>js</strong> 0.10 or higher is required. If this is a brand new project, make sure to create a package.json first with the npm init command. Installation is done using the npm install command: ... Follow our installing guide for more information. ... PROTIP Be sure to read Migrating from 3.x to 4.x as well as New features in 4.x. The quickest way to get started with <strong>express</strong> ...",
+        "page_age": "2022-08-16T00:00:00",
+        "profile": {
+          "name": "GitHub",
+          "url": "https://github.com/expressjs/express",
+          "long_name": "github.com",
+          "img": "https://imgs.search.brave.com/xxsA4YxzaR0cl-DBsH9-lpv2gsif3KMYgM87p26bs_o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "software",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "github.com",
+          "hostname": "github.com",
+          "favicon": "https://imgs.search.brave.com/xxsA4YxzaR0cl-DBsH9-lpv2gsif3KMYgM87p26bs_o/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYWQyNWM1NjA5/ZjZmZjNlYzI2MDNk/N2VkNmJhYjE2MzZl/MDY5ZTMxMDUzZmY1/NmU3NWIzNWVmMjk0/NTBjMjJjZi9naXRo/dWIuY29tLw",
+          "path": "› expressjs  › express"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/udKegM_qCid0K2e576xcF2Orc_T2bg95ZKrnkEkjxHU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9vcGVu/Z3JhcGguZ2l0aHVi/YXNzZXRzLmNvbS8y/ZGZjNTg1YjE0MDg4/NmYzMDY5NmI2OGY0/YzcwNWI5YTU5Mzgw/NzQ0ZTM2NzdiMTgx/ZWQxZmIwYzk0YjJm/MzAzL2V4cHJlc3Nq/cy9leHByZXNz",
+          "original": "https://opengraph.githubassets.com/2dfc585b140886f30696b68f4c705b9a59380744e3677b181ed1fb0c94b2f303/expressjs/express",
+          "logo": false
+        },
+        "age": "August 16, 2022"
+      },
+      {
+        "title": "r/node on Reddit: Is Express.js a good idea for backend?",
+        "url": "https://www.reddit.com/r/node/comments/10duf7e/is_expressjs_a_good_idea_for_backend/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "53 votes, 109 comments. I&#x27;m a junior dev, and I found my first job in a startup and I&#x27;ll need to work ALONE in a project, so I need some help here…",
+        "page_age": "2023-01-16T23:49:56",
+        "profile": {
+          "name": "Reddit",
+          "url": "https://www.reddit.com/r/node/comments/10duf7e/is_expressjs_a_good_idea_for_backend/",
+          "long_name": "reddit.com",
+          "img": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "qa",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "reddit.com",
+          "hostname": "www.reddit.com",
+          "favicon": "https://imgs.search.brave.com/U-eHNCapRHVNWWCVPPMTIvOofZULh0_A_FQKe8xTE4I/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvN2ZiNTU0M2Nj/MTFhZjRiYWViZDlk/MjJiMjBjMzFjMDRk/Y2IzYWI0MGI0MjVk/OGY5NzQzOGQ5NzQ5/NWJhMWI0NC93d3cu/cmVkZGl0LmNvbS8",
+          "path": "  › r/node  › is express.js a good idea for backend?"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/EG0nmHnqivTFksbrtVA0Mba-aSpMLui6JRnsw1RS8s0/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zaGFy/ZS5yZWRkLml0L3By/ZXZpZXcvcG9zdC8x/MGR1Zjdl",
+          "original": "https://share.redd.it/preview/post/10duf7e",
+          "logo": false
+        },
+        "age": "January 16, 2023"
+      },
+      {
+        "title": "express - npm",
+        "url": "https://www.npmjs.com/package/express",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Node</strong>.<strong>js</strong> 0.10 or higher is required. If this is a brand new project, make sure to create a package.json first with the npm init command. Installation is done using the npm install command: ... Follow our installing guide for more information. ... PROTIP Be sure to read Migrating from 3.x to 4.x as well as New features in 4.x. The quickest way to get started with <strong>express</strong> ...",
+        "page_age": "2024-03-25T00:00:00",
+        "profile": {
+          "name": "npm",
+          "url": "https://www.npmjs.com/package/express",
+          "long_name": "npmjs.com",
+          "img": "https://imgs.search.brave.com/129PsExJCizx2_pC-7e4exnT1C0gWE4PUinIWjrXr-4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzg1ZTZiOGFm/M2NhY2JjMmE1NmJl/ZTRlODIwNDVhZWIy/OWRjZDgzYjYyYjcw/NjhmNzQzMWM0NDBk/Y2U3MGIzMi93d3cu/bnBtanMuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "software",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "npmjs.com",
+          "hostname": "www.npmjs.com",
+          "favicon": "https://imgs.search.brave.com/129PsExJCizx2_pC-7e4exnT1C0gWE4PUinIWjrXr-4/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMzg1ZTZiOGFm/M2NhY2JjMmE1NmJl/ZTRlODIwNDVhZWIy/OWRjZDgzYjYyYjcw/NjhmNzQzMWM0NDBk/Y2U3MGIzMi93d3cu/bnBtanMuY29tLw",
+          "path": "› package  › express"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/t1TrvkMaJ8NM6BTzVXuMm-wqMPNvTDiEW-dL8v7DsSc/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9zdGF0/aWMtcHJvZHVjdGlv/bi5ucG1qcy5jb20v/MzM4ZTQ5MDVhMjY4/NGNhOTZlMDhjNzc4/MGZjNjg0MTIucG5n",
+          "original": "https://static-production.npmjs.com/338e4905a2684ca96e08c7780fc68412.png",
+          "logo": false
+        },
+        "age": "March 25, 2024"
+      },
+      {
+        "title": "difference between node.js and express - Stack Overflow",
+        "url": "https://stackoverflow.com/questions/57939849/difference-between-node-js-and-express",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "I&#x27;m new to the front end development and modern technologies MEAN/MERN stack, I am confuse about difference between <strong>node</strong>.<strong>js</strong> <strong>and</strong> <strong>express</strong> can someone outline differences or advantages and one can le...",
+        "page_age": "2019-09-15T00:00:00",
+        "profile": {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com/questions/57939849/difference-between-node-js-and-express",
+          "long_name": "stackoverflow.com",
+          "img": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "qa",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "stackoverflow.com",
+          "hostname": "stackoverflow.com",
+          "favicon": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8",
+          "path": "› questions  › 57939849  › difference-between-node-js-and-express"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/4eF1Hc63ppYaxZ4e5vCKJVQtFhMkuzdk3kpY3MGOCjs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c3N0YXRpYy5uZXQv/U2l0ZXMvc3RhY2tv/dmVyZmxvdy9JbWcv/YXBwbGUtdG91Y2gt/aWNvbkAyLnBuZz92/PTczZDc5YTg5YmRl/ZA",
+          "original": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+          "logo": false
+        },
+        "age": "September 15, 2019"
+      },
+      {
+        "title": "Express JS Tutorial [Understand in 5 Minutes]",
+        "url": "https://www.simplilearn.com/tutorials/nodejs-tutorial/what-is-express-js",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "Do you want to know what is <strong>Node</strong>.<strong>js</strong> framework <strong>Express</strong> <strong>JS</strong> and what are its features, advantages, and limitations? Then this tutorial is for you, just click here to know more.",
+        "page_age": "2024-08-11T00:00:00",
+        "profile": {
+          "name": "Simplilearn",
+          "url": "https://www.simplilearn.com/tutorials/nodejs-tutorial/what-is-express-js",
+          "long_name": "simplilearn.com",
+          "img": "https://imgs.search.brave.com/k4DgIXOOs7S3CLpUK0RF6rNy38Zy9est3E1QTRGCjAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2E0YTc5Yzhm/NGMyNjUyMjM5OTgx/YjNlNGUwZThjMGMy/ZTEzMWUxMTg4YzMz/NWU0MWZkZWVmM2Ez/ZjNjZjcwOC93d3cu/c2ltcGxpbGVhcm4u/Y29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "location",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "simplilearn.com",
+          "hostname": "www.simplilearn.com",
+          "favicon": "https://imgs.search.brave.com/k4DgIXOOs7S3CLpUK0RF6rNy38Zy9est3E1QTRGCjAc/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2E0YTc5Yzhm/NGMyNjUyMjM5OTgx/YjNlNGUwZThjMGMy/ZTEzMWUxMTg4YzMz/NWU0MWZkZWVmM2Ez/ZjNjZjcwOC93d3cu/c2ltcGxpbGVhcm4u/Y29tLw",
+          "path": "  › home  › resources  › software development  › node.js tutorial  › express js tutorial"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/2vSA0cXKHPXCugq_VY6uQaLHxs-ePWHts-AAMAs6QOQ/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly93d3cu/c2ltcGxpbGVhcm4u/Y29tL2ljZTkvZnJl/ZV9yZXNvdXJjZXNf/YXJ0aWNsZV90aHVt/Yi9BbnViaGF2Lmpw/Zw",
+          "original": "https://www.simplilearn.com/ice9/free_resources_article_thumb/Anubhav.jpg",
+          "logo": false
+        },
+        "age": "2 weeks ago"
+      },
+      {
+        "title": "Learn Express JS In 35 Minutes - YouTube",
+        "url": "https://www.youtube.com/watch?v=SccSCuHhOw0",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "ExpressJS is the most popular <strong>Node</strong>.<strong>js</strong> web server framework and is the basis of thousands of sites. In this video I will be breaking down every important aspe...",
+        "page_age": "2021-09-01T00:00:00",
+        "profile": {
+          "name": "YouTube",
+          "url": "https://www.youtube.com/watch?v=SccSCuHhOw0",
+          "long_name": "youtube.com",
+          "img": "https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "video",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "youtube.com",
+          "hostname": "www.youtube.com",
+          "favicon": "https://imgs.search.brave.com/Wg4wjE5SHAargkzePU3eSLmWgVz84BEZk1SjSglJK_U/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTkyZTZiMWU3/YzU3Nzc5YjExYzUy/N2VhZTIxOWNlYjM5/ZGVjN2MyZDY4Nzdh/ZDYzMTYxNmI5N2Rk/Y2Q3N2FkNy93d3cu/eW91dHViZS5jb20v",
+          "path": "  › web dev simplified"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/z1ajD8GbgLqH5pz3sT5cH7yB5Jy_jxMh3xvMkcbr3XU/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9pLnl0/aW1nLmNvbS92aS9T/Y2NTQ3VIaE93MC9t/YXhyZXNkZWZhdWx0/LmpwZw",
+          "original": "https://i.ytimg.com/vi/SccSCuHhOw0/maxresdefault.jpg",
+          "logo": false
+        },
+        "age": "September 1, 2021"
+      },
+      {
+        "title": "Express.js - Wikipedia",
+        "url": "https://en.wikipedia.org/wiki/Express.js",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Express</strong>.<strong>js</strong>, or simply <strong>Express</strong>, is a back end web application framework for building RESTful APIs with <strong>Node</strong>.<strong>js</strong>, released as free and open-source software under the MIT License. It is designed for building web applications and APIs.",
+        "page_age": "2024-06-11T02:45:24",
+        "profile": {
+          "name": "Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Express.js",
+          "long_name": "en.wikipedia.org",
+          "img": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "deep_results": {
+          "buttons": [
+            {
+              "type": "button_result",
+              "title": "History",
+              "url": "https://en.wikipedia.org/wiki/Express.js#History"
+            },
+            {
+              "type": "button_result",
+              "title": "Features",
+              "url": "https://en.wikipedia.org/wiki/Express.js#Features"
+            },
+            {
+              "type": "button_result",
+              "title": "Popularity",
+              "url": "https://en.wikipedia.org/wiki/Express.js#Popularity"
+            },
+            {
+              "type": "button_result",
+              "title": "Example",
+              "url": "https://en.wikipedia.org/wiki/Express.js#Example"
+            }
+          ]
+        },
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "en.wikipedia.org",
+          "hostname": "en.wikipedia.org",
+          "favicon": "https://imgs.search.brave.com/m6XxME4ek8DGIUcEPCqjRoDjf2e54EwL9pQzyzogLYk/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNjQwNGZhZWY0/ZTQ1YWUzYzQ3MDUw/MmMzMGY3NTQ0ZjNj/NDUwMDk5ZTI3MWRk/NWYyNTM4N2UwOTE0/NTI3ZDQzNy9lbi53/aWtpcGVkaWEub3Jn/Lw",
+          "path": "› wiki  › Express.js"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/yMuhpmeyROP8pJP2qNjU-7hXW4ygT6VX9QJpNk71EsM/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzY0L0V4cHJlc3Nq/cy5wbmc",
+          "original": "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
+          "logo": false
+        },
+        "age": "June 11, 2024"
+      },
+      {
+        "title": "How to set up your Node.js and Express development environment | Twilio",
+        "url": "https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-node-js-and-express-development-environment",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "Learn how to set up <strong>Node</strong>.<strong>js</strong> for web development using the <strong>Express</strong> web app framework. Manage dependencies with npm and use ngrok to expose your dev server.",
+        "page_age": "2022-02-10T00:00:00",
+        "profile": {
+          "name": "Twilio",
+          "url": "https://www.twilio.com/docs/usage/tutorials/how-to-set-up-your-node-js-and-express-development-environment",
+          "long_name": "twilio.com",
+          "img": "https://imgs.search.brave.com/SAGMnbzXWlex_IXQqJGi29_4s2iWPhEHHIHR1HDu-p8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDUwNWFiOTM0/ZmE5MTAxMmFiZmRj/OGRlOThlZDQ0OGZi/NTRiMDFjNjc0YTU3/YjI2ZTUzYzgwZWUy/MjQ2ZGI5YS93d3cu/dHdpbGlvLmNvbS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "twilio.com",
+          "hostname": "www.twilio.com",
+          "favicon": "https://imgs.search.brave.com/SAGMnbzXWlex_IXQqJGi29_4s2iWPhEHHIHR1HDu-p8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvMDUwNWFiOTM0/ZmE5MTAxMmFiZmRj/OGRlOThlZDQ0OGZi/NTRiMDFjNjc0YTU3/YjI2ZTUzYzgwZWUy/MjQ2ZGI5YS93d3cu/dHdpbGlvLmNvbS8",
+          "path": "› docs  › usage  › tutorials  › how-to-set-up-your-node-js-and-express-development-environment"
+        },
+        "age": "February 10, 2022"
+      },
+      {
+        "title": "Express web framework (Node.js/JavaScript) - Learn web development | MDN",
+        "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Express</strong> is a popular unopinionated web framework, written in JavaScript and hosted within the <strong>Node</strong>.<strong>js</strong> runtime environment. This module explains some of the key benefits of the framework, how to set up your development environment and how to perform common web development and deployment tasks.",
+        "page_age": "2024-07-26T06:50:03",
+        "profile": {
+          "name": "MDN Web Docs",
+          "url": "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs",
+          "long_name": "developer.mozilla.org",
+          "img": "https://imgs.search.brave.com/4tUMaE-wrDFe-VfOV22wfV58-Q6q7X3MRdR7gVojXzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2EzZDA1YmEz/N2E0NWUwMzEyMjg2/NjY1Y2ZmMTNkYWM1/MDdjZjhjMGI5MGZh/NDRhMTFkYmM3ODE2/NDUwODY1MS9kZXZl/bG9wZXIubW96aWxs/YS5vcmcv"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "developer.mozilla.org",
+          "hostname": "developer.mozilla.org",
+          "favicon": "https://imgs.search.brave.com/4tUMaE-wrDFe-VfOV22wfV58-Q6q7X3MRdR7gVojXzY/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2EzZDA1YmEz/N2E0NWUwMzEyMjg2/NjY1Y2ZmMTNkYWM1/MDdjZjhjMGI5MGZh/NDRhMTFkYmM3ODE2/NDUwODY1MS9kZXZl/bG9wZXIubW96aWxs/YS5vcmcv",
+          "path": "› en-US  › docs  › Learn  › Server-side  › Express_Nodejs"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/GxtzDV4l9rIe_Swm6Rd8yUGjpEbQigZCu8K282ME50U/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9kZXZl/bG9wZXIubW96aWxs/YS5vcmcvbWRuLXNv/Y2lhbC1zaGFyZS5j/ZDZjNGE1YS5wbmc",
+          "original": "https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png",
+          "logo": false
+        },
+        "age": "July 26, 2024"
+      },
+      {
+        "title": "What Is Express.js? Everything You Should Know",
+        "url": "https://kinsta.com/knowledgebase/what-is-express-js/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Express</strong>.<strong>js</strong> is the most popular backend framework for <strong>Node</strong>.<strong>js</strong>. Learn more about this important constituent of the JavaScript ecosystem.",
+        "page_age": "2023-09-14T06:00:03",
+        "profile": {
+          "name": "Kinsta",
+          "url": "https://kinsta.com/knowledgebase/what-is-express-js/",
+          "long_name": "kinsta.com",
+          "img": "https://imgs.search.brave.com/9grrJ3P5K6xbvg2yg0Cf5_T15HyUfJ0NEKyZEqPs_d8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTkzNmMwMDFj/YTMxMTViYTM0MWMy/MmNmOWVjMDE4NDJk/ZGIwMjJkYTQ3NGZh/NTYzYjhmNzMxMzFj/YzQ2ZWY5Ni9raW5z/dGEuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "kinsta.com",
+          "hostname": "kinsta.com",
+          "favicon": "https://imgs.search.brave.com/9grrJ3P5K6xbvg2yg0Cf5_T15HyUfJ0NEKyZEqPs_d8/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTkzNmMwMDFj/YTMxMTViYTM0MWMy/MmNmOWVjMDE4NDJk/ZGIwMjJkYTQ3NGZh/NTYzYjhmNzMxMzFj/YzQ2ZWY5Ni9raW5z/dGEuY29tLw",
+          "path": "  › home  › resource center  › knowledge base  › web development languages  › what is express.js? everything you should know"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/Vk96_w3ReDhIMTGqsM5XlZl6Da7zhpNN4NP_4x2F-zg/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9raW5z/dGEuY29tL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzAzL3do/YXQtaXMtZXhwcmVz/cy1qcy0xLTEyMDB4/Njc1LmpwZw",
+          "original": "https://kinsta.com/wp-content/uploads/2022/03/what-is-express-js-1-1200x675.jpg",
+          "logo": false
+        },
+        "age": "September 14, 2023"
+      },
+      {
+        "title": "Express \"Hello World\" example",
+        "url": "https://expressjs.com/en/starter/hello-world.html",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "This is powered by RunKit, which ... complete <strong>Node</strong> environment that runs in your web browser. Below are instructions for running the same app on your local machine. RunKit is a third-party service not affiliated with the <strong>Express</strong> project. First create a directory named myapp, change to it and run npm init. Then, install <strong>express</strong> as a dependency, as per the installation guide. In the myapp directory, create a file named app.<strong>js</strong> and copy the ...",
+        "profile": {
+          "name": "Expressjs",
+          "url": "https://expressjs.com/en/starter/hello-world.html",
+          "long_name": "expressjs.com",
+          "img": "https://imgs.search.brave.com/sFAukgJD-nbgqVp-6HA0hWnCXZ9QoE2guQ5ygS-ZowU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2Y4YmU0NGQ3/ODQyMGE1YzhiZjZi/NTI1MzAzNDkzY2Rk/NmI2YzcyNGU1M2Fl/NjZmZDhlMWIyY2Y1/M2Q2ODExMS9leHBy/ZXNzanMuY29tLw"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "generic",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "expressjs.com",
+          "hostname": "expressjs.com",
+          "favicon": "https://imgs.search.brave.com/sFAukgJD-nbgqVp-6HA0hWnCXZ9QoE2guQ5ygS-ZowU/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvM2Y4YmU0NGQ3/ODQyMGE1YzhiZjZi/NTI1MzAzNDkzY2Rk/NmI2YzcyNGU1M2Fl/NjZmZDhlMWIyY2Y1/M2Q2ODExMS9leHBy/ZXNzanMuY29tLw",
+          "path": "› en  › starter  › hello-world.html"
+        }
+      },
+      {
+        "title": "node.js - What does Express.js do in the MEAN stack? - Stack Overflow",
+        "url": "https://stackoverflow.com/questions/19411135/what-does-express-js-do-in-the-mean-stack",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "I have recently have gotten into AngularJS and I love it. For an upcoming project I am looking to use the MEAN stack (MongoDB, <strong>Express</strong>, Angular, <strong>Node</strong>). I&#x27;m pretty familiar with Angular and I have a",
+        "page_age": "2015-12-02T00:00:00",
+        "profile": {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com/questions/19411135/what-does-express-js-do-in-the-mean-stack",
+          "long_name": "stackoverflow.com",
+          "img": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "qa",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "stackoverflow.com",
+          "hostname": "stackoverflow.com",
+          "favicon": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8",
+          "path": "› questions  › 19411135  › what-does-express-js-do-in-the-mean-stack"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/4eF1Hc63ppYaxZ4e5vCKJVQtFhMkuzdk3kpY3MGOCjs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c3N0YXRpYy5uZXQv/U2l0ZXMvc3RhY2tv/dmVyZmxvdy9JbWcv/YXBwbGUtdG91Y2gt/aWNvbkAyLnBuZz92/PTczZDc5YTg5YmRl/ZA",
+          "original": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+          "logo": false
+        },
+        "age": "December 2, 2015"
+      },
+      {
+        "title": "Node vs Express - GeeksforGeeks",
+        "url": "https://www.geeksforgeeks.org/node-js-vs-express-js/",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "We often use <strong>Node</strong>.<strong>js</strong> for building back-end services like APIs for Web Apps or Mobile Apps. It’s used in production by large companies such as Paypal, Uber, Netflix, Walmart, and so on. <strong>Express</strong> is a small framework that sits on top of <strong>Node</strong> JSs web server functionality to simplify its APIs ...",
+        "page_age": "2024-05-30T21:15:02",
+        "profile": {
+          "name": "GeeksforGeeks",
+          "url": "https://www.geeksforgeeks.org/node-js-vs-express-js/",
+          "long_name": "geeksforgeeks.org",
+          "img": "https://imgs.search.brave.com/bGE5KD5Za34la_MeOAt7584d1aXRWEQopsXEQyAALPw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjBhOGQ3MmNi/ZWE5N2EwMmZjYzA1/ZTI0ZTFhMGUyMTE0/MGM0ZTBmMWZlM2Y2/Yzk2ODMxZTRhYTBi/NDdjYTE0OS93d3cu/Z2Vla3Nmb3JnZWVr/cy5vcmcv"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "article",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "geeksforgeeks.org",
+          "hostname": "www.geeksforgeeks.org",
+          "favicon": "https://imgs.search.brave.com/bGE5KD5Za34la_MeOAt7584d1aXRWEQopsXEQyAALPw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvYjBhOGQ3MmNi/ZWE5N2EwMmZjYzA1/ZTI0ZTFhMGUyMTE0/MGM0ZTBmMWZlM2Y2/Yzk2ODMxZTRhYTBi/NDdjYTE0OS93d3cu/Z2Vla3Nmb3JnZWVr/cy5vcmcv",
+          "path": "› node-js-vs-express-js"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/_fzGmMZYNpvqu-zCCn1DvMFxQlLyXaZGxtNJSHwXuds/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZWVrc2Zvcmdl/ZWtzLm9yZy93cC1j/b250ZW50L3VwbG9h/ZHMvMjAyMDEyMDQx/NTMxNTQvYXJ0aWNs/ZTEtNjYweDM0Ni5Q/Tkc",
+          "original": "https://media.geeksforgeeks.org/wp-content/uploads/20201204153154/article1-660x346.PNG",
+          "logo": false
+        },
+        "age": "May 30, 2024"
+      },
+      {
+        "title": "When should I use express.js over a standalone node.js",
+        "url": "https://stackoverflow.com/questions/27824859/when-should-i-use-express-js-over-a-standalone-node-js",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "<strong>Node</strong>.<strong>js</strong> is a javascript environment <strong>Express</strong> is a framework What is a software framework? for <strong>Node</strong>.<strong>js</strong>? Why and when is it useful to use <strong>Express</strong> framework over <strong>Node</strong>.<strong>js</strong> standalone? What I mean is...",
+        "page_age": "2016-03-29T00:00:00",
+        "profile": {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com/questions/27824859/when-should-i-use-express-js-over-a-standalone-node-js",
+          "long_name": "stackoverflow.com",
+          "img": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "qa",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "stackoverflow.com",
+          "hostname": "stackoverflow.com",
+          "favicon": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8",
+          "path": "› questions  › 27824859  › when-should-i-use-express-js-over-a-standalone-node-js"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/4eF1Hc63ppYaxZ4e5vCKJVQtFhMkuzdk3kpY3MGOCjs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c3N0YXRpYy5uZXQv/U2l0ZXMvc3RhY2tv/dmVyZmxvdy9JbWcv/YXBwbGUtdG91Y2gt/aWNvbkAyLnBuZz92/PTczZDc5YTg5YmRl/ZA",
+          "original": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+          "logo": false
+        },
+        "age": "March 29, 2016"
+      },
+      {
+        "title": "node.js - Difference between Node js and express js - Stack Overflow",
+        "url": "https://stackoverflow.com/questions/12668880/difference-between-node-js-and-express-js",
+        "is_source_local": false,
+        "is_source_both": false,
+        "description": "I am a newbie for <strong>node</strong> <strong>js</strong>. What is the use of <strong>express</strong> <strong>JS</strong>? According to my understanding it is used for web projects and has some templates like Jade and CSS. Is there anyother extra features in e...",
+        "page_age": "2016-07-20T00:00:00",
+        "profile": {
+          "name": "Stack Overflow",
+          "url": "https://stackoverflow.com/questions/12668880/difference-between-node-js-and-express-js",
+          "long_name": "stackoverflow.com",
+          "img": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8"
+        },
+        "language": "en",
+        "family_friendly": true,
+        "type": "search_result",
+        "subtype": "qa",
+        "meta_url": {
+          "scheme": "https",
+          "netloc": "stackoverflow.com",
+          "hostname": "stackoverflow.com",
+          "favicon": "https://imgs.search.brave.com/4WRMec_wn8Q9LO6DI43kkBvIL6wD5TYCXztC9C9kEI0/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvNWU3Zjg0ZjA1/YjQ3ZTlkNjQ1ODA1/MjAwODhiNjhjYWU0/OTc4MjM4ZDJlMTBi/ODExYmNiNTkzMjdh/YjM3MGExMS9zdGFj/a292ZXJmbG93LmNv/bS8",
+          "path": "› questions  › 12668880  › difference-between-node-js-and-express-js"
+        },
+        "thumbnail": {
+          "src": "https://imgs.search.brave.com/4eF1Hc63ppYaxZ4e5vCKJVQtFhMkuzdk3kpY3MGOCjs/rs:fit:200:200:1:0/g:ce/aHR0cHM6Ly9jZG4u/c3N0YXRpYy5uZXQv/U2l0ZXMvc3RhY2tv/dmVyZmxvdy9JbWcv/YXBwbGUtdG91Y2gt/aWNvbkAyLnBuZz92/PTczZDc5YTg5YmRl/ZA",
+          "original": "https://cdn.sstatic.net/Sites/stackoverflow/Img/apple-touch-icon@2.png?v=73d79a89bded",
+          "logo": false
+        },
+        "age": "July 20, 2016"
+      }
+    ],
+    "family_friendly": true
+  }
+}
