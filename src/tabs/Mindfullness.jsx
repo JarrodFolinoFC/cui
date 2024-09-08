@@ -35,7 +35,7 @@ function Mindfullness() {
           "Identification",
           "Preparation",
           "Action",
-          "Maintenace",
+          "Maintenance",
           "Terminate",
           "Progress",
         ]}

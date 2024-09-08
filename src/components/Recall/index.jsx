@@ -27,7 +27,7 @@ function Concept({ value }) {
           setActual(e.target.value);
         }}
       />
-      {actual === value && <CheckCircleOutlined />}
+      {actual.toLowerCase() === value.toLowerCase() && <CheckCircleOutlined />}
       {isIncorrect(actual) && <CloseCircleOutlined />}
     </Space>
   );

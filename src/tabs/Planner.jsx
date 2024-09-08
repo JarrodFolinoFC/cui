@@ -1,7 +1,12 @@
-import { Space, Flex } from "antd";
+import React, { useState, useEffect } from "react";
+import { Flex } from "antd";
 import DaysUntil from "../components/DaysUntil";
+import SimpleLineChart from "../components/SimpleLineChart";
+import PreviewCard from "../components/PreviewCard";
+import MarkdownCard from "../components/MarkdownCard";
+import JsConsole from "../components/JsConsole";
 
-const data = [
+const daysUntilData = [
   {
     date: "2024-09-10",
     description: "CT",
@@ -16,10 +21,29 @@ const data = [
   },
 ];
 
+const md = `
+# Hello
+
+## Some info
+
+- tag(tag one)
+- tag(tag two)
+
+List
+- a
+- b
+`;
+
 function Planner() {
   return (
-    <Flex>
-      <DaysUntil data={data} />
+    <Flex wrap>
+      <DaysUntil data={daysUntilData} />
+      <SimpleLineChart
+        unit="$"
+        dataUrl={"http://localhost:5173/mortgage.json"}
+      />
+      <MarkdownCard title={"Some content"}>{md}</MarkdownCard>
+      <JsConsole />
     </Flex>
   );
 }
