@@ -5,6 +5,8 @@ import SimpleLineChart from "../components/SimpleLineChart";
 import MarkdownCard from "../components/MarkdownCard";
 import JsConsole from "../components/JsConsole";
 import UpcomingBirthdays from "../components/UpcomingBirthdays";
+import WorldClock from "../components/WorldClock";
+import LongPressButton from "../components/LongPressButton";
 
 const birthdays = [
   {
@@ -56,6 +58,8 @@ function Planner() {
       <MarkdownCard title={"Some content"}>{md}</MarkdownCard>
       <JsConsole />
       <UpcomingBirthdays data={birthdays} />
+      <WorldClock />
+      <LongPressButton name="Something" display="88" completedDisplay={"89"} />
     </Flex>
   );
 }
