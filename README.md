@@ -1,18 +1,32 @@
 # todo
 
+weight tracker
+vscode shortcuts
 weather
-reminders
 world clock
+countries visited
+summarise conversation
+tablet reminder
 food journal
 travel journal
-tablet reminder
+linkedin messages
 contacts
 important files
 aws bill
-countries visited
+search stackoverflow
 workout tracker
-weight tracker
+get aws updates (dynamo db, lambda, api gateway) from website, rss, slack
+reminders (integrate with DaysUntil)
+
 replace 411mania
+replace ign
+replace mac rumours
+is clean code ai
+is clean coder ai
+is design pattern ai
+random mindfulness checkins
+mindfulness awareness
+slack js api (forums)
 
 ## emails
 

@@ -2,9 +2,20 @@ import React, { useState, useEffect } from "react";
 import { Flex } from "antd";
 import DaysUntil from "../components/DaysUntil";
 import SimpleLineChart from "../components/SimpleLineChart";
-import PreviewCard from "../components/PreviewCard";
 import MarkdownCard from "../components/MarkdownCard";
 import JsConsole from "../components/JsConsole";
+import UpcomingBirthdays from "../components/UpcomingBirthdays";
+
+const birthdays = [
+  {
+    date: "08-22",
+    description: "Mum",
+  },
+  {
+    date: "10-04",
+    description: "Me",
+  },
+];
 
 const daysUntilData = [
   {
@@ -44,6 +55,7 @@ function Planner() {
       />
       <MarkdownCard title={"Some content"}>{md}</MarkdownCard>
       <JsConsole />
+      <UpcomingBirthdays data={birthdays} />
     </Flex>
   );
 }

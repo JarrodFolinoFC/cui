@@ -1,9 +1,12 @@
 import { Timeline } from "antd";
 
-
 import PreviewCard from "../PreviewCard";
 
-function DaysUntil({ data }) {
+function UpcomingBirthdays({ data }) {
+  function addYear(mmdd) {
+    return `2024-${mmdd}`;
+  }
+
   function getDaysUntil(date) {
     const now = new Date();
     const then = new Date(date);
@@ -13,13 +16,14 @@ function DaysUntil({ data }) {
 
   return (
     <PreviewCard
-      title="Days Until"
+      title="Birthdays"
       content={
         <Timeline
           mode="left"
           items={data.map((item) => {
+            const fullDate = addYear(item.date);
             return {
-              label: `${getDaysUntil(item.date)} days`,
+              label: `${fullDate} (${getDaysUntil(fullDate)} days)`,
               children: item.description,
             };
           })}
@@ -28,9 +32,11 @@ function DaysUntil({ data }) {
       preview={
         <Timeline
           mode="left"
+          style={{"min-width": 200}}
           items={data.slice(0, 2).map((item) => {
+            const fullDate = addYear(item.date);
             return {
-              label: `${getDaysUntil(item.date)} days`,
+              label: `${getDaysUntil(fullDate)} days`,
               children: item.description,
             };
           })}
@@ -40,4 +46,4 @@ function DaysUntil({ data }) {
   );
 }
 
-export default DaysUntil;
+export default UpcomingBirthdays;

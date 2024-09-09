@@ -1,0 +1,175 @@
+[
+  {
+    "date": "2022-12-08",
+    "country": "England",
+    "city": "Nottingham"
+  },
+  {
+    "date": "2022-12-08",
+    "country": "Scotland",
+    "city": "Edinburgh"
+  },
+  {
+    "date": "2023-02",
+    "country": "Spain",
+    "province": "Catalonia",
+    "city": "Barcelona"
+  },
+  {
+    "date": "2023-01",
+    "country": "England",
+    "province": "",
+    "city": "Windsor"
+  },
+  {
+    "date": "2023-03",
+    "country": "Republic of Ireland",
+    "province": "",
+    "city": "Dublin"
+  },
+  {
+    "date": "2023-03",
+    "country": "Norway",
+    "province": "",
+    "city": "Bergen"
+  },
+  {
+    "date": "2023-03",
+    "country": "Iceland",
+    "province": "",
+    "city": "Rajavik"
+  },
+  {
+    "date": "2023-03",
+    "country": "Switzerland",
+    "province": "",
+    "city": "Zurich"
+  },
+  {
+    "date": "2023-03",
+    "country": "England",
+    "province": "",
+    "city": "Manchester"
+  },
+  {
+    "date": "2023-03",
+    "country": "Japan",
+    "province": "",
+    "city": "Tokyo"
+  },
+  {
+    "date": "2023-03",
+    "country": "Japan",
+    "province": "",
+    "city": "Kyoto"
+  },
+  {
+    "date": "2023-03",
+    "country": "Japan",
+    "province": "",
+    "city": "Hakone"
+  },
+  {
+    "date": "2023-03",
+    "country": "Japan",
+    "province": "",
+    "city": "Nagoya"
+  },
+  {
+    "date": "2023-03",
+    "country": "Denmark",
+    "province": "",
+    "city": "Copenhagen"
+  },
+  {
+    "date": "2023-03",
+    "country": "Japan",
+    "province": "",
+    "city": "Stockholm"
+  },
+  {
+    "date": "2023-03",
+    "country": "Spain",
+    "province": "",
+    "city": "Mallorca"
+  },
+  {
+    "date": "2023-03",
+    "country": "Spain",
+    "province": "",
+    "city": "Minorca"
+  },
+  {
+    "date": "2024-03",
+    "country": "Germany",
+    "province": "",
+    "city": "Frankfurt Am Main"
+  },
+  {
+    "date": "2024-03",
+    "country": "Bulgaria",
+    "province": "",
+    "city": "Sofia"
+  },
+  {
+    "date": "2024-03",
+    "country": "Bulgaria",
+    "province": "",
+    "city": "Plovdiv"
+  },
+  {
+    "date": "2024-03",
+    "country": "United States of America",
+    "state": "Illonios",
+    "city": "Chicago"
+  },
+  {
+    "date": "2024-03",
+    "country": "United States of America",
+    "state": "California",
+    "city": "San Francisco"
+  },
+  {
+    "date": "2024-03",
+    "country": "Canada",
+    "state": "",
+    "city": "Vancouver"
+  },
+  {
+    "date": "2024-03",
+    "country": "Canada",
+    "state": "",
+    "city": "Calgary"
+  },
+  {
+    "date": "2024-03",
+    "country": "United States of America",
+    "state": "Oregon",
+    "city": "Portland"
+  },
+  {
+    "date": "2024-03",
+    "country": "United States of America",
+    "state": "Seattle",
+    "city": "Washington"
+  },
+  {
+    "date": "2024-03",
+    "country": "England",
+    "state": "",
+    "city": "",
+    "place": "Seven Sisters"
+  },
+  {
+    "date": "2024-03",
+    "country": "India",
+    "province": "Karnataka",
+    "city": "Bangalore"
+  },
+  {
+    "date": "2024-03",
+    "country": "India",
+    "province": "Karnataka",
+    "city": "Manipal"
+  }
+]
