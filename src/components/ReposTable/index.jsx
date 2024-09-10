@@ -1,18 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Table, Tag, Space } from "antd";
 import {
-  GithubOutlined,
-  PullRequestOutlined,
-  CiCircleOutlined,
   CodeOutlined,
   CloudOutlined,
 } from "@ant-design/icons";
-
-const lookup = {
-  Github: <GithubOutlined />,
-  Pulls: <PullRequestOutlined />,
-  CI: <CiCircleOutlined />,
-};
 
 const columns = [
   {
@@ -20,21 +11,6 @@ const columns = [
     dataIndex: "name",
     key: "name",
     render: (text) => <h4>{text}</h4>,
-  },
-  {
-    title: "Links",
-    key: "links",
-    render: (_, record) => (
-      <Space>
-        {record.links.map((link) => {
-          return (
-            <a href={link.link} target={link.name}>
-              {lookup[link.name]}
-            </a>
-          );
-        })}
-      </Space>
-    ),
   },
   {
     title: "PRs",
@@ -80,7 +56,7 @@ const MyTable = () => {
     fetch("http://localhost:5173/data.json")
       .then((res) => res.json())
       .then((data) => setData(data));
-  });
+  }, []);
   return <Table columns={columns} dataSource={data} />;
 };
 export default MyTable;

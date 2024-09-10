@@ -1,16 +1,13 @@
-import { Card, Button, Modal, Flex } from "antd";
+import { Card, Modal, Flex } from "antd";
 import { useState } from "react";
 
 function PreviewCard({ title, preview, content, buttonLabel }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <Card title={title}>
-      <Flex vertical>
+    <Card title={title} size="small">
+      <Flex onClick={() => setIsOpen(true)} vertical>
         {preview}
-        <Button onClick={() => setIsOpen(true)}>
-          {buttonLabel || "Show More"}
-        </Button>
       </Flex>
       <Modal
         open={isOpen}

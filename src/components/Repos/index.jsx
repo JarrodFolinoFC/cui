@@ -18,10 +18,10 @@ function Repos() {
     fetch("http://localhost:5173/other.json")
       .then((res) => res.json())
       .then((data) => setOther(data));
-  });
+  }, []);
 
   return (
-    <Card title="Repos" style={{ width: "100%" }}>
+    <Card title="Repos" size="small">
       {other.map((data) => {
         return (
           <Tag>

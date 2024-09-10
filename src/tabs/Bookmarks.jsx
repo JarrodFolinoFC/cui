@@ -14,7 +14,7 @@ function Bookmarks() {
     fetch("http://localhost:5173/links.json")
       .then((res) => res.json())
       .then((data) => setLinks(data));
-  });
+  }, []);
 
   return (
     <>

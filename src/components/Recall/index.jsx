@@ -6,8 +6,8 @@ function Concept({ value }) {
   const [actual, setActual] = useState("");
 
   function isIncorrect(given) {
-    
-    
+
+
     if (given.toLowerCase() === value.toLowerCase()) {
       return false;
     }
@@ -35,7 +35,7 @@ function Concept({ value }) {
 
 function Recall({ title, concepts }) {
   return (
-    <Card title={title} style={{ width: 600 }}>
+    <Card title={title} size="small">
       <Flex gap="middle" vertical>
         {concepts.map((concept) => {
           return <Concept value={concept} />;

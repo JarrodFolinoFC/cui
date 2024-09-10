@@ -9,14 +9,14 @@ function SimpleLineChart({ dataUrl, unit = null }) {
     fetch(dataUrl)
       .then((res) => res.json())
       .then((data) => setData(data));
-  });
+  }, []);
 
   const config = {
     data,
     xField: "date",
     yField: "amount",
     point: {
-      shapeField: "square",
+      shapeField: "circle",
       sizeField: 4,
     },
     interaction: {

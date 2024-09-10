@@ -15,7 +15,7 @@ function JsConsole() {
   }
 
   return (
-    <Card title="Js Calculator">
+    <Card title="Js Calculator" size="small">
       <Input onChange={runCode} value={code}></Input>
       <span>{result}</span>
     </Card>

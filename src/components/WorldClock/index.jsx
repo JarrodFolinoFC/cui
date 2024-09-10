@@ -8,6 +8,7 @@ function WorldClock() {
   function getTimes() {
     return [
       { region: "Europe/London", value: getTime("Europe/London") },
+      { region: "Europe/Sofia", value: getTime("Europe/Sofia") },
       { region: "Australia/Melbourne", value: getTime("Australia/Melbourne") },
     ];
   }

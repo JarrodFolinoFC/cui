@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Progress, Flex, Space } from "antd";
+import { Progress, Flex } from "antd";
 import { Typography } from "antd";
-import { CheckOutlined } from "@ant-design/icons";
 
 const { Title } = Typography;
-const DURATION = 10;
+const DURATION = 4;
 
 function LongPressButton({
   name,
@@ -18,7 +17,13 @@ function LongPressButton({
 
   const clearTimer = () => {
     clearInterval(progressUpdater);
-    setPercent(0);
+    if (percent < 100) {
+      setPercent(percent / 2);
+      setTimeout(() => {
+        setPercent(0);
+        setCompleted(false);
+      }, 30);
+    }
   };
 
   const longPress = () => {
@@ -27,9 +32,12 @@ function LongPressButton({
         setPercent((percent) => {
           if (percent < 100) {
             return percent + 1;
-          } else if (percent === 100) {
-            setCompleted(true);
-            oncomplete && oncomplete();
+          } else if (percent >= 100) {
+            if (completed !== true) {
+              oncomplete && oncomplete();
+              setCompleted(true);
+            }
+
             return 100;
           }
         });
