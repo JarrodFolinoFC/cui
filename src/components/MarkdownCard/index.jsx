@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import { List, Tag, Typography, Space } from "antd";
 import Markdown from "react-markdown";
 import PreviewCard from "../PreviewCard";
@@ -38,7 +39,7 @@ const subTitleConfig = {
     return <p>{children}</p>;
   },
   h3({ children }) {
-    const tagH3Value = tagH3(children);
+    const tagH3Value = tagLi(children);
     return tagH3Value && <Tag>{tagH3Value[1]}</Tag>;
   },
   ul({ children }) {
@@ -76,7 +77,7 @@ const bodyConfig = {
     return <Typography.Title>{children}</Typography.Title>;
   },
   h3({ children }) {
-    const tagH3Value = tagH3(children);
+    const tagH3Value = tagLi(children);
     if (tagH3Value) {
       return;
     }
@@ -92,12 +93,20 @@ const bodyConfig = {
   },
 };
 
-const MarkdownCard = ({ title, children }) => {
+const MarkdownCard = ({ url }) => {
+  const [content, setContent] = useState(null);
+
+  useEffect(() => {
+    fetch(url)
+      .then((res) => res.text())
+      .then((data) => setContent(data));
+  });
+
   return (
     <PreviewCard
-      title={<Markdown components={titleConfig}>{children}</Markdown>}
-      preview={<Markdown components={subTitleConfig}>{children}</Markdown>}
-      content={<Markdown components={bodyConfig}>{children}</Markdown>}
+      title={<Markdown components={titleConfig}>{content}</Markdown>}
+      preview={"Click to expand"}
+      content={<Markdown components={bodyConfig}>{content}</Markdown>}
     />
   );
 };

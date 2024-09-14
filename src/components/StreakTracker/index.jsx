@@ -1,4 +1,4 @@
-import { Spin } from "antd";
+import { Card } from "antd";
 import React, { useEffect, useState } from "react";
 import LongPressButton from "../LongPressButton";
 
@@ -11,7 +11,8 @@ function getTodayDate() {
 }
 
 function StreakTracker({ name }) {
-  const [count, setCount] = useState(null);
+  const [streak, setStreak] = useState(null);
+  const today = getTodayDate();
 
   function parseStreakFromLocalStorage() {
     return JSON.parse(localStorage.getItem(`Streak ${name}`) || "[]");
@@ -19,30 +20,35 @@ function StreakTracker({ name }) {
 
   function updateStreak(newValue) {
     localStorage.setItem(`Streak ${name}`, JSON.stringify(newValue));
+    setStreak(localStorage.getItem(`Streak ${name}`));
   }
 
-    useEffect(() => {
-      const streak = parseStreakFromLocalStorage(name);
-      setCount(streak.length);
-    }, [name]);
+  useEffect(() => {
+    const streak = parseStreakFromLocalStorage(name);
+    setStreak(streak);
+  }, [name]);
 
   return (
-    <LongPressButton
-      name={name}
-      display={count}
-      completedDisplay={count}
-      oncomplete={() => {
-        const streak = parseStreakFromLocalStorage();
-        const today = getTodayDate();
-        if (streak.includes(today)) {
-          return;
-        } else {
-          streak.push(today);
-          updateStreak(streak);
-          setCount(streak.length);
-        }
-      }}
-    />
+    streak && (
+      <Card title={name} size="small">
+        <LongPressButton
+          name={name}
+          display={streak && streak.length}
+          completedDisplay={streak && streak.length}
+          isComplete={streak && streak.includes(today)}
+          oncomplete={() => {
+            const streak = parseStreakFromLocalStorage();
+
+            if (streak.includes(today)) {
+              return;
+            } else {
+              streak.push(today);
+              updateStreak(streak);
+            }
+          }}
+        />
+      </Card>
+    )
   );
 }
 

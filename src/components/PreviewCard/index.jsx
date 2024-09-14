@@ -1,7 +1,7 @@
 import { Card, Modal, Flex } from "antd";
 import { useState } from "react";
 
-function PreviewCard({ title, preview, content, buttonLabel }) {
+function PreviewCard({ title, preview, content }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (

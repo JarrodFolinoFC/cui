@@ -9,13 +9,17 @@ function LongPressButton({
   name,
   display,
   completedDisplay,
+  isComplete,
   oncomplete = null,
 }) {
   const [progressUpdater, setProgressUpdater] = useState(null);
   const [percent, setPercent] = useState(0);
-  const [completed, setCompleted] = useState(false);
+  const [completed, setCompleted] = useState(isComplete);
 
   const clearTimer = () => {
+    if (completed) {
+      return;
+    }
     clearInterval(progressUpdater);
     if (percent < 100) {
       setPercent(percent / 2);
@@ -27,6 +31,10 @@ function LongPressButton({
   };
 
   const longPress = () => {
+    if (completed) {
+      return;
+    }
+
     setProgressUpdater(
       setInterval(() => {
         setPercent((percent) => {
@@ -37,7 +45,6 @@ function LongPressButton({
               oncomplete && oncomplete();
               setCompleted(true);
             }
-
             return 100;
           }
         });
@@ -55,8 +62,8 @@ function LongPressButton({
       onMouseUp={clearTimer}
       onMouseOut={clearTimer}
     >
-      <Title level={3}>{name}</Title>
       <Progress
+      size={"small"}
         format={format}
         type="circle"
         percent={completed ? 100 : percent}

@@ -9,9 +9,6 @@ const Prs = ({ name }) => {
       .then((data) => setData(data));
   }, []);
 
-  if (data) {
-    debugger;
-  }
   return (
     <Card title={name} size="small">
       {data &&

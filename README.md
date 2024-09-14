@@ -1,9 +1,7 @@
 # todo
 
-number tracker
 currency converter https://open.er-api.com/v6/latest/USD
-EUR/GBP = EUR/USD divided by GBP/USD
-vscode shortcuts
+EUR/GBP = EUR/USD divided by GBP/USD     AUD,USD,GBP,EUR
 
 countries visited https://stephanwagner.me/create-world-map-charts-with-svgmap
 reminders (integrate with DaysUntil)

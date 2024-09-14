@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Space } from "antd";
+import { Card, Space, List } from "antd";
 import { useState, useEffect } from "react";
 
 function AwsAccounts() {
@@ -16,15 +16,17 @@ function AwsAccounts() {
   }, []);
   return (
     <Card title="AWS Accounts" size="small">
-      <Space>
+      <List size="small">
         {accounts.map((link) => {
           return (
-            <a target="new" href={link.link}>
-              {link.name}
-            </a>
+            <List.Item>
+              <a target="new" href={link.link}>
+                {link.name}
+              </a>
+            </List.Item>
           );
         })}
-      </Space>
+      </List>
     </Card>
   );
 }

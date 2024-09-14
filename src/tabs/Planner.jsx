@@ -11,11 +11,12 @@ import Recall from "../components/Recall";
 import AwsAccounts from "../components/AwsAccounts";
 import StreakTracker from "../components/StreakTracker";
 import Counter from "../components/Counter";
-import MyTable from "../components/ReposTable";
 import Repos from "../components/Repos";
 import SshProject from "../components/SshProject";
 import AwsLambdas from "../components/AwsLambdas";
+import CurrencyConvertor from "../components/CurrencyConvertor";
 import Prs from "../components/Prs";
+import Todo from "../components/Todo";
 
 const birthdays = [
   {
@@ -54,10 +55,6 @@ const birthdays = [
 
 const daysUntilData = [
   {
-    date: "2024-09-10",
-    description: "CT",
-  },
-  {
     date: "2024-09-14",
     description: "Renew Australian Passport",
   },
@@ -65,20 +62,11 @@ const daysUntilData = [
     date: "2024-09-29",
     description: "New Zelda",
   },
+  {
+    date: "2024-10-29",
+    description: "Twilight",
+  },
 ];
-
-const md = `
-# Hello
-
-## Some info
-
-- tag(tag one)
-- tag(tag two)
-
-List
-- a
-- b
-`;
 
 function Planner() {
   const [links, setLinks] = useState([]);
@@ -90,14 +78,30 @@ function Planner() {
   }, []);
   return (
     <Flex wrap>
-      <AwsAccounts />
+      <Todo />
+      <CurrencyConvertor />
+      <Counter name="Card" />
+      <Weather location="London" latitude={52.52} longitude={13.41} />
+      <Weather location="Sofia" latitude={42.6977} longitude={23.3219} />
+      <DaysUntil data={daysUntilData} />
+      <SimpleLineChart
+        unit="$"
+        dataUrl={"http://localhost:5173/mortgage.json"}
+      />
+      <JsConsole />
       <StreakTracker name="Something" />
-      <Counter name="Counter" />
-      <SshProject name="flexipay-rewards-api" />
-      <SshProject name="flexipay-pricing-api" />
-      <SshProject name="flexipay-rewards-and-pricing-shared" />
+      <UpcomingBirthdays data={birthdays} />
+      <WorldClock />
+      <AwsAccounts />
+      <SshProject
+        name="RAP Projects"
+        repos={[
+          "flexipay-rewards-api",
+          "flexipay-pricing-api",
+          "flexipay-rewards-and-pricing-shared",
+        ]}
+      />
       <Prs name="PRs" />
-
       <AwsLambdas name="flexipay-rewards-api" />
       <AwsLambdas name="flexipay-pricing-api" />
       <AwsLambdas name="flexipay-rewards-and-pricing-shared" />
@@ -113,19 +117,7 @@ function Planner() {
         })}
       </Card>
       {/* <MyTable /> */}
-
       <Repos />
-      <DaysUntil data={daysUntilData} />
-      <SimpleLineChart
-        unit="$"
-        dataUrl={"http://localhost:5173/mortgage.json"}
-      />
-      {/* <MarkdownCard title={"Some content"}>{md}</MarkdownCard> */}
-      <JsConsole />
-      <UpcomingBirthdays data={birthdays} />
-      <WorldClock />
-      <Weather location="London" latitude={52.52} longitude={13.41} />
-      <Weather location="Sofia" latitude={42.6977} longitude={23.3219} />
       <Recall
         title="Aspects of Mindfullness"
         concepts={[
@@ -162,6 +154,10 @@ function Planner() {
           "Progress",
         ]}
       />
+      <MarkdownCard url="http://localhost:5173/md/vscode_general_basic.md" />
+      <MarkdownCard url="http://localhost:5173/md/vscode_search_select.md" />
+      <MarkdownCard url="http://localhost:5173/md/vscode_other.md" />
+      <MarkdownCard url="http://localhost:5173/md/vscode_display.md" />
     </Flex>
   );
 }
