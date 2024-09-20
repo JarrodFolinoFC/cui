@@ -1,13 +1,15 @@
 import React, { useState } from "react";
 import { Card, Space, Input, Flex } from "antd";
-import { CheckCircleOutlined, CloseCircleOutlined } from "@ant-design/icons";
+import {
+  CheckCircleOutlined,
+  CloseCircleOutlined,
+  QuestionOutlined,
+} from "@ant-design/icons";
 
 function Concept({ value }) {
   const [actual, setActual] = useState("");
 
   function isIncorrect(given) {
-
-
     if (given.toLowerCase() === value.toLowerCase()) {
       return false;
     }
@@ -20,15 +22,25 @@ function Concept({ value }) {
     return true;
   }
 
+  function getIcon() {
+    if (actual.toLowerCase() === value.toLowerCase()) {
+      return <CheckCircleOutlined />;
+    }
+    if (isIncorrect(actual)) {
+      return <CloseCircleOutlined />;
+    }
+    return <QuestionOutlined />;
+  }
+
   return (
-    <Space>
+    <Space key={value}>
       <Input
+        key={value}
         onChange={(e) => {
           setActual(e.target.value);
         }}
       />
-      {actual.toLowerCase() === value.toLowerCase() && <CheckCircleOutlined />}
-      {isIncorrect(actual) && <CloseCircleOutlined />}
+      {getIcon()}
     </Space>
   );
 }
@@ -37,8 +49,12 @@ function Recall({ title, concepts }) {
   return (
     <Card title={title} size="small">
       <Flex gap="middle" vertical>
-        {concepts.map((concept) => {
-          return <Concept value={concept} />;
+        {concepts.map((concept, index) => {
+          return (
+            <div key={index}>
+              <Concept value={concept} />
+            </div>
+          );
         })}
       </Flex>
     </Card>

@@ -18,7 +18,7 @@ const Prs = ({ name }) => {
           })
           .map((pr) => {
             return (
-              <a href={pr.link}>
+              <a href={pr.link} target="new">
                 <Tag>{pr.name}</Tag>
               </a>
             );

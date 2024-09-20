@@ -1,4 +1,11 @@
 import { useEffect, useRef, useState } from "react";
+import { List, Input, Space, Form, Flex, Checkbox } from "antd";
+import {
+  DeleteOutlined,
+  EditOutlined,
+  SaveOutlined,
+  UndoOutlined,
+} from "@ant-design/icons";
 
 function usePrevious(value) {
   const ref = useRef(null);
@@ -8,9 +15,16 @@ function usePrevious(value) {
   return ref.current;
 }
 
+function handleKeyPressSave(event) {
+  if (event.key === "Enter") {
+    props.addTask(value);
+    setValue("");
+  }
+}
+
 function Todo(props) {
   const [isEditing, setEditing] = useState(false);
-  const [newName, setNewName] = useState("");
+  const [newName, setNewName] = useState(props.name);
 
   const editFieldRef = useRef(null);
   const editButtonRef = useRef(null);
@@ -21,9 +35,13 @@ function Todo(props) {
     setNewName(event.target.value);
   }
 
-  // NOTE: As written, this function has a bug: it doesn't prevent the user
-  // from submitting an empty form. This is left as an exercise for developers
-  // working through MDN's React tutorial.
+  function handleKeyPress(event) {
+    if (event.key === "Enter") {
+      props.editTask(props.id, newName);
+      setEditing(false);
+    }
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
     props.editTask(props.id, newName);
@@ -32,70 +50,49 @@ function Todo(props) {
   }
 
   const editingTemplate = (
-    <form className="stack-small" onSubmit={handleSubmit}>
-      <div className="form-group">
-        <label className="todo-label" htmlFor={props.id}>
-          New name for {props.name}
-        </label>
-        <input
-          id={props.id}
-          className="todo-text"
-          type="text"
-          value={newName}
-          onChange={handleChange}
-          ref={editFieldRef}
-        />
-      </div>
-      <div className="btn-group">
-        <button
-          type="button"
-          className="btn todo-cancel"
-          onClick={() => setEditing(false)}
-        >
-          Cancel
-          <span className="visually-hidden">renaming {props.name}</span>
-        </button>
-        <button type="submit" className="btn btn__primary todo-edit">
-          Save
-          <span className="visually-hidden">new name for {props.name}</span>
-        </button>
-      </div>
-    </form>
+    <List.Item key={props.name} style={{ minWidth: "380px" }}>
+      <Form className="stack-small" onSubmit={handleSubmit}>
+        <Space>
+          <Input
+            id={props.id}
+            value={newName}
+            onChange={handleChange}
+            ref={editFieldRef}
+            onKeyDown={handleKeyPressSave}
+          />
+          <SaveOutlined
+            onClick={() => {
+              props.editTask(props.id, newName);
+              setEditing(false);
+            }}
+          />
+          <UndoOutlined onClick={() => setEditing(false)} />
+        </Space>
+      </Form>
+    </List.Item>
   );
 
   const viewTemplate = (
-    <div className="stack-small">
-      <div className="c-cb">
-        <input
-          id={props.id}
-          type="checkbox"
-          defaultChecked={props.completed}
+    <List.Item key={props.name} style={{ minWidth: "380px" }}>
+      <Flex>
+        <Checkbox
+          checked={props.completed}
           onChange={() => props.toggleTaskCompleted(props.id)}
-        />
-        <label className="todo-label" htmlFor={props.id}>
-          {props.name}
-        </label>
-      </div>
-      <div className="btn-group">
-        <button
-          type="button"
-          className="btn"
-          onClick={() => {
-            setEditing(true);
-          }}
-          ref={editButtonRef}
         >
-          Edit <span className="visually-hidden">{props.name}</span>
-        </button>
-        <button
-          type="button"
-          className="btn btn__danger"
-          onClick={() => props.deleteTask(props.id)}
-        >
-          Delete <span className="visually-hidden">{props.name}</span>
-        </button>
-      </div>
-    </div>
+          {props.completed ? <strike>{newName}</strike> : newName}
+        </Checkbox>
+
+        <Space>
+          <EditOutlined
+            ref={editButtonRef}
+            onClick={() => {
+              setEditing(true);
+            }}
+          />
+          <DeleteOutlined onClick={() => props.deleteTask(props.id)} />
+        </Space>
+      </Flex>
+    </List.Item>
   );
 
   useEffect(() => {
@@ -106,7 +103,7 @@ function Todo(props) {
     }
   }, [wasEditing, isEditing]);
 
-  return <li className="todo">{isEditing ? editingTemplate : viewTemplate}</li>;
+  return isEditing ? editingTemplate : viewTemplate;
 }
 
 export default Todo;

@@ -25,7 +25,7 @@ const SshProject = ({ name, repos }) => {
       <List size="small">
         {repos.map((repo) => {
           return (
-            <List.Item>
+            <List.Item key={repo}>
               <Space>
                 {repo}{" "}
                 {data &&

@@ -482,10 +482,10 @@ Express.js Tutorial \- GeeksforGeeks
 
 
 
-* 
-* 
-* 
-* 
+*
+*
+*
+*
 
 
 
@@ -575,12 +575,12 @@ Express.js Tutorial
 
 
 
-Last Updated : 
+Last Updated :
 15 Jul, 2024
 
 
 
- 
+
 
 Comments
 
@@ -597,10 +597,10 @@ Improve
 
 
 
- 
-* 
-* 
-* 
+
+*
+*
+*
 
 
 
@@ -626,7 +626,7 @@ Summarize
 Suggest changes
 
 
- 
+
 
 
 Like Article
@@ -671,7 +671,7 @@ Follow](https://news.google.com/publications/CAAqBwgKMLTrzwsw44bnAw?hl=en-IN&gl=
 
 
 
-****Express.js**** is a fast, flexible and minimalist web framework for Node.js. It’s effectively a tool that simplifies building web applications and APIs using JavaScript on the server side. Express is an open\-source that is developed and maintained by the Node.js foundation. 
+****Express.js**** is a fast, flexible and minimalist web framework for Node.js. It’s effectively a tool that simplifies building web applications and APIs using JavaScript on the server side. Express is an open\-source that is developed and maintained by the Node.js foundation.
 
 
 Express.js offers a robust set of features that enhance your productivity and streamline your web application. It makes it easier to organize your application’s functionality with middleware and routing. It adds helpful utilities to Node HTTP objects and facilitates the rendering of dynamic HTTP objects.
@@ -839,13 +839,10 @@ Express Functions:
 
 
 > ### More on Express:
-> 
+>
 > * If you are preparing for the interviews, please read the [Top 50 Express JS Interview Questions and Answers](https://www.geeksforgeeks.org/top-50-express-js-interview-questions-and-answers)
 > * For more article, read the recently published article’s on Express: [Recent Articles on Express](https://www.geeksforgeeks.org/tag/express-js/?type=)
 
-  
-
-  
 
 
 
@@ -854,22 +851,25 @@ Express Functions:
 
 
 
-[S](https://www.geeksforgeeks.org/user/souravsharma098/contributions/?itm_source=geeksforgeeks&itm_medium=article_author&itm_campaign=auth_user) 
-
-[souravsharma098](https://www.geeksforgeeks.org/user/souravsharma098/contributions/?itm_source=geeksforgeeks&itm_medium=article_author&itm_campaign=auth_user) 
 
 
 
+[S](https://www.geeksforgeeks.org/user/souravsharma098/contributions/?itm_source=geeksforgeeks&itm_medium=article_author&itm_campaign=auth_user)
+
+[souravsharma098](https://www.geeksforgeeks.org/user/souravsharma098/contributions/?itm_source=geeksforgeeks&itm_medium=article_author&itm_campaign=auth_user)
 
 
- Follow 
+
+
+
+ Follow
 
 
 [![News](https://media.geeksforgeeks.org/auth-dashboard-uploads/Google-news.svg)](https://news.google.com/publications/CAAqBwgKMLTrzwsw44bnAw?hl=en-IN&gl=IN&ceid=IN%3Aen)
 
 
 
- 
+
 
 
 
@@ -883,7 +883,7 @@ Improve
 
 
 
-  
+
 [Next Article](https://www.geeksforgeeks.org/top-50-express-js-interview-questions-and-answers/?ref=next_article)
 
 
@@ -1103,7 +1103,7 @@ The app.param() function is used to add the callback triggers to route parameter
 
 
 
-Article Tags : 
+Article Tags :
 * [Express.js](https://www.geeksforgeeks.org/category/web-technologies/node-js/express-js/?ref=article_category)
 * [Node.js](https://www.geeksforgeeks.org/category/web-technologies/node-js/?ref=article_category)
 * [Web Technologies](https://www.geeksforgeeks.org/category/web-technologies/?ref=article_category)
@@ -1171,7 +1171,7 @@ Trending in News
 
 
 
- 
+
 
 
 
@@ -1236,7 +1236,7 @@ Explore More
 
 
 
- Corporate \& Communications Address:\- A\-143, 9th Floor, Sovereign Corporate Tower, Sector\- 136, Noida, Uttar Pradesh (201305\) \| Registered Address:\- K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305 
+ Corporate \& Communications Address:\- A\-143, 9th Floor, Sovereign Corporate Tower, Sector\- 136, Noida, Uttar Pradesh (201305\) \| Registered Address:\- K 061, Tower K, Gulshan Vivante Apartment, Sector 137, Noida, Gautam Buddh Nagar, Uttar Pradesh, 201305
 
 
 
@@ -1357,7 +1357,7 @@ Explore More
 * [Web Development](https://www.geeksforgeeks.org/videos/category/web-development/?ref=outindfooter)
 * [Data Science](https://www.geeksforgeeks.org/videos/category/data-science/?ref=outindfooter)
 * [CS Subjects](https://www.geeksforgeeks.org/videos/category/cs-subjects/?ref=outindfooter)
- 
+
 
 
 
@@ -1382,7 +1382,7 @@ Explore More
 
 
  Got It !
- 
+
 
 
 
@@ -1405,7 +1405,7 @@ Please go through our recently updated [Improvement Guidelines](https://write.ge
 This improvement is locked by another user right now. You can suggest the changes for now and it will be under 'My Suggestions' Tab on Write.
 You will be notified via email once the article is available for improvement.
  Thank you for your valuable feedback!
- 
+
 
 Suggest changes
 

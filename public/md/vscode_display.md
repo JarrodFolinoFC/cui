@@ -1,6 +1,4 @@
-# UI
-
-## Display
+# Display
 
 - ⌃⌘F Toggle full screen
 - ⌥⌘ (^0) Toggle editor layout (horizontal/vertical)
@@ -18,11 +16,4 @@
 - ⌘K V Open Markdown preview to the side
 - ⌘K Z Zen Mode (Esc Esc to exit)
 
-## Integrated terminal
 
-- ⌃` Show integrated terminal
-- ⌃⇧` Create new terminal
-- ⌘C Copy selection
-- ⌘↑ / ↓ Scroll up/down
-- PgUp / PgDn Scroll page up/down
-- ⌘Home / End Scroll to top/bottom

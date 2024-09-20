@@ -1,5 +1,188 @@
 [
   {
+    "date": "1995-03",
+    "country": "Indonesia",
+    "state": "",
+    "city": "Bali"
+  },
+  {
+    "date": "2003-06",
+    "country": "New Zealand",
+    "state": "",
+    "city": "Auckland"
+  },
+  {
+    "date": "2007-03",
+    "country": "South Korea",
+    "state": "Jeolbukdo",
+    "city": ""
+  },
+  {
+    "date": "2007-01",
+    "country": "South Korea",
+    "state": "",
+    "city": "Seoul"
+  },
+  {
+    "date": "2007-06",
+    "country": "China",
+    "state": "",
+    "city": ""
+  },
+  {
+    "date": "2010-01",
+    "country": "Thailand",
+    "state": "",
+    "city": ""
+  },
+  {
+    "date": "2010-01",
+    "country": "Vietnam",
+    "state": "",
+    "city": ""
+  },
+  {
+    "date": "2010-01",
+    "country": "Cambodia",
+    "state": "",
+    "city": "Phnom Penh"
+  },
+  {
+    "date": "2010-01",
+    "country": "New Caladonia",
+    "state": "",
+    "city": "New Caladonia"
+  },
+  {
+    "date": "2010-01",
+    "country": "Vanuatu",
+    "state": "",
+    "city": ""
+  },
+  {
+    "date": "2014-10",
+    "country": "Singapore",
+    "state": "Singapore",
+    "city": "Singapore"
+  },
+  {
+    "date": "2014-10",
+    "country": "Nepal",
+    "state": "TBD",
+    "city": "Katmandu"
+  },
+  {
+    "date": "2015-06",
+    "country": "India",
+    "state": "TBD",
+    "city": "Delhi"
+  },
+  {
+    "date": "2015-06",
+    "country": "Netherlands",
+    "state": "TBD",
+    "city": "Amsterdam"
+  },
+  {
+    "date": "2015-06",
+    "country": "Germany",
+    "state": "TBD",
+    "city": "Berlin"
+  },
+  {
+    "date": "2015-06",
+    "country": "Germany",
+    "state": "TBD",
+    "city": "Munich"
+  },
+  {
+    "date": "2015-06",
+    "country": "Italy",
+    "state": "TBD",
+    "city": "Rome"
+  },
+  {
+    "date": "2015-06",
+    "country": "Italy",
+    "state": "TBD",
+    "city": "Venice"
+  },
+  {
+    "date": "2015-06",
+    "country": "Vatican City",
+    "state": "Vatican City",
+    "city": "Vatican City"
+  },
+  {
+    "date": "2015-06",
+    "country": "Italy",
+    "state": "TBD",
+    "city": "Florence"
+  },
+  {
+    "date": "2015-06",
+    "country": "France",
+    "state": "TBD",
+    "city": "Paris"
+  },
+  {
+    "date": "2015-06",
+    "country": "Switzerland",
+    "state": "TBD",
+    "city": "???"
+  },
+  {
+    "date": "2015-06",
+    "country": "Czech Republic",
+    "state": "TBD",
+    "city": "Prague"
+  },
+  {
+    "date": "2015-07",
+    "country": "United Arab Emirates",
+    "state": "TBD",
+    "city": "Dubai"
+  },
+  {
+    "date": "2017-01",
+    "country": "United States of America",
+    "state": "California",
+    "city": "Los Angeles"
+  },
+  {
+    "date": "2017-01",
+    "country": "United States of America",
+    "state": "Nevada",
+    "city": "Las Vegas"
+  },
+  {
+    "date": "2017-01",
+    "country": "United States of America",
+    "state": "Florida",
+    "city": "Miami"
+  },
+  {
+    "date": "2017-04-08",
+    "country": "Panama",
+    "city": "Panama City"
+  },
+  {
+    "date": "2017-04-08",
+    "country": "Panama",
+    "city": "Volcan"
+  },
+  {
+    "date": "2017-04-08",
+    "country": "Cuba",
+    "city": "Havana"
+  },
+  {
+    "date": "2022-07",
+    "country": "Singapore",
+    "state": "Singapore",
+    "city": "Singapore"
+  },
+  {
     "date": "2022-12-08",
     "country": "England",
     "city": "Nottingham"
@@ -130,25 +313,25 @@
     "city": "San Francisco"
   },
   {
-    "date": "2024-03",
+    "date": "2024-04",
     "country": "Canada",
     "state": "",
     "city": "Vancouver"
   },
   {
-    "date": "2024-03",
+    "date": "2024-04",
     "country": "Canada",
     "state": "",
     "city": "Calgary"
   },
   {
-    "date": "2024-03",
+    "date": "2024-05",
     "country": "United States of America",
     "state": "Oregon",
     "city": "Portland"
   },
   {
-    "date": "2024-03",
+    "date": "2024-05",
     "country": "United States of America",
     "state": "Seattle",
     "city": "Washington"
@@ -156,20 +339,25 @@
   {
     "date": "2024-03",
     "country": "England",
-    "state": "",
-    "city": "",
+    "state": "East Sussex",
     "place": "Seven Sisters"
   },
   {
-    "date": "2024-03",
+    "date": "2024-09",
     "country": "India",
     "province": "Karnataka",
     "city": "Bangalore"
   },
   {
-    "date": "2024-03",
+    "date": "2024-09",
     "country": "India",
     "province": "Karnataka",
     "city": "Manipal"
+  },
+  {
+    "date": "2024-09",
+    "country": "England",
+    "province": "Surrey",
+    "place": "Box Hill"
   }
 ]

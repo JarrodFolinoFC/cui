@@ -1,7 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { List, Tag, Typography, Space, Flex } from "antd";
-import Markdown from "react-markdown";
-import PreviewCard from "../PreviewCard";
+import React from "react";
+import { List, Tag, Typography, Space } from "antd";
 
 function tagLi(item) {
   return item.match(/tag\((.*)\)/);
@@ -71,11 +69,7 @@ const bodyConfig = {
     return <List.Item>{children}</List.Item>;
   },
   h1({ children }) {
-    return (
-      <Typography.Title h4 style={{ textWrap: "nowrap" }}>
-        {children}
-      </Typography.Title>
-    );
+    return <Typography.Title>{children}</Typography.Title>;
   },
   h2({ children }) {
     return <Typography.Title>{children}</Typography.Title>;
@@ -93,51 +87,8 @@ const bodyConfig = {
     return <span style={{ color: "blue" }} {...rest} />;
   },
   p({ children }) {
-    return (
-      <Typography.Paragraph style={{ wrap: "nowrap" }}>
-        {children}
-      </Typography.Paragraph>
-    );
+    return <Typography.Paragraph>{children}</Typography.Paragraph>;
   },
 };
 
-const MarkdownCard = ({ urls, title }) => {
-  const [content, setContent] = useState([]);
-
-  useEffect(() => {
-    fetchContent();
-  }, []);
-
-  async function fetchContent() {
-    async function fetchUrl(url) {
-      const res = await fetch(url);
-      const text = await res.text();
-      return text;
-    }
-
-    await Promise.all(urls.map((url) => fetchUrl(url))).then((values) => {
-      setContent(values);
-    });
-  }
-
-  return (
-    <PreviewCard
-      title={title}
-      preview={"Click to expand"}
-      content={
-        <Flex gap={20}>
-          {content &&
-            content.map((item) => {
-              return (
-                <Flex vertical>
-                  <Markdown components={bodyConfig}>{item}</Markdown>
-                </Flex>
-              );
-            })}
-        </Flex>
-      }
-    />
-  );
-};
-
-export default MarkdownCard;
+export { titleConfig, bodyConfig };

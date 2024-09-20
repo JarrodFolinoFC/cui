@@ -2,6 +2,8 @@ import { Card } from "antd";
 import React, { useEffect, useState } from "react";
 import LongPressButton from "../LongPressButton";
 
+import asyncLocalStorage from "../../utils/asyncLocalStorage";
+
 function getTodayDate() {
   const today = new Date();
   const year = today.getFullYear();
@@ -10,22 +12,32 @@ function getTodayDate() {
   return `${year}-${month}-${day}`;
 }
 
-function StreakTracker({ name }) {
+function StreakTracker({ name, storageDriver = asyncLocalStorage }) {
   const [streak, setStreak] = useState(null);
   const today = getTodayDate();
 
-  function parseStreakFromLocalStorage() {
-    return JSON.parse(localStorage.getItem(`Streak ${name}`) || "[]");
-  }
-
-  function updateStreak(newValue) {
-    localStorage.setItem(`Streak ${name}`, JSON.stringify(newValue));
-    setStreak(localStorage.getItem(`Streak ${name}`));
+  async function updateStreak() {
+    if (streak.includes(today)) {
+      return;
+    } else {
+      const newValue = [...streak, today];
+      setStreak(newValue);
+      storageDriver.setItem(`Streak_${name}`, JSON.stringify(newValue));
+    }
   }
 
   useEffect(() => {
-    const streak = parseStreakFromLocalStorage(name);
-    setStreak(streak);
+    const fetchData = async () => {
+      try {
+        const data = await storageDriver.getItem(`Streak_${name}`);
+        if (data) {
+          setStreak(JSON.parse(data));
+        }
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
   }, [name]);
 
   return (
@@ -36,16 +48,7 @@ function StreakTracker({ name }) {
           display={streak && streak.length}
           completedDisplay={streak && streak.length}
           isComplete={streak && streak.includes(today)}
-          oncomplete={() => {
-            const streak = parseStreakFromLocalStorage();
-
-            if (streak.includes(today)) {
-              return;
-            } else {
-              streak.push(today);
-              updateStreak(streak);
-            }
-          }}
+          oncomplete={updateStreak}
         />
       </Card>
     )

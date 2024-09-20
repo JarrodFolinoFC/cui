@@ -1,11 +1,15 @@
 # todo
 
-currency converter https://open.er-api.com/v6/latest/USD
-EUR/GBP = EUR/USD divided by GBP/USD     AUD,USD,GBP,EUR
-
-countries visited https://stephanwagner.me/create-world-map-charts-with-svgmap
-reminders (integrate with DaysUntil)
+aws bill
+spin the wheel
+upload browser history
+mindmap
+react-notion
+essential files
 contacts
+rss reader
+browser history
+workout tracker
 
 https://medium.com/yavar/ssh-web-console-21e87b611674
 pdf viewer (index)
@@ -15,9 +19,8 @@ tablet reminder
 food journal
 travel journal
 important files
-aws bill
 search stackoverflow
-workout tracker
+
 get aws updates (dynamo db, lambda, api gateway) from website, rss, slack
 
 linkedin messages

@@ -3,25 +3,30 @@ import React, { useState, useEffect } from "react";
 
 const currencies = ["USD", "EUR", "GBP", "AUD"];
 
-function CurrecyConvertor() {
+function CurrecyConvertor({ baseCurrency }) {
   const [exchangeRateMapping, setExchangeRateMapping] = useState(null);
-  const [baseCurrency, setBaseCurrency] = useState("GBP");
-  const [toCurrency, setToCurrency] = useState("AUD");
-  const [result, setResult] = useState(null);
 
   useEffect(() => {
     fetch(`https://open.er-api.com/v6/latest/${baseCurrency}`)
       .then((response) => response.json())
       .then((data) => {
-        setExchangeRateMapping(data.rates);
-
-        setResult(data.rates[toCurrency]);
+        setExchangeRateMapping(data);
       });
   }, []);
 
   return (
-    <Card size="small" title="Cross Rates">
-      <Statistic title="GBP" prefix={toCurrency} value={result} precision={2} />
+    <Card size="small" title={baseCurrency}>
+      {currencies.map((currency) => {
+        return (
+          <Statistic
+            size="small"
+            key={currency}
+            prefix={currency}
+            value={exchangeRateMapping && exchangeRateMapping.rates[currency]}
+            precision={2}
+          />
+        );
+      })}
     </Card>
   );
 }

@@ -1,9 +1,20 @@
-import { Timeline } from "antd";
+import React, { useState, useEffect } from "react";
 
+import { Timeline } from "antd";
 
 import PreviewCard from "../PreviewCard";
 
-function DaysUntil({ data }) {
+function DaysUntil({ previewAmount = 3 }) {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("http://localhost:5173/days_until.json")
+      .then((response) => response.json())
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
+
   function getDaysUntil(date) {
     const now = new Date();
     const then = new Date(date);
@@ -28,7 +39,7 @@ function DaysUntil({ data }) {
       preview={
         <Timeline
           mode="left"
-          items={data.slice(0, 2).map((item) => {
+          items={data.slice(0, previewAmount).map((item) => {
             return {
               label: `${getDaysUntil(item.date)} days`,
               children: item.description,

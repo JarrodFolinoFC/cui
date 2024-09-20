@@ -1,120 +1,88 @@
-import { useState, useRef, useEffect } from "react";
-import Form from "./Form";
-import FilterButton from "./FilterButton";
+import { useState, useEffect } from "react";
+import MyForm from "./MyForm";
 import Todo from "./Todo";
-import { nanoid } from "nanoid";
+import { Card, List } from "antd";
+import { v4 as uuidv4 } from "uuid";
 
-function usePrevious(value) {
-  const ref = useRef(null);
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
-}
+import MirrorStorage from "../../utils/mirrorStorage";
+import asyncLocalStorage from "../../utils/asyncLocalStorage";
 
-const FILTER_MAP = {
-  All: () => true,
-  Active: (task) => !task.completed,
-  Completed: (task) => task.completed,
-};
+const URL = "https://wz17dd6el1.execute-api.eu-west-1.amazonaws.com/v1/storage";
+const mirrorStorage = new MirrorStorage(URL, "aaaa");
 
-const FILTER_NAMES = Object.keys(FILTER_MAP);
-
-function App(props) {
+function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
   const [tasks, setTasks] = useState([]);
-  const [filter, setFilter] = useState("All");
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const data = await storageDriver.getItem(name);
+        if (data) {
+          setTasks(JSON.parse(data));
+        }
+      } catch (error) {
+        console.error("Error fetching data:", error);
+      }
+    };
+    fetchData();
+  }, [storageDriver]);
 
   function toggleTaskCompleted(id) {
     const updatedTasks = tasks.map((task) => {
-      // if this task has the same ID as the edited task
       if (id === task.id) {
-        // use object spread to make a new obkect
-        // whose `completed` prop has been inverted
         return { ...task, completed: !task.completed };
       }
       return task;
     });
     setTasks(updatedTasks);
+    storageDriver.setItem(name, JSON.stringify(updatedTasks));
   }
 
   function deleteTask(id) {
     const remainingTasks = tasks.filter((task) => id !== task.id);
     setTasks(remainingTasks);
+    storageDriver.setItem(name, JSON.stringify(remainingTasks));
   }
 
   function editTask(id, newName) {
     const editedTaskList = tasks.map((task) => {
-      // if this task has the same ID as the edited task
       if (id === task.id) {
-        // Copy the task and update its name
         return { ...task, name: newName };
       }
-      // Return the original task if it's not the edited task
       return task;
     });
     setTasks(editedTaskList);
+    storageDriver.setItem(name, JSON.stringify(editedTaskList));
   }
 
-  const taskList = tasks
-    ?.filter(FILTER_MAP[filter])
-    .map((task) => (
-      <Todo
-        id={task.id}
-        name={task.name}
-        completed={task.completed}
-        key={task.id}
-        toggleTaskCompleted={toggleTaskCompleted}
-        deleteTask={deleteTask}
-        editTask={editTask}
-      />
-    ));
-
-  const filterList = FILTER_NAMES.map((name) => (
-    <FilterButton
-      key={name}
-      name={name}
-      isPressed={name === filter}
-      setFilter={setFilter}
-    />
-  ));
-
-  function addTask(name) {
+  function addTask(taskName) {
     const newTask = {
-      id: "todo-" + name.replace(" ", "-"),
-      name: name,
+      id: uuidv4(),
+      name: taskName,
       completed: false,
     };
-    setTasks([...tasks, newTask]);
+    const newTasks = [...tasks, newTask];
+    setTasks(newTasks);
+    storageDriver.setItem(name, JSON.stringify(newTasks));
   }
 
-  const tasksNoun = taskList.length !== 1 ? "tasks" : "task";
-  const headingText = `${taskList.length} ${tasksNoun} remaining`;
-
-  const listHeadingRef = useRef(null);
-  const prevTaskLength = usePrevious(tasks.length);
-
-  useEffect(() => {
-    if (tasks.length < prevTaskLength) {
-      listHeadingRef.current.focus();
-    }
-  }, [tasks.length, prevTaskLength]);
-
   return (
-    <div className="todoapp stack-large">
-      <h1>TodoMatic</h1>
-      <Form addTask={addTask} />
-      <div className="filters btn-group stack-exception">{filterList}</div>
-      <h2 id="list-heading" tabIndex="-1" ref={listHeadingRef}>
-        {headingText}
-      </h2>
-      <ul
-        aria-labelledby="list-heading"
-        className="todo-list stack-large stack-exception"
-        role="list"
-      >
-        {taskList}
-      </ul>
-    </div>
+    <Card title={`Todo (${name})`} size="small">
+      <MyForm addTask={addTask} />
+      <List size="small">
+        {tasks.map((task) => (
+          <Todo
+            id={task.id}
+            name={task.name}
+            completed={task.completed}
+            key={task.id}
+            toggleTaskCompleted={toggleTaskCompleted}
+            deleteTask={deleteTask}
+            editTask={editTask}
+          />
+        ))}
+      </List>
+    </Card>
   );
 }
 

@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import { Progress, Flex } from "antd";
 import { Typography } from "antd";
 
-const { Title } = Typography;
 const DURATION = 4;
 
 function LongPressButton({
-  name,
   display,
   completedDisplay,
   isComplete,

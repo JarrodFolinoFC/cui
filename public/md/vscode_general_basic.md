@@ -1,14 +1,10 @@
-# VS Code (General & Basic)
+# Basic editing
 
-- ⇧⌘P, F1 Show Command Palette
-- ⌘P Quick Open, Go to File...
+
 - ⇧⌘N New window/instance
 - ⌘W Close window/instance
 - ⌘, User Settings
 - ⌘K ⌘S Keyboard Shortcuts
-
-## Basic editing
-
 - ⌘X Cut line (empty selection)
 - ⌘C Copy line (empty selection)
 - ⌥↓ / ⌥↑ Move line down/up
