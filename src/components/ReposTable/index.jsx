@@ -53,7 +53,7 @@ const columns = [
 const MyTable = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5173/data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);

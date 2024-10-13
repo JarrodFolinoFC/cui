@@ -7,7 +7,7 @@ function CountriesVisited({ previewCount = 4 }) {
   const [visits, setVisits] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5173/visits.json")
+    fetch("/visits.json")
       .then((response) => response.json())
       .then((data) => {
         setVisits(data.reverse());
@@ -23,7 +23,7 @@ function CountriesVisited({ previewCount = 4 }) {
   const getTimeline = (visits) => {
     return (
       <Timeline
-        mode="right"
+        mode="left"
         items={visits.map((item) => {
           return {
             date: item.date,

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { Card, Avatar } from "antd";
+import { Avatar } from "antd";
 
 import "./style.css";
 
@@ -16,17 +16,17 @@ const App = () => {
   }
 
   return (
-    <Card title="Coin Flip" size="small">
-      <div id="coin" className={result} key={+new Date()} onClick={coinToss}>
-        <div class="side-a">
-          <Avatar size={96}>TAILS</Avatar>
-        </div>
-
-        <div className="side-b">
-          <Avatar size={96}>HEADS</Avatar>
-        </div>
+    <div className={`coin ${result}`} key={+new Date()}>
+      <div class="side-a" onClick={coinToss}>
+        <Avatar onClick={coinToss} size={96}>
+          TAILS
+        </Avatar>
       </div>
-    </Card>
+
+      <div className="side-b" onClick={coinToss}>
+        <Avatar size={96}>HEADS</Avatar>
+      </div>
+    </div>
   );
 };
 

@@ -1,38 +1,26 @@
 import React, { useState, useEffect } from "react";
-import { Flex, Card, Button, Space } from "antd";
-import MarkdownCard from "../components/MarkdownCard";
+import { Flex } from "antd";
 import JsConsole from "../components/JsConsole";
-import UpcomingBirthdays from "../components/UpcomingBirthdays";
 
 import Weather from "../components/Weather";
 import AwsAccounts from "../components/AwsAccounts";
 import Repos from "../components/Repos";
 import SshProject from "../components/SshProject";
 import AwsLambdas from "../components/AwsLambdas";
-import Prs from "../components/Prs";
+import Links from "../components/Links";
 import MergedPrs from "../components/MergedPrs";
 
 function Planner() {
   const [links, setLinks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5173/links.json")
+    fetch("/links.json")
       .then((res) => res.json())
       .then((data) => setLinks(data));
   }, []);
   return (
     <Flex wrap gap="4px" vertical>
-      <Space>
-        {links.map((link) => {
-          return (
-            <Button size="small">
-              <a href={link.url} target={link.name}>
-                {link.name}
-              </a>
-            </Button>
-          );
-        })}
-      </Space>
+      <Links links={links} />
       <MergedPrs name="Merged PRs" key="merged_prs" />
       <Flex>
         <AwsAccounts />
@@ -42,6 +30,13 @@ function Planner() {
             "flexipay-rewards-api",
             "flexipay-pricing-api",
             "flexipay-rewards-and-pricing-shared",
+          ]}
+        />
+        <SshProject
+          name="RAP Projects"
+          repos={[
+            "flexipay-pricing-end-to-end",
+            "uk-borrower-platform-rewards",
           ]}
         />
         <AwsLambdas name="flexipay-rewards-api" />

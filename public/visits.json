@@ -2,50 +2,138 @@
   {
     "date": "1995-03",
     "country": "Indonesia",
-    "state": "",
     "city": "Bali"
   },
   {
     "date": "2003-06",
     "country": "New Zealand",
-    "state": "",
+    "state": "Auckland Region",
     "city": "Auckland"
+  },
+  {
+    "date": "2003-06",
+    "country": "New Zealand",
+    "state": "Canterbury Region",
+    "city": "Christchurch"
+  },
+  {
+    "date": "2003-06",
+    "country": "New Zealand",
+    "state": "Fiordland",
+    "city": "Milford Sound"
+  },
+  {
+    "date": "2003-06",
+    "country": "New Zealand",
+    "state": "Queenstown-Lakes District",
+    "city": "Queenstown"
+  },
+  {
+    "date": "2003-06",
+    "country": "New Zealand",
+    "state": "Far North District",
+    "city": "Bay of Islands"
+  },
+  {
+    "date": "2003-06",
+    "country": "New Zealand",
+    "state": "Bay of Plenty Region",
+    "city": "Rotorua"
   },
   {
     "date": "2006-03",
     "country": "South Korea",
-    "state": "Jeonbuk State",
-    "city": ""
+    "state": "Jeonbuk State"
+  },
+  {
+    "date": "2006-01",
+    "country": "Japan",
+    "state": "Osaka Prefecture",
+    "city": "Osaka"
   },
   {
     "date": "2006-01",
     "country": "South Korea",
-    "state": "",
+    "state": "Gyeonggi Province",
     "city": "Seoul"
   },
   {
     "date": "2007-06",
     "country": "China",
+    "state": "Beijing",
+    "city": "Beijing"
+  },
+  {
+    "date": "2007-06",
+    "country": "China",
+    "state": "Shaanxi",
+    "city": "Xi'an"
+  },
+  {
+    "date": "2007-06",
+    "country": "China",
     "state": "",
-    "city": ""
+    "city": "Chonqing"
+  },
+  {
+    "date": "2007-06",
+    "country": "China",
+    "state": "Yunnan",
+    "city": "Dali"
+  },
+  {
+    "date": "2007-06",
+    "country": "China",
+    "state": "Yunnan",
+    "city": "Lijiang"
+  },
+  {
+    "date": "2007-06",
+    "country": "China",
+    "state": "Yunnan",
+    "region": "Tiger Leaping Gorge"
   },
   {
     "date": "2010-01",
     "country": "Thailand",
-    "state": "",
-    "city": ""
+    "state": "Bangkok Metropolitan Region",
+    "city": "Bangkok"
+  },
+  {
+    "date": "2010-01",
+    "country": "Vietnam",
+    "state": "Southeast",
+    "city": "Ho Chi Minh City"
+  },
+  {
+    "date": "2010-01",
+    "country": "Vietnam",
+    "state": "Red River Delta",
+    "city": "Hanoi"
+  },
+  {
+    "date": "2010-01",
+    "country": "Vietnam",
+    "state": "North Central Coast",
+    "city": "Hue"
   },
   {
     "date": "2010-01",
     "country": "Vietnam",
     "state": "",
-    "city": ""
+    "city": "Ha Long Bay"
   },
   {
     "date": "2010-01",
     "country": "Cambodia",
     "state": "",
     "city": "Phnom Penh"
+  },
+  {
+    "date": "2010-01",
+    "country": "Cambodia",
+    "state": "",
+    "city": "Angkor Wat"
   },
   {
     "date": "2010-01",
@@ -68,14 +156,32 @@
   {
     "date": "2014-10",
     "country": "Nepal",
+    "state": "Bagmati",
+    "city": "Kathmandu"
+  },
+  {
+    "date": "2014-10",
+    "country": "Nepal",
     "state": "TBD",
-    "city": "Katmandu"
+    "city": "Annapurna"
   },
   {
     "date": "2015-06",
     "country": "India",
     "state": "TBD",
     "city": "Delhi"
+  },
+  {
+    "date": "2015-06",
+    "country": "India",
+    "state": "TBD",
+    "city": "Agra"
+  },
+  {
+    "date": "2015-06",
+    "country": "England",
+    "state": "TBD",
+    "city": "London"
   },
   {
     "date": "2015-06",
@@ -188,6 +294,11 @@
     "city": "Nottingham"
   },
   {
+    "date": "2022-12-09",
+    "country": "England",
+    "city": "Derbyshire"
+  },
+  {
     "date": "2022-12-08",
     "country": "Scotland",
     "city": "Edinburgh"
@@ -230,6 +341,12 @@
   },
   {
     "date": "2023-03",
+    "country": "Switzerland",
+    "province": "",
+    "city": "Interlaken"
+  },
+  {
+    "date": "2023-05",
     "country": "England",
     "province": "",
     "city": "Manchester"
@@ -266,7 +383,13 @@
   },
   {
     "date": "2023-03",
-    "country": "Japan",
+    "country": "Denmark",
+    "province": "",
+    "city": "Christianshavn"
+  },
+  {
+    "date": "2023-03",
+    "country": "Sweden",
     "province": "",
     "city": "Stockholm"
   },
@@ -322,6 +445,36 @@
     "date": "2024-04",
     "country": "Canada",
     "state": "",
+    "city": "Whistler"
+  },
+  {
+    "date": "2024-04",
+    "country": "Canada",
+    "state": "",
+    "city": "Pemberton"
+  },
+  {
+    "date": "2024-04",
+    "country": "Canada",
+    "state": "",
+    "city": "Jaspar"
+  },
+  {
+    "date": "2024-04",
+    "country": "Canada",
+    "state": "",
+    "area": "Wells Gray Park"
+  },
+  {
+    "date": "2024-04",
+    "country": "Canada",
+    "state": "",
+    "city": "Banff"
+  },
+  {
+    "date": "2024-04",
+    "country": "Canada",
+    "state": "",
     "city": "Calgary"
   },
   {
@@ -356,8 +509,26 @@
   },
   {
     "date": "2024-09",
+    "country": "India",
+    "province": "Karnataka",
+    "city": "Kandapor"
+  },
+  {
+    "date": "2024-09",
     "country": "England",
     "province": "Surrey",
     "place": "Box Hill"
+  },
+  {
+    "date": "2024-09",
+    "country": "England",
+    "province": "Surrey",
+    "place": "Chilterns"
+  },
+  {
+    "date": "2024-10-19",
+    "country": "England",
+    "province": "South West",
+    "place": "Bath"
   }
 ]

@@ -17,7 +17,7 @@ function Repos() {
   const [other, setOther] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5173/other.json")
+    fetch("/other.json")
       .then((res) => res.json())
       .then((data) => setOther(data));
   }, []);

@@ -44,7 +44,25 @@
     "url": "https://chatgpt.com"
   },
   {
-    "name": "Grafana (Staging)",
-    "url": "https://grafana.fc-staging.co.uk/?orgId=1"
+    "type": "collection",
+    "description": "Grafana",
+    "collection": [
+      {
+        "name": "Staging",
+        "url": "https://grafana.fc-staging.co.uk/?orgId=1"
+      },
+      {
+        "name": "Prod",
+        "url": "https://grafana.fc-prod.co.uk/?orgId=1"
+      }
+    ]
+  },
+  {
+    "name": "Mermaid Charts",
+    "url": "https://mermaid.live/edit"
+  },
+  {
+    "name": "Rewards Infra",
+    "url": "https://github.com/FundingCircle/flexipay-rewards-api/blob/main/main_diagram.jpg"
   }
 ]

@@ -4,12 +4,12 @@ import os
 directory = "/Users/jarrod.folino/Dev/sharks/rap"
 
 other_repos = [
-    {"name": "uk-borrower-platform-rewards", "path": "../uk-borrower-platform-rewards"},
-    {"name": "flexipay-pricing-end-to-end", "path": "../flexipay-pricing-end-to-end"},
+    {
+        "name": "template-serverless-api",
+        "path": "../template-serverless-api",
+    },
     {"name": "python-db-item-handler", "path": "../python-db-item-handler"},
     {"name": "python-lambda-utils", "path": "../python-lambda-utils"},
-    # {"name": "ssh-vscode", "path": "."},
-    # {"name": "ssh-home", "path": "../ssh-home"},
     {"name": "msk-cluster-uat", "path": "../msk-cluster-uat"},
     {
         "name": "flexipay-rewards-and-pricing-db-migrator",
@@ -23,35 +23,6 @@ other_repos = [
         "path": "../python-lambda-builder-docker-image",
     },
     {"name": "drone-terraform-docker-image", "path": "../drone-terraform-docker-image"},
-    # {"name": "terraform-aws-api-gateway", "path": "../terraform-aws-api-gateway"},
-    # {
-    #     "name": "terraform-aws-api-gateway-cors",
-    #     "path": "../terraform-aws-api-gateway-cors",
-    # },
-    # {
-    #     "name": "terraform-aws-api-gateway-domain",
-    #     "path": "../terraform-aws-api-gateway-domain",
-    # },
-    # {
-    #     "name": "terraform-aws-lambda-function",
-    #     "path": "../terraform-aws-lambda-function",
-    # },
-    # {"name": "funding-circle-api-template", "path": "../funding-circle-api-template"},
-    # {"name": "loom-api-end-to-end", "path": "../loom-api-end-to-end"},
-    # {
-    #     "name": "flexipay-onboarding-summary-end-to-end",
-    #     "path": "../flexipay-onboarding-summary-end-to-end",
-    # },
-    # {
-    #     "name": "flexipay-request-payment-api-end-to-end",
-    #     "path": "../flexipay-request-payment-api-end-to-end",
-    # },
-    # {"name": "flexipay-lite-end-to-end", "path": "../flexipay-lite-end-to-end"},
-    # {"name": "flexipay-referral-end-to-end", "path": "../flexipay-referral-end-to-end"},
-    # {
-    #     "name": "flexipay-companion-everything-end-to-end",
-    #     "path": "../flexipay-companion-everything-end-to-end",
-    # },
     {
         "name": "flexipay-billing-cashback-end-to-end",
         "path": "../flexipay-billing-cashback-end-to-end",
@@ -59,6 +30,8 @@ other_repos = [
 ]
 
 lambda_repos = [
+    {"name": "uk-borrower-platform-rewards", "path": "../uk-borrower-platform-rewards"},
+    {"name": "flexipay-pricing-end-to-end", "path": "../flexipay-pricing-end-to-end"},
     {
         "name": "flexipay-rewards-api",
         "path": "../flexipay-rewards-api",
@@ -137,7 +110,7 @@ def get_prs(repo):
 
 
 def get_merged_prs(repo):
-    cmd = f'gh pr list --repo FundingCircle/{repo} --state merged --json number,title,author,url'
+    cmd = f"gh pr list --repo FundingCircle/{repo} --state merged --json number,title,author,url"
     prs = os.popen(cmd).read()
     return [
         {"name": f'{pr["title"]} {pr["author"]["login"]}', "link": pr["url"]}

@@ -1,21 +1,42 @@
 import React from "react";
 import { IndexBar, List } from "antd-mobile";
+import { Space, Row, Col } from "antd";
 
 import DaysUntil from "../components/DaysUntil";
 import Recall from "../components/Recall";
 import Todo from "../components/Todo";
 import MetricTracker from "../components/MetricTracker";
+import MetricTrackerDisplay from "../components/MetricTrackerDisplay";
+import MetricTrackerVisual from "../components/MetricTrackerVisual";
 import CoinFlip from "../components/CoinFlip";
 import CountriesVisited from "../components/CountriesVisited";
 import StreakTracker from "../components/StreakTracker";
 import Counter from "../components/Counter";
 import CurrencyConvertor from "../components/CurrencyConvertor";
-import SimpleLineChart from "../components/SimpleLineChart";
 import UpcomingBirthdays from "../components/UpcomingBirthdays";
-import PomodoroTimer from "../components/PomodoroTimer";
 import Weather from "../components/Weather";
 import Backup from "../components/Backup";
-import Restore from "../components/Restore";
+import LongPressButton from "../components/LongPressButton";
+import PomodoroTimer from "../components/PomodoroTimer";
+import SimpleLineChart from "../components/SimpleLineChart";
+
+import {
+  UploadOutlined,
+  CloudOutlined,
+  ClockCircleOutlined,
+  UnorderedListOutlined,
+  NumberOutlined,
+  FireOutlined,
+  PoundCircleOutlined,
+  GlobalOutlined,
+  CalendarOutlined,
+  RightOutlined,
+  TransactionOutlined,
+  HomeOutlined,
+  TrademarkCircleOutlined,
+  GiftOutlined,
+  DownloadOutlined,
+} from "@ant-design/icons";
 
 const recalls = [
   <Recall
@@ -93,8 +114,28 @@ const recalls = [
 ];
 
 const sections = [
-  { name: "Restore", components: [<Restore />] },
-  { name: "Backup", components: [<Backup />] },
+  {
+    name: "Counters",
+    components: [
+      <Counter names={["Drink Water", "Pilates Workout", "Smoothie"]} />,
+    ],
+    icon: <NumberOutlined />,
+  },
+  {
+    name: "Runs",
+    components: [
+      <MetricTracker name="runs" />,
+      <MetricTrackerDisplay name="runs" />,
+      <MetricTrackerVisual name="runs" />,
+    ],
+    icon: <RightOutlined />,
+  },
+  {
+    name: "Streaks",
+    components: [<StreakTracker name="DrinkWater" />],
+    icon: <FireOutlined />,
+  },
+
   {
     name: "Weather",
     components: [
@@ -104,47 +145,60 @@ const sections = [
         longitude={13.41}
         timeInfo="Europe/London"
       />,
-    ],
-  },
-  {
-    name: "PomodoroTimer",
-    components: [<PomodoroTimer />],
-  },
-  { name: "Todo", components: [<Todo />, <Todo name="TechBooks" />] },
-  {
-    name: "Counters",
-    components: [
-      <Counter name="Recall Activity" />,
-      <Counter name="Meditate" />,
-      <Counter name="Lower Back Stability" />,
-    ],
-  },
-  {
-    name: "StreakTracker",
-    components: [
-      <StreakTracker name="Mindfullness Walk" />,
-      <StreakTracker name="Brush Teeth" />,
-    ],
-  },
-  { name: "Coinflip", components: [<CoinFlip />] },
-  { name: "CountriesVisited", components: [<CountriesVisited />] },
-  { name: "DaysUntil", components: [<DaysUntil />] },
-  { name: "MetricTracker", components: [<MetricTracker name="runs" />] },
-  {
-    name: "CurrencyConvertor",
-    components: [<CurrencyConvertor baseCurrency={"USD"} />],
-  },
-  { name: "Recall", components: [recalls] },
-  { name: "UpcomingBirthdays", components: [<UpcomingBirthdays />] },
-  {
-    name: "SimpleLineChart",
-    components: [
-      <SimpleLineChart
-        unit="$"
-        dataUrl={"http://localhost:5173/mortgage.json"}
+      <Weather
+        location="Melbourne"
+        latitude={-37.8136}
+        longitude={144.9631}
+        timeInfo={"Australia/Melbourne"}
       />,
     ],
+    icon: <CloudOutlined />,
   },
+  {
+    name: "Todo",
+    components: [<Todo />, <Todo name="TechBooks" />],
+    icon: <UnorderedListOutlined />,
+  },
+  {
+    name: "Coinflip",
+    components: [<CoinFlip />],
+    icon: <PoundCircleOutlined />,
+  },
+  {
+    name: "CountriesVisited",
+    components: [<CountriesVisited />],
+    icon: <GlobalOutlined />,
+  },
+
+  {
+    name: "CurrencyConvertor",
+    components: [<CurrencyConvertor baseCurrency={"AUD"} />],
+    icon: <TransactionOutlined />,
+  },
+  {
+    name: "DaysUntil",
+    components: [<DaysUntil hideSensitive={true} />],
+    icon: <CalendarOutlined />,
+  },
+
+  // { name: "Recall", components: [recalls], icon: <TrademarkCircleOutlined /> },
+  {
+    name: "UpcomingBirthdays",
+    components: [<UpcomingBirthdays />],
+    icon: <GiftOutlined />,
+  },
+  // {
+  //   name: "PomodoroTimer",
+  //   components: [<PomodoroTimer />],
+  //   icon: <ClockCircleOutlined />,
+  // },
+  { name: "Backup", components: [<Backup />], icon: <DownloadOutlined /> },
+
+  // {
+  //   name: "SimpleLineChart",
+  //   components: [<SimpleLineChart unit="$" dataUrl={"/mortgage.json"} />],
+  //   icon: <HomeOutlined />,
+  // },
 ];
 
 export default () => {
@@ -154,8 +208,14 @@ export default () => {
         {sections.map((section) => {
           return (
             <IndexBar.Panel
+              brief={section?.icon || section.name}
               index={section.name}
-              title={section.name}
+              title={
+                <Space>
+                  {section?.icon}
+                  {section.name}
+                </Space>
+              }
               key={section.name}
             >
               <List>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Progress, Flex } from "antd";
-import { Typography } from "antd";
 
 const DURATION = 4;
 
