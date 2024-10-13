@@ -1,17 +1,16 @@
-
-
-#coin {
+.coin {
   position: relative;
   margin: 0 auto;
   width: 100px;
   height: 100px;
+  cursor: pointer;
 }
 
-#coin {
+.coin {
   transition: -webkit-transform 1s ease-in;
   -webkit-transform-style: preserve-3d;
 }
-#coin div {
+.coin div {
   position: absolute;
   -webkit-backface-visibility: hidden;
 }
@@ -22,13 +21,13 @@
   -webkit-transform: rotateY(-180deg);
 }
 
-#coin.heads {
+.coin.heads {
   -webkit-animation: flipHeads 2s ease-out forwards;
   -moz-animation: flipHeads 2s ease-out forwards;
   -o-animation: flipHeads 2s ease-out forwards;
   animation: flipHeads 2s ease-out forwards;
 }
-#coin.tails {
+.coin.tails {
   -webkit-animation: flipTails 2s ease-out forwards;
   -moz-animation: flipTails 2s ease-out forwards;
   -o-animation: flipTails 2s ease-out forwards;

@@ -50,7 +50,7 @@ function Todo(props) {
   }
 
   const editingTemplate = (
-    <List.Item key={props.name} style={{ minWidth: "380px" }}>
+    <List.Item key={props.name}>
       <Form className="stack-small" onSubmit={handleSubmit}>
         <Space>
           <Input
@@ -65,6 +65,7 @@ function Todo(props) {
               props.editTask(props.id, newName);
               setEditing(false);
             }}
+            
           />
           <UndoOutlined onClick={() => setEditing(false)} />
         </Space>
@@ -73,9 +74,10 @@ function Todo(props) {
   );
 
   const viewTemplate = (
-    <List.Item key={props.name} style={{ minWidth: "380px" }}>
+    <List.Item key={props.name} style={{ maxWidth: "80%" }}>
       <Flex>
         <Checkbox
+
           checked={props.completed}
           onChange={() => props.toggleTaskCompleted(props.id)}
         >

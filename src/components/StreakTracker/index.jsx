@@ -1,4 +1,4 @@
-import { Card } from "antd";
+import { Flex } from "antd";
 import React, { useEffect, useState } from "react";
 import LongPressButton from "../LongPressButton";
 
@@ -7,42 +7,43 @@ import asyncLocalStorage from "../../utils/asyncLocalStorage";
 function getTodayDate() {
   const today = new Date();
   const year = today.getFullYear();
-  const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are zero-based
+  const month = String(today.getMonth() + 1).padStart(2, "0");
   const day = String(today.getDate()).padStart(2, "0");
   return `${year}-${month}-${day}`;
 }
 
-function StreakTracker({ name, storageDriver = asyncLocalStorage }) {
+function StreakTracker({ name, storageDriver = localStorage }) {
   const [streak, setStreak] = useState(null);
   const today = getTodayDate();
 
-  async function updateStreak() {
+  function updateStreak() {
     if (streak.includes(today)) {
       return;
     } else {
       const newValue = [...streak, today];
       setStreak(newValue);
-      storageDriver.setItem(`Streak_${name}`, JSON.stringify(newValue));
+      storageDriver.setItem(`#Streak#${name}`, JSON.stringify(newValue));
     }
   }
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = () => {
       try {
-        const data = await storageDriver.getItem(`Streak_${name}`);
+        const data = storageDriver.getItem(`#Streak#${name}`);
         if (data) {
           setStreak(JSON.parse(data));
         }
       } catch (error) {
-        console.error("Error fetching data:", error);
+        alert("Error fetching data:", error);
       }
     };
     fetchData();
-  }, [name]);
+  }, []);
 
   return (
     streak && (
-      <Card title={name} size="small">
+      <Flex gap={'1em'}>
+        {name}
         <LongPressButton
           name={name}
           display={streak && streak.length}
@@ -50,7 +51,7 @@ function StreakTracker({ name, storageDriver = asyncLocalStorage }) {
           isComplete={streak && streak.includes(today)}
           oncomplete={updateStreak}
         />
-      </Card>
+      </Flex>
     )
   );
 }

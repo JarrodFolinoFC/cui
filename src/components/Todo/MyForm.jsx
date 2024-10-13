@@ -23,10 +23,10 @@ function MyForm(props) {
       setValue("");
     }
   }
-  
+
   return (
     <Form onSubmit={handleSubmit}>
-      <Space.Compact style={{ width: "100%" }}>
+      <Space.Compact style={{ width: "80%" }}>
         <Input
           value={value}
           onChange={handleChange}

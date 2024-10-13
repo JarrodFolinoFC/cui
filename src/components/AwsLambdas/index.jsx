@@ -5,7 +5,7 @@ import { CloudOutlined, CodeOutlined } from "@ant-design/icons";
 const AwsLambdas = ({ name }) => {
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5173/data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);

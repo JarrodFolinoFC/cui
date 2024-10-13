@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 function AwsAccounts() {
   const [accounts, setAccounts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5173/aws_accounts.json")
+    fetch("/aws_accounts.json")
       .then((response) => response.json())
       .then((data) => {
         setAccounts(data);

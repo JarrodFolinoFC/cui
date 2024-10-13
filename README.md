@@ -1,5 +1,10 @@
 # todo
 
+Habit tracker
+Info
+Long term diary
+Development
+
 aws bill
 spin the wheel
 upload browser history

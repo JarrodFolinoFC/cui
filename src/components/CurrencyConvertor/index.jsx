@@ -15,7 +15,7 @@ function CurrecyConvertor({ baseCurrency }) {
   }, []);
 
   return (
-    <Card size="small" title={baseCurrency}>
+    <>
       {currencies.map((currency) => {
         return (
           <Statistic
@@ -27,7 +27,7 @@ function CurrecyConvertor({ baseCurrency }) {
           />
         );
       })}
-    </Card>
+    </>
   );
 }
 

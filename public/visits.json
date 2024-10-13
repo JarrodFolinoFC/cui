@@ -39,13 +39,37 @@
     "date": "2010-01",
     "country": "Vietnam",
     "state": "",
-    "city": ""
+    "city": "Ho Chi Minh City"
+  },
+  {
+    "date": "2010-01",
+    "country": "Vietnam",
+    "state": "",
+    "city": "Hanoi"
+  },
+  {
+    "date": "2010-01",
+    "country": "Vietnam",
+    "state": "",
+    "city": "Hue"
+  },
+  {
+    "date": "2010-01",
+    "country": "Vietnam",
+    "state": "",
+    "city": "Ha Long Bay"
   },
   {
     "date": "2010-01",
     "country": "Cambodia",
     "state": "",
     "city": "Phnom Penh"
+  },
+  {
+    "date": "2010-01",
+    "country": "Cambodia",
+    "state": "",
+    "city": "Angkor Wat"
   },
   {
     "date": "2010-01",
@@ -359,5 +383,11 @@
     "country": "England",
     "province": "Surrey",
     "place": "Box Hill"
+  },
+  {
+    "date": "2024-10-19",
+    "country": "England",
+    "province": "South West",
+    "place": "Bath"
   }
 ]

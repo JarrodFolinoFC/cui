@@ -35,9 +35,9 @@ function PersonalTabs() {
         <MetricTracker name={"runs"}/>
         <StreakTracker name="Mindfullness Walk" />
         <StreakTracker name="Brush Teeth" />
-        <Counter name="Recall Activity" />
-        <Counter name="Meditate" />
-        <Counter name="Lower Back Stability" />
+        {/* <Counter names={["Recall Activity"]} />
+        <Counter names={["Meditate"]} />
+          <Counter names={["Lower Back Stability"]} /> */}
       </Flex>
       <Flex>
         <Flex wrap vertical>
@@ -47,7 +47,7 @@ function PersonalTabs() {
           <CurrencyConvertor baseCurrency="AUD" />
           <SimpleLineChart
             unit="$"
-            dataUrl={"http://localhost:5173/mortgage.json"}
+            dataUrl={"/mortgage.json"}
           />
         </Flex>
 

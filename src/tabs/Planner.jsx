@@ -16,7 +16,7 @@ function Planner() {
   const [links, setLinks] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5173/links.json")
+    fetch("/links.json")
       .then((res) => res.json())
       .then((data) => setLinks(data));
   }, []);
@@ -42,6 +42,8 @@ function Planner() {
             "flexipay-rewards-api",
             "flexipay-pricing-api",
             "flexipay-rewards-and-pricing-shared",
+            "flexipay-pricing-end-to-end",
+            "uk-borrower-platform-rewards",
           ]}
         />
         <AwsLambdas name="flexipay-rewards-api" />

@@ -7,7 +7,7 @@ function UpcomingBirthdays({ previewCount = 6 }) {
   const [birthdays, setBirthdays] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5173/birthdays.json")
+    fetch("/birthdays.json")
       .then((response) => response.json())
       .then((data) => {
         setBirthdays(data);
