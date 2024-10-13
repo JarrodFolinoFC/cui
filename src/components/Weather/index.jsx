@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Statistic } from "antd";
-import { Spin, Card } from "antd";
+import { Spin, Card, Flex, Row, Col } from "antd";
 
 function Weather({ location, timeInfo, latitude = 52.52, longitude = 13.41 }) {
   const [temperature, setTemperature] = useState(null);
@@ -11,7 +11,6 @@ function Weather({ location, timeInfo, latitude = 52.52, longitude = 13.41 }) {
   function getFormattedTime(format) {
     const currentTime = new Intl.DateTimeFormat("en-AU", {
       timeZone: format,
-      year: "numeric",
       month: "2-digit",
       day: "2-digit",
       hour: "2-digit",
@@ -39,14 +38,18 @@ function Weather({ location, timeInfo, latitude = 52.52, longitude = 13.41 }) {
   }, []);
 
   return (
-    <Card title={timeInfo} size="small">
-      {times}
-      {temperature ? (
-        <Statistic value={temperature} suffix="°C" precision={1} />
-      ) : (
-        <Spin />
-      )}
-    </Card>
+    <Row align={"middle"} gutter={4}>
+      <Col span={8}>
+        {temperature ? (
+          <Statistic value={temperature} suffix="°C" precision={1} />
+        ) : (
+          <Spin />
+        )}
+      </Col>
+      <Col>
+        {timeInfo.split("/")[1]} {times}
+      </Col>
+    </Row>
   );
 }
 

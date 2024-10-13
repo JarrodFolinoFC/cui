@@ -17,7 +17,7 @@ const lookup = {
 const SshProject = ({ name, repos }) => {
   const [data, setData] = useState(null);
   useEffect(() => {
-    fetch("http://localhost:5173/data.json")
+    fetch("/data.json")
       .then((res) => res.json())
       .then((data) => setData(data));
   }, []);
@@ -35,7 +35,7 @@ const SshProject = ({ name, repos }) => {
                     .find((e) => {
                       return e["name"] === repo;
                     })
-                    .links.map((link) => {
+                    ?.links.map((link) => {
                       return (
                         <a href={link.link} target={link.name}>
                           {lookup[link.name]}
