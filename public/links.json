@@ -46,5 +46,13 @@
   {
     "name": "Grafana (Staging)",
     "url": "https://grafana.fc-staging.co.uk/?orgId=1"
+  },
+  {
+    "name": "Mermaid Charts",
+    "url": "https://mermaid.live/edit"
+  },
+  {
+    "name": "Rewards Infra",
+    "url": "https://github.com/FundingCircle/flexipay-rewards-api/blob/main/main_diagram.jpg"
   }
 ]

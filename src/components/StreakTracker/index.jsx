@@ -1,4 +1,4 @@
-import { Card } from "antd";
+import { Flex } from "antd";
 import React, { useEffect, useState } from "react";
 import LongPressButton from "../LongPressButton";
 
@@ -7,7 +7,7 @@ import asyncLocalStorage from "../../utils/asyncLocalStorage";
 function getTodayDate() {
   const today = new Date();
   const year = today.getFullYear();
-  const month = String(today.getMonth() + 1).padStart(2, "0"); // Months are zero-based
+  const month = String(today.getMonth() + 1).padStart(2, "0");
   const day = String(today.getDate()).padStart(2, "0");
   return `${year}-${month}-${day}`;
 }
@@ -42,7 +42,8 @@ function StreakTracker({ name, storageDriver = asyncLocalStorage }) {
 
   return (
     streak && (
-      <Card title={name} size="small">
+      <Flex gap={'1em'}>
+        {name}
         <LongPressButton
           name={name}
           display={streak && streak.length}
@@ -50,7 +51,7 @@ function StreakTracker({ name, storageDriver = asyncLocalStorage }) {
           isComplete={streak && streak.includes(today)}
           oncomplete={updateStreak}
         />
-      </Card>
+      </Flex>
     )
   );
 }

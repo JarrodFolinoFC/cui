@@ -67,7 +67,8 @@ function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
   }
 
   return (
-    <Card title={`Todo (${name})`} size="small">
+    <>
+      <h3>{name}</h3>
       <MyForm addTask={addTask} />
       <List size="small">
         {tasks.map((task) => (
@@ -82,7 +83,7 @@ function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
           />
         ))}
       </List>
-    </Card>
+    </>
   );
 }
 

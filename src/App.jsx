@@ -23,7 +23,7 @@ const items = [
     children: (
       <>
         <img
-          src="http://localhost:5173/svgs/custom-mac-layout.svg"
+          src="/svgs/custom-mac-layout.svg"
           alt="Description of SVG"
           width="100%"
 
@@ -31,9 +31,9 @@ const items = [
         <MarkdownCard
           title={"General"}
           urls={[
-            "http://localhost:5173/md/vscode_general_basic.md",
-            "http://localhost:5173/md/vscode_search_select.md",
-            "http://localhost:5173/md/vscode_other.md",
+            "/md/vscode_general_basic.md",
+            "/md/vscode_search_select.md",
+            "/md/vscode_other.md",
           ]}
         />
       </>
@@ -72,7 +72,7 @@ const router = createBrowserRouter([
     path: "/",
     element: (
       <Tabs
-        defaultActiveKey={isWorkingHours() ? "1" : "2"}
+        defaultActiveKey={"1"}
         items={items}
         onChange={() => {}}
       />

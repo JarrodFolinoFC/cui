@@ -74,6 +74,8 @@ lambda_repos = [
         "path": "../flexipay-rewards-and-pricing-shared",
         "lambda_prefix": "fp_rap_shared_",
     },
+    {"name": "uk-borrower-platform-rewards", "path": "../uk-borrower-platform-rewards"},
+    {"name": "flexipay-pricing-end-to-end", "path": "../flexipay-pricing-end-to-end"},
 ]
 
 
@@ -137,7 +139,7 @@ def get_prs(repo):
 
 
 def get_merged_prs(repo):
-    cmd = f'gh pr list --repo FundingCircle/{repo} --state merged --json number,title,author,url'
+    cmd = f"gh pr list --repo FundingCircle/{repo} --state merged --json number,title,author,url"
     prs = os.popen(cmd).read()
     return [
         {"name": f'{pr["title"]} {pr["author"]["login"]}', "link": pr["url"]}
