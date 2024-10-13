@@ -1,11 +1,13 @@
 import { useEffect, useRef, useState } from "react";
-import { List, Input, Space, Form, Flex, Checkbox } from "antd";
+import { Input, Space, Form, Flex, Checkbox, Button } from "antd";
+import { List } from "antd-mobile";
 import {
-  DeleteOutlined,
   EditOutlined,
   SaveOutlined,
   UndoOutlined,
+  DeleteOutlined,
 } from "@ant-design/icons";
+import { SwipeAction } from "antd-mobile";
 
 function usePrevious(value) {
   const ref = useRef(null);
@@ -23,24 +25,21 @@ function handleKeyPressSave(event) {
 }
 
 function Todo(props) {
-  const [isEditing, setEditing] = useState(false);
+  const [isEditing, setEditing] = useState(props.isEditing);
   const [newName, setNewName] = useState(props.name);
 
   const editFieldRef = useRef(null);
-  const editButtonRef = useRef(null);
-
-  const wasEditing = usePrevious(isEditing);
 
   function handleChange(event) {
     setNewName(event.target.value);
   }
 
-  function handleKeyPress(event) {
-    if (event.key === "Enter") {
-      props.editTask(props.id, newName);
-      setEditing(false);
-    }
-  }
+  // function handleKeyPress(event) {
+  //   if (event.key === "Enter") {
+  //     props.editTask(props.id, newName);
+  //     setEditing(false);
+  //   }
+  // }
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -50,9 +49,9 @@ function Todo(props) {
   }
 
   const editingTemplate = (
-    <List.Item key={props.name} style={{ minWidth: "380px" }}>
+    <List.Item key={props.name}>
       <Form className="stack-small" onSubmit={handleSubmit}>
-        <Space>
+        <Space.Compact style={{ width: "80%" }}>
           <Input
             id={props.id}
             value={newName}
@@ -60,48 +59,51 @@ function Todo(props) {
             ref={editFieldRef}
             onKeyDown={handleKeyPressSave}
           />
-          <SaveOutlined
+          <Button
+            type="primary"
             onClick={() => {
               props.editTask(props.id, newName);
               setEditing(false);
             }}
-          />
-          <UndoOutlined onClick={() => setEditing(false)} />
-        </Space>
+          >
+            <SaveOutlined />
+          </Button>
+        </Space.Compact>
       </Form>
     </List.Item>
   );
 
   const viewTemplate = (
-    <List.Item key={props.name} style={{ minWidth: "380px" }}>
-      <Flex>
-        <Checkbox
-          checked={props.completed}
-          onChange={() => props.toggleTaskCompleted(props.id)}
-        >
-          {props.completed ? <strike>{newName}</strike> : newName}
-        </Checkbox>
-
-        <Space>
-          <EditOutlined
-            ref={editButtonRef}
-            onClick={() => {
-              setEditing(true);
-            }}
-          />
-          <DeleteOutlined onClick={() => props.deleteTask(props.id)} />
-        </Space>
-      </Flex>
-    </List.Item>
+    <SwipeAction
+      rightActions={[
+        {
+          key: "edit",
+          text: <EditOutlined />,
+          onClick: () => {
+            setEditing(true);
+          },
+          color: "primary",
+        },
+        {
+          key: "delete",
+          text: <DeleteOutlined />,
+          onClick: () => deleteTask(task.id),
+          color: "danger",
+        },
+      ]}
+    >
+      <List.Item key={props.name} style={{ maxWidth: "80%" }}>
+        <Flex>
+          <Checkbox
+            checked={props.completed}
+            onChange={() => props.toggleTaskCompleted(props.id)}
+          >
+            {props.completed ? <strike>{newName}</strike> : newName}
+          </Checkbox>
+        </Flex>
+      </List.Item>
+    </SwipeAction>
   );
-
-  useEffect(() => {
-    if (!wasEditing && isEditing) {
-      editFieldRef.current.focus();
-    } else if (wasEditing && !isEditing) {
-      editButtonRef.current.focus();
-    }
-  }, [wasEditing, isEditing]);
 
   return isEditing ? editingTemplate : viewTemplate;
 }

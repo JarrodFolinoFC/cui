@@ -1,33 +1,24 @@
 import React, { useState, useEffect } from "react";
-import {
-  Modal,
-  InputNumber,
-  Form,
-  Flex,
-  Button,
-  DatePicker,
-  Statistic,
-} from "antd";
+import { Modal, InputNumber, Form, Flex, Button, DatePicker } from "antd";
 
 import dayjs from "dayjs";
-import RunTable from "./table";
-import Graph from "./graph";
 
 function MetricTracker({ name, storageDriver = localStorage }) {
   const [date, setDate] = useState(dayjs());
   const [distance, setDistance] = useState(null);
   const [minutes, setMinutes] = useState(null);
   const [seconds, setSeconds] = useState(null);
-  const [graphDistance, setGraphDistance] = useState(2.2);
 
   const [runs, setRuns] = useState([]);
-  const [modalOpen, setModalOpen] = useState(false);
-  const [graphModalOpen, setGraphModalOpen] = useState(false);
 
   useEffect(() => {
     const runs = storageDriver.getItem(name);
     if (runs) {
-      setRuns(JSON.parse(runs));
+      const parsedRuns = JSON.parse(runs);
+      setRuns(parsedRuns);
+      setDistance(parsedRuns[parsedRuns.length - 1].distance);
+      setMinutes(parsedRuns[parsedRuns.length - 1].minutes);
+      setSeconds(parsedRuns[parsedRuns.length - 1].seconds);
     }
   }, []);
 
@@ -46,111 +37,64 @@ function MetricTracker({ name, storageDriver = localStorage }) {
 
   return (
     <Form size="small" name={name}>
-      <Flex vertical>
-        <Flex gap={4} justify="space-between">
-          <Form.Item name={["user"]}>
-            <DatePicker defaultValue={dayjs()} onChange={handleDateChange} />
-          </Form.Item>
-          <Form.Item>
-            <InputNumber
-              style={{
-                width: "8em",
-              }}
-              addonBefore="km"
-              value={distance}
-              onChange={(value) => {
-                setDistance(value);
-              }}
-              size="small"
-            />
-          </Form.Item>
-          <Form.Item>
-            <InputNumber
-              style={{
-                width: "8em",
-              }}
-              onChange={(value) => setMinutes(value)}
-              value={minutes}
-              addonBefore="m"
-              size="small"
-            />
-            <InputNumber
-              style={{
-                width: "8em",
-              }}
-              onChange={(value) => setSeconds(value)}
-              value={seconds}
-              addonBefore="s"
-              size="small"
-            />
-          </Form.Item>
-        </Flex>
-        <Flex gap={5} justify="space-between">
-          <Form.Item>
-            <Button
-              disabled={!(distance && minutes && seconds)}
-              onClick={save}
-              type="primary"
-              htmlType="submit"
-            >
-              Submit
-            </Button>
-            <Button
-              onClick={() => {
-                setModalOpen(true);
-              }}
-            >
-              Show {name}
-            </Button>
-            <Button
-              onClick={() => {
-                setGraphModalOpen(true);
-              }}
-            >
-              Graph {name} ({graphDistance}km)
-            </Button>
-          </Form.Item>
-          <Form.Item>
-            <Statistic
-              title="Total Distance"
-              value={`${runs.reduce((acc, run) => acc + run.distance, 0)}km`}
-            />
-          </Form.Item>
-        </Flex>
-
-        <Modal
-          title="Runs"
-          open={modalOpen}
-          onOk={() => {
-            setModalOpen(false);
-          }}
-          onCancel={() => {
-            setModalOpen(false);
-          }}
-        >
-          <RunTable runs={runs} />
-        </Modal>
-        <Modal
-          title={`Runs ${graphDistance}km`}
-          open={graphModalOpen}
-          onOk={() => {
-            setGraphModalOpen(false);
-          }}
-          onCancel={() => {
-            setGraphModalOpen(false);
-          }}
-        >
-          <Graph
-            distance={graphDistance}
-            data={runs.map((e) => {
-              return {
-                date: e.date,
-                minutes: e.minutes + e.seconds / 60,
-                distance: e.distance,
-              };
-            })}
+      <Flex vertical gap={0} justify="space-between">
+        <Form.Item name={["user"]}>
+          <DatePicker
+            style={{ width: "90%" }}
+            defaultValue={dayjs()}
+            onChange={handleDateChange}
+            size="large"
           />
-        </Modal>
+        </Form.Item>
+        <Form.Item>
+          <InputNumber
+            style={{
+              width: "90%",
+            }}
+            addonBefore="km"
+            value={distance}
+            min={0}
+            onChange={(value) => {
+              setDistance(value);
+            }}
+            size="large"
+          />
+        </Form.Item>
+        <Form.Item>
+          <InputNumber
+            style={{
+              width: "45%",
+            }}
+            min={0}
+            onChange={(value) => setMinutes(value)}
+            value={minutes}
+            addonBefore="m"
+            size="large"
+          />
+          <InputNumber
+            style={{
+              width: "45%",
+            }}
+            min={0}
+            onChange={(value) => setSeconds(value)}
+            value={seconds}
+            addonBefore="s"
+            size="large"
+          />
+        </Form.Item>
+      </Flex>
+      <Flex gap={5} justify="space-between">
+        <Form.Item>
+          <Button
+            size="large"
+            disabled={!(distance && minutes && seconds)}
+            onClick={save}
+            type="primary"
+            htmlType="submit"
+          >
+            Save
+          </Button>
+        </Form.Item>
       </Flex>
     </Form>
   );

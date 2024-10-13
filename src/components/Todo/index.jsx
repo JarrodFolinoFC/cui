@@ -1,14 +1,10 @@
 import { useState, useEffect } from "react";
 import MyForm from "./MyForm";
 import Todo from "./Todo";
-import { Card, List } from "antd";
+import { List } from "antd-mobile";
 import { v4 as uuidv4 } from "uuid";
 
-import MirrorStorage from "../../utils/mirrorStorage";
 import asyncLocalStorage from "../../utils/asyncLocalStorage";
-
-const URL = "https://wz17dd6el1.execute-api.eu-west-1.amazonaws.com/v1/storage";
-const mirrorStorage = new MirrorStorage(URL, "aaaa");
 
 function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
   const [tasks, setTasks] = useState([]);
@@ -47,7 +43,7 @@ function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
   function editTask(id, newName) {
     const editedTaskList = tasks.map((task) => {
       if (id === task.id) {
-        return { ...task, name: newName };
+        return { ...task, name: newName, editing: false };
       }
       return task;
     });
@@ -67,22 +63,27 @@ function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
   }
 
   return (
-    <Card title={`Todo (${name})`} size="small">
+    <>
+      <h3>{name}</h3>
       <MyForm addTask={addTask} />
+
       <List size="small">
-        {tasks.map((task) => (
-          <Todo
-            id={task.id}
-            name={task.name}
-            completed={task.completed}
-            key={task.id}
-            toggleTaskCompleted={toggleTaskCompleted}
-            deleteTask={deleteTask}
-            editTask={editTask}
-          />
-        ))}
+        {tasks.map((task) => {
+          return (
+            <Todo
+              id={task.id}
+              name={task.name}
+              completed={task.completed}
+              key={task.id}
+              toggleTaskCompleted={toggleTaskCompleted}
+              isEditing={task.editing}
+              editTask={editTask}
+              deleteTask={deleteTask}
+            />
+          );
+        })}
       </List>
-    </Card>
+    </>
   );
 }
 

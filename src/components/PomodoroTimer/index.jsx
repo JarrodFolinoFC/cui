@@ -12,10 +12,12 @@ const PomodoroTimer = ({ duration = 25 }) => {
   };
 
   const pauseTimer = () => {
+    setState("paused");
     clearInterval(progressUpdater);
-  }
+  };
 
   const startTimer = () => {
+    setState("running");
     setProgressUpdater(
       setInterval(() => {
         setElapsedSeconds((elapsedSeconds) => {
@@ -30,24 +32,21 @@ const PomodoroTimer = ({ duration = 25 }) => {
     );
   };
 
-return (
-  <Flex vertical>
-    <Progress
-      percent={(elapsedSeconds / totalSeconds) * 100}
-      format={() => {
-        const minutes = Math.floor(elapsedSeconds / 60);
-        const seconds = elapsedSeconds % 60;
-        return `${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
-      }}
-      type="circle"
-    />
-    <Flex justify="center">
-      <Button onClick={startTimer}>Start</Button>
-      <Button onClick={pauseTimer}>Pause</Button>
+  return (
+    <Flex justify="center" align="centre">
+      <Progress
+        percent={(elapsedSeconds / totalSeconds) * 100}
+        format={() => {
+          const minutes = Math.floor(elapsedSeconds / 60);
+          const seconds = elapsedSeconds % 60;
+          return `${minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+        }}
+        type="circle"
+        onClick={startTimer}
+      />
       <Button onClick={clearTimer}>Cancel</Button>
     </Flex>
-  </Flex>
-);
+  );
 };
 
 export default PomodoroTimer;
