@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Card, Tag } from "antd";
+import { Card, List } from "antd";
 
-const Prs = ({ name }) => {
+const Prs = ({ name, key }) => {
   const [data, setData] = useState(null);
   useEffect(() => {
     fetch("/data.json")
@@ -11,18 +11,20 @@ const Prs = ({ name }) => {
 
   return (
     <Card title={name} size="small">
-      {data &&
-        data
-          .flatMap((d) => {
-            return d.prs;
-          })
-          .map((pr) => {
-            return (
-              <a href={pr.link} target="new">
-                <Tag>{pr.name}</Tag>
-              </a>
-            );
-          })}
+      <List>
+        {data &&
+          data
+            .flatMap((d) => {
+              return d.prs;
+            })
+            .map((pr) => {
+              return (
+                <a href={pr.link} target="new">
+                  <List.Item>{pr.name}</List.Item>
+                </a>
+              );
+            })}
+      </List>
     </Card>
   );
 };

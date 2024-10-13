@@ -1,1 +1,662 @@
-[{"name": "flexipay-rewards-api", "cwlogs": [{"name": "fp_rewards_api_billing_bill_public_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_billing_bill_public_event_sink", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_billing_bill_public_event_sink"}, {"name": "fp_rewards_api_rewards_redeem_post", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_redeem_post", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_redeem_post"}, {"name": "fp_rewards_api_rewards_user_patch", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_patch", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_patch"}, {"name": "fp_rewards_api_card_statements_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_card_statements_event_sink", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_statements_event_sink"}, {"name": "fp_rewards_api_card_settled_transactions_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_card_settled_transactions_event_sink", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_settled_transactions_event_sink"}, {"name": "fp_rewards_api_rewards_revoke_post", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_revoke_post", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_revoke_post"}, {"name": "fp_rewards_api_healthcheck_get", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_healthcheck_get", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_healthcheck_get"}, {"name": "fp_rewards_api_rewards_user_card_enfuce_db_stream", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_card_enfuce_db_stream", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_card_enfuce_db_stream"}, {"name": "fp_rewards_api_rewards_user_enabled_get", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_enabled_get", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_enabled_get"}, {"name": "fp_rewards_api_rewards_get", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_get", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_get"}, {"name": "fp_rewards_api_rewards_user_loc_active_db_stream", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_loc_active_db_stream", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_loc_active_db_stream"}], "lambdas": [{"name": "fp_rewards_api_billing_bill_public_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_billing_bill_public_event_sink"}, {"name": "fp_rewards_api_rewards_redeem_post", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_redeem_post"}, {"name": "fp_rewards_api_rewards_user_patch", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_patch"}, {"name": "fp_rewards_api_card_statements_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_statements_event_sink"}, {"name": "fp_rewards_api_card_settled_transactions_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_settled_transactions_event_sink"}, {"name": "fp_rewards_api_rewards_revoke_post", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_revoke_post"}, {"name": "fp_rewards_api_healthcheck_get", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_healthcheck_get"}, {"name": "fp_rewards_api_rewards_user_card_enfuce_db_stream", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_card_enfuce_db_stream"}, {"name": "fp_rewards_api_rewards_user_enabled_get", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_enabled_get"}, {"name": "fp_rewards_api_rewards_get", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_get"}, {"name": "fp_rewards_api_rewards_user_loc_active_db_stream", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_loc_active_db_stream"}], "prs": [{"name": "[RAP-74] Add resync script AdamM-FC", "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/166"}], "links": [{"name": "Github", "link": "https://github.com/FundingCircle/flexipay-rewards-api"}, {"name": "Pulls", "link": "https://github.com/FundingCircle/flexipay-rewards-api/pulls"}, {"name": "CI", "link": "https://drone.fc-ops.com/FundingCircle/flexipay-rewards-api"}]}, {"name": "flexipay-pricing-api", "cwlogs": [{"name": "fp_pricing_api_repayment_details_get", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_repayment_details_get", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_repayment_details_get"}, {"name": "fp_pricing_api_healthcheck_get", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_healthcheck_get", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_healthcheck_get"}, {"name": "fp_pricing_api_pricing_user_loc_active_db_stream", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_user_loc_active_db_stream", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_loc_active_db_stream"}, {"name": "fp_pricing_api_pricing_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_event_sink", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_sink"}, {"name": "fp_pricing_api_pricing_user_patch", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_user_patch", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_patch"}, {"name": "fp_pricing_api_pricing_event_post", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_event_post", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_post"}], "lambdas": [{"name": "fp_pricing_api_repayment_details_get", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_repayment_details_get"}, {"name": "fp_pricing_api_healthcheck_get", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_healthcheck_get"}, {"name": "fp_pricing_api_pricing_user_loc_active_db_stream", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_loc_active_db_stream"}, {"name": "fp_pricing_api_pricing_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_sink"}, {"name": "fp_pricing_api_pricing_user_patch", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_patch"}, {"name": "fp_pricing_api_pricing_event_post", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_post"}], "prs": [{"name": "[RAP-196] Remove partitioner from producers extra config DanailDim", "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/56"}, {"name": "[RAP-90] Create pricing user schema and enable producer Anwilcz", "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/55"}, {"name": "[RAP-181] use new lib mugx-fc", "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/54"}], "links": [{"name": "Github", "link": "https://github.com/FundingCircle/flexipay-pricing-api"}, {"name": "Pulls", "link": "https://github.com/FundingCircle/flexipay-pricing-api/pulls"}, {"name": "CI", "link": "https://drone.fc-ops.com/FundingCircle/flexipay-pricing-api"}]}, {"name": "flexipay-rewards-and-pricing-shared", "cwlogs": [{"name": "fp_rap_shared_drawdown_builder_post", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_drawdown_builder_post", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_drawdown_builder_post"}, {"name": "fp_rap_shared_mock_line_of_credit_app_completed_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_mock_line_of_credit_app_completed_event_sink", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_completed_event_sink"}, {"name": "fp_rap_shared_transactions_builder_post", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_transactions_builder_post", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_transactions_builder_post"}, {"name": "fp_rap_shared_line_of_credit_sink", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_line_of_credit_sink", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_line_of_credit_sink"}, {"name": "fp_rap_shared_mock_line_of_credit_app_approved_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_mock_line_of_credit_app_approved_event_sink", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_approved_event_sink"}, {"name": "fp_rap_shared_customer_builder_post", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_customer_builder_post", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_customer_builder_post"}, {"name": "fp_rap_shared_mock_line_of_credit_fee_change_requested", "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_mock_line_of_credit_fee_change_requested", "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_fee_change_requested"}], "lambdas": [{"name": "fp_rap_shared_drawdown_builder_post", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_drawdown_builder_post"}, {"name": "fp_rap_shared_mock_line_of_credit_app_completed_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_completed_event_sink"}, {"name": "fp_rap_shared_transactions_builder_post", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_transactions_builder_post"}, {"name": "fp_rap_shared_line_of_credit_sink", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_line_of_credit_sink"}, {"name": "fp_rap_shared_mock_line_of_credit_app_approved_event_sink", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_approved_event_sink"}, {"name": "fp_rap_shared_customer_builder_post", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_customer_builder_post"}, {"name": "fp_rap_shared_mock_line_of_credit_fee_change_requested", "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_fee_change_requested"}], "prs": [], "links": [{"name": "Github", "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared"}, {"name": "Pulls", "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pulls"}, {"name": "CI", "link": "https://drone.fc-ops.com/FundingCircle/flexipay-rewards-and-pricing-shared"}]}]
+[
+  {
+    "name": "flexipay-rewards-api",
+    "cwlogs": [
+      {
+        "name": "fp_rewards_api_billing_bill_public_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_billing_bill_public_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_billing_bill_public_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_loc_active_db_stream",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_rewards_api_card_statements_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_card_statements_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_statements_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_rewards_revoke_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_revoke_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_revoke_post"
+      },
+      {
+        "name": "fp_rewards_api_card_settled_transactions_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_card_settled_transactions_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_settled_transactions_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_healthcheck_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_healthcheck_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_enabled_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_enabled_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_enabled_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_patch",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_patch"
+      },
+      {
+        "name": "fp_rewards_api_rewards_redeem_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_redeem_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_redeem_post"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_card_enfuce_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_user_card_enfuce_db_stream",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_card_enfuce_db_stream"
+      },
+      {
+        "name": "fp_rewards_api_rewards_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rewards_api_rewards_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_get"
+      }
+    ],
+    "lambdas": [
+      {
+        "name": "fp_rewards_api_billing_bill_public_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_billing_bill_public_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_rewards_api_card_statements_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_statements_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_rewards_revoke_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_revoke_post"
+      },
+      {
+        "name": "fp_rewards_api_card_settled_transactions_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_card_settled_transactions_event_sink"
+      },
+      {
+        "name": "fp_rewards_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_healthcheck_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_enabled_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_enabled_get"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_patch"
+      },
+      {
+        "name": "fp_rewards_api_rewards_redeem_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_redeem_post"
+      },
+      {
+        "name": "fp_rewards_api_rewards_user_card_enfuce_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_user_card_enfuce_db_stream"
+      },
+      {
+        "name": "fp_rewards_api_rewards_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rewards_api_rewards_get"
+      }
+    ],
+    "prs": [
+      {
+        "name": "[RAP-211] Add rewards_redeem_patch DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/171"
+      },
+      {
+        "name": "[RAP-74] Add resync script AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/166"
+      }
+    ],
+    "merged_prs": [
+      {
+        "name": "fix lint mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/172"
+      },
+      {
+        "name": "[RAP-46] Add lambda that sets available_cashback of defaulted users to 0 DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/170"
+      },
+      {
+        "name": "[RAP-211] stop auto redeem into lima mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/169"
+      },
+      {
+        "name": "[RAP-207] tune tf mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/168"
+      },
+      {
+        "name": "[RAP-196] Promote to python-kafka-utils 2.0.0 DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/167"
+      },
+      {
+        "name": "[RAP-163] Enable flexipay-rewards-redeemed ingestion DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/165"
+      },
+      {
+        "name": "[Hotfix] Add murmur2 partitioner mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/164"
+      },
+      {
+        "name": "[RAP-101] Update python version to 3.12.1 DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/163"
+      },
+      {
+        "name": "[RAP-154]Adds bill id Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/162"
+      },
+      {
+        "name": "[RAP-179] adding public reference mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/161"
+      },
+      {
+        "name": "bump libs mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/160"
+      },
+      {
+        "name": "[hotfix] fix ci mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/159"
+      },
+      {
+        "name": "[RAP-152] amend diagram mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/158"
+      },
+      {
+        "name": "[RAP-64] send last cashback mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/157"
+      },
+      {
+        "name": "[RAP-147] Fix date format returned in current promotion AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/156"
+      },
+      {
+        "name": "[RAP-66] revoke revolve cashback on statement declined mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/155"
+      },
+      {
+        "name": "[RAP-147] Fix promotion description AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/154"
+      },
+      {
+        "name": "[RAP-151] Add db stream reciever lambda logic Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/153"
+      },
+      {
+        "name": "[RAP-148] hide revolve mfe mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/152"
+      },
+      {
+        "name": "[RAP-147] Return current promotion AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/151"
+      },
+      {
+        "name": "[RAP-161] fix athena query mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/150"
+      },
+      {
+        "name": "[RAP-66] Finalise revolve redemption mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/149"
+      },
+      {
+        "name": "[RAP-127] tune fuzzy matching mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/148"
+      },
+      {
+        "name": "[RAP-127] Distinguish revolve transaction type mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/147"
+      },
+      {
+        "name": "[RAP-127] errata corrige mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/146"
+      },
+      {
+        "name": "[RAP-11] fix athena pipeline mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/145"
+      },
+      {
+        "name": "[fix] athena query mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/144"
+      },
+      {
+        "name": "[hotfix] fix script mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/143"
+      },
+      {
+        "name": "[RAP-162] fix revolve promo mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/142"
+      },
+      {
+        "name": "[RAP-161] Fix promo AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pull/141"
+      }
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api"
+      },
+      {
+        "name": "MyPrs",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pulls?q=is%3Apr+is%3Amerged+author%3AJarrodFolinoFC+"
+      },
+      {
+        "name": "Pulls",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-api/pulls"
+      },
+      {
+        "name": "CI",
+        "link": "https://drone.fc-ops.com/FundingCircle/flexipay-rewards-api"
+      }
+    ]
+  },
+  {
+    "name": "flexipay-pricing-api",
+    "cwlogs": [
+      {
+        "name": "fp_pricing_api_pricing_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_user_patch",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_patch"
+      },
+      {
+        "name": "fp_pricing_api_pricing_event_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_event_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_post"
+      },
+      {
+        "name": "fp_pricing_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_healthcheck_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_healthcheck_get"
+      },
+      {
+        "name": "fp_pricing_api_pricing_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_user_loc_active_db_stream",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_pricing_api_pricing_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_pricing_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_sink"
+      },
+      {
+        "name": "fp_pricing_api_repayment_details_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_pricing_api_repayment_details_get",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_repayment_details_get"
+      }
+    ],
+    "lambdas": [
+      {
+        "name": "fp_pricing_api_pricing_user_patch",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_patch"
+      },
+      {
+        "name": "fp_pricing_api_pricing_event_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_post"
+      },
+      {
+        "name": "fp_pricing_api_healthcheck_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_healthcheck_get"
+      },
+      {
+        "name": "fp_pricing_api_pricing_user_loc_active_db_stream",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_user_loc_active_db_stream"
+      },
+      {
+        "name": "fp_pricing_api_pricing_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_pricing_event_sink"
+      },
+      {
+        "name": "fp_pricing_api_repayment_details_get",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_pricing_api_repayment_details_get"
+      }
+    ],
+    "prs": [
+      {
+        "name": "[RAP-86] Add get standard fee lambda mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/57"
+      },
+      {
+        "name": "[RAP-90] Create pricing user schema and enable producer Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/55"
+      }
+    ],
+    "merged_prs": [
+      {
+        "name": "[RAP-201] enable dl mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/59"
+      },
+      {
+        "name": "[Improvement] return error if more than 1 penny old vs new pricing mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/58"
+      },
+      {
+        "name": "[RAP-196] Remove partitioner from producers extra config DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/56"
+      },
+      {
+        "name": "[RAP-181] use new lib mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/54"
+      },
+      {
+        "name": "[hotfix] use murmur2 partitioner mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/53"
+      },
+      {
+        "name": "[RAP-170] expose fee decimal mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/52"
+      },
+      {
+        "name": "[RAP-190] Refactors unit tests Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/51"
+      },
+      {
+        "name": "[RAP-111] Use auth headers from customer builder AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/50"
+      },
+      {
+        "name": "[RAP-100] Update python version to 3.12.1 DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/49"
+      },
+      {
+        "name": "[RAP-96] fix make from shared mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/48"
+      },
+      {
+        "name": "[RAP-96] Adds csv historic testing Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/47"
+      },
+      {
+        "name": "[RAP-185] fix warning mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/46"
+      },
+      {
+        "name": "[RAP-185] add HB for 2p discrepancy mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/45"
+      },
+      {
+        "name": "[RAP-96] Refactor repayment details Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/44"
+      },
+      {
+        "name": "[RAP-182] fix created at mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/43"
+      },
+      {
+        "name": "[hotfix] add person uuid mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/42"
+      },
+      {
+        "name": "[RAP-182] split pricing user lambda mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/41"
+      },
+      {
+        "name": "RAP-111 docomentation fix JarrodFolinoFC",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/40"
+      },
+      {
+        "name": "[RAP-177] Start ingesting data in dl and fix lib mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/39"
+      },
+      {
+        "name": "[RAP-108] forgot to add old_pricing_fee_cents in db mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/38"
+      },
+      {
+        "name": "[RAP-164] Add logging to help debug AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/37"
+      },
+      {
+        "name": "[RAP-164] Add pricing event post business logic mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/36"
+      },
+      {
+        "name": "[RAP-110] Event sink business logic DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/35"
+      },
+      {
+        "name": "[RAP-168] Improve query param validation JarrodFolinoFC",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/34"
+      },
+      {
+        "name": "add pricing e2e mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/33"
+      },
+      {
+        "name": "[RAP-164] add pricing event post lambda scaffolding mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/32"
+      },
+      {
+        "name": "[RAP-109] Add missing policy AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/31"
+      },
+      {
+        "name": "[RAP-110] Move repayment logic to shared folder DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/29"
+      },
+      {
+        "name": "[RAP-109] Add flexipay_pricing_event lambda and tests DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/28"
+      },
+      {
+        "name": "[RAP-93] Add canary Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pull/27"
+      }
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api"
+      },
+      {
+        "name": "MyPrs",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pulls?q=is%3Apr+is%3Amerged+author%3AJarrodFolinoFC+"
+      },
+      {
+        "name": "Pulls",
+        "link": "https://github.com/FundingCircle/flexipay-pricing-api/pulls"
+      },
+      {
+        "name": "CI",
+        "link": "https://drone.fc-ops.com/FundingCircle/flexipay-pricing-api"
+      }
+    ]
+  },
+  {
+    "name": "flexipay-rewards-and-pricing-shared",
+    "cwlogs": [
+      {
+        "name": "fp_rap_shared_drawdown_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_drawdown_builder_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_drawdown_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_transactions_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_transactions_builder_post",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_transactions_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_app_approved_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_mock_line_of_credit_app_approved_event_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_approved_event_sink"
+      },
+      {
+        "name": "fp_rap_shared_line_of_credit_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_line_of_credit_sink",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_line_of_credit_sink"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_fee_change_requested",
+        "link": "https://eu-west-1.console.aws.amazon.com/cloudwatch/home?region=eu-west-1#logsV2:log-groups/log-group/$252Faws$252Flambda$252Ffp_rap_shared_mock_line_of_credit_fee_change_requested",
+        "lambda_link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_fee_change_requested"
+      }
+    ],
+    "lambdas": [
+      {
+        "name": "fp_rap_shared_drawdown_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_drawdown_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_transactions_builder_post",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_transactions_builder_post"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_app_approved_event_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_app_approved_event_sink"
+      },
+      {
+        "name": "fp_rap_shared_line_of_credit_sink",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_line_of_credit_sink"
+      },
+      {
+        "name": "fp_rap_shared_mock_line_of_credit_fee_change_requested",
+        "link": "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/fp_rap_shared_mock_line_of_credit_fee_change_requested"
+      }
+    ],
+    "prs": [],
+    "merged_prs": [
+      {
+        "name": "[RAP-102] Update python version to 3.12.1 DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/51"
+      },
+      {
+        "name": "[hotfix] activated_at hotfix mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/50"
+      },
+      {
+        "name": "fix int testing mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/49"
+      },
+      {
+        "name": "[hotfix] Add activated at mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/48"
+      },
+      {
+        "name": "[RAP-182] output table mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/47"
+      },
+      {
+        "name": "[RAP-179] sync public reference mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/46"
+      },
+      {
+        "name": "[RAP-68] Fix revolve promotion uat AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/45"
+      },
+      {
+        "name": "[RAP-127] Send trans type code AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/44"
+      },
+      {
+        "name": "[RAP-68] update transactions builder staging AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/43"
+      },
+      {
+        "name": "[RAP-68] Adds transaction builder and updates customer builder to save revolve (Part 1, UAT) AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/42"
+      },
+      {
+        "name": "[RAP-68] Add transactions builder skeleton AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/41"
+      },
+      {
+        "name": "[RAP-68] Expand customer builder to allow building of revolve customers AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/40"
+      },
+      {
+        "name": "[RAP-139] Fix integration test AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/38"
+      },
+      {
+        "name": "[RAP-139] Store holder reference AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/37"
+      },
+      {
+        "name": "[RAP-131] Hotfix customer builder AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/36"
+      },
+      {
+        "name": "[RAP-131] Fix customer builder AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/35"
+      },
+      {
+        "name": "RAP-15 Logger was logging a set JarrodFolinoFC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/34"
+      },
+      {
+        "name": "[RAP-125] Add loc-fee-change-result mock producer and loc-fee-change-requested consumer DanailDim",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/33"
+      },
+      {
+        "name": "[RAP-93] Add pd setup Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/32"
+      },
+      {
+        "name": "[RAP-104] Expand customer builder to return auth headers AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/31"
+      },
+      {
+        "name": "RAP-15 use latest TF Lambda module JarrodFolinoFC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/30"
+      },
+      {
+        "name": "[RAP-50] Use enum style for DBTables and KafkaTopics Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/29"
+      },
+      {
+        "name": "[RAP-50] Process transactions UAT Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/28"
+      },
+      {
+        "name": "[RAP-8] enable e2e mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/27"
+      },
+      {
+        "name": "[RAP-57] Introduce billed monthly mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/26"
+      },
+      {
+        "name": "[RAP-57] Restructure db mugx-fc",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/24"
+      },
+      {
+        "name": "[RAP-54] Update customer builder to handle updated FCApp dev endpoint AdamM-FC",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/23"
+      },
+      {
+        "name": "[RAP-50] Adds basic setup for drawdown builder Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/22"
+      },
+      {
+        "name": "[RAP-50] Add process bill payment lambda Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/21"
+      },
+      {
+        "name": "[RAP-21] Send kafka message to billing-bill-public when loc active Anwilcz",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pull/20"
+      }
+    ],
+    "links": [
+      {
+        "name": "Github",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared"
+      },
+      {
+        "name": "MyPrs",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pulls?q=is%3Apr+is%3Amerged+author%3AJarrodFolinoFC+"
+      },
+      {
+        "name": "Pulls",
+        "link": "https://github.com/FundingCircle/flexipay-rewards-and-pricing-shared/pulls"
+      },
+      {
+        "name": "CI",
+        "link": "https://drone.fc-ops.com/FundingCircle/flexipay-rewards-and-pricing-shared"
+      }
+    ]
+  }
+]

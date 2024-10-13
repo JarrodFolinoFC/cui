@@ -15,6 +15,7 @@ import UpcomingBirthdays from "../components/UpcomingBirthdays";
 import PomodoroTimer from "../components/PomodoroTimer";
 import Weather from "../components/Weather";
 import Backup from "../components/Backup";
+import Restore from "../components/Restore";
 
 const recalls = [
   <Recall
@@ -92,6 +93,7 @@ const recalls = [
 ];
 
 const sections = [
+  { name: "Restore", components: [<Restore />] },
   { name: "Backup", components: [<Backup />] },
   {
     name: "Weather",

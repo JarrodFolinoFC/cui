@@ -18,6 +18,7 @@ function MetricTracker({ name, storageDriver = localStorage }) {
   const [distance, setDistance] = useState(null);
   const [minutes, setMinutes] = useState(null);
   const [seconds, setSeconds] = useState(null);
+  const [graphDistance, setGraphDistance] = useState(2.2);
 
   const [runs, setRuns] = useState([]);
   const [modalOpen, setModalOpen] = useState(false);
@@ -106,7 +107,7 @@ function MetricTracker({ name, storageDriver = localStorage }) {
                 setGraphModalOpen(true);
               }}
             >
-              Graph {name}
+              Graph {name} ({graphDistance}km)
             </Button>
           </Form.Item>
           <Form.Item>
@@ -130,7 +131,7 @@ function MetricTracker({ name, storageDriver = localStorage }) {
           <RunTable runs={runs} />
         </Modal>
         <Modal
-          title="Runs"
+          title={`Runs ${graphDistance}km`}
           open={graphModalOpen}
           onOk={() => {
             setGraphModalOpen(false);
@@ -140,10 +141,12 @@ function MetricTracker({ name, storageDriver = localStorage }) {
           }}
         >
           <Graph
+            distance={graphDistance}
             data={runs.map((e) => {
               return {
                 date: e.date,
                 minutes: e.minutes + e.seconds / 60,
+                distance: e.distance,
               };
             })}
           />

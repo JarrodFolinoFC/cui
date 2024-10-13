@@ -1,6 +1,10 @@
 import { Line } from "@ant-design/plots";
 
-function Graph({ data }) {
+function Graph({ data, distance }) {
+
+  data = data.filter((d) => {
+    return d.distance == distance
+  })
 
   const config = {
     data,

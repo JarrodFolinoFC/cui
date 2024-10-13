@@ -136,6 +136,15 @@ def get_prs(repo):
     ]
 
 
+def get_merged_prs(repo):
+    cmd = f'gh pr list --repo FundingCircle/{repo} --state merged --json number,title,author,url'
+    prs = os.popen(cmd).read()
+    return [
+        {"name": f'{pr["title"]} {pr["author"]["login"]}', "link": pr["url"]}
+        for pr in json.loads(prs)
+    ]
+
+
 def generate_lambda_url(repo):
     lambda_url = "https://eu-west-1.console.aws.amazon.com/lambda/home?region=eu-west-1#/functions/"
     results = []
@@ -177,10 +186,15 @@ def make_file(repos, file_name):
                 "cwlogs": get_unique_items(generate_cwlog_url(repo)),
                 "lambdas": get_unique_items(generate_lambda_url(repo)),
                 "prs": get_prs(repo["name"]),
+                "merged_prs": get_merged_prs(repo["name"]),
                 "links": [
                     {
                         "name": "Github",
                         "link": f"https://github.com/FundingCircle/{repo['name']}",
+                    },
+                    {
+                        "name": "MyPrs",
+                        "link": f"https://github.com/FundingCircle/{repo['name']}/pulls?q=is%3Apr+is%3Amerged+author%3AJarrodFolinoFC+",
                     },
                     {
                         "name": "Pulls",

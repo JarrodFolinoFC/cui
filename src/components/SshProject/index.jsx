@@ -4,12 +4,14 @@ import {
   GithubOutlined,
   PullRequestOutlined,
   CiCircleOutlined,
+  IdcardOutlined
 } from "@ant-design/icons";
 
 const lookup = {
   Github: <GithubOutlined />,
   Pulls: <PullRequestOutlined />,
   CI: <CiCircleOutlined />,
+  MyPrs: <IdcardOutlined />,
 };
 
 const SshProject = ({ name, repos }) => {

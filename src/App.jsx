@@ -3,7 +3,7 @@ import { Tabs } from "antd";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PersonalTabs from "./tabs/Personal";
 import Planner from "./tabs/Planner";
-
+import MarkdownCard from "./components/MarkdownCard";
 import Mobile from "./pages/Mobile";
 
 const items = [
@@ -16,6 +16,28 @@ const items = [
     key: "2",
     label: "Personal",
     children: <PersonalTabs />,
+  },
+  {
+    key: "3",
+    label: "VS Code",
+    children: (
+      <>
+        <img
+          src="http://localhost:5173/svgs/custom-mac-layout.svg"
+          alt="Description of SVG"
+          width="100%"
+
+        />
+        <MarkdownCard
+          title={"General"}
+          urls={[
+            "http://localhost:5173/md/vscode_general_basic.md",
+            "http://localhost:5173/md/vscode_search_select.md",
+            "http://localhost:5173/md/vscode_other.md",
+          ]}
+        />
+      </>
+    ),
   },
 ];
 

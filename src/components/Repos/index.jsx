@@ -4,12 +4,14 @@ import {
   GithubOutlined,
   PullRequestOutlined,
   CiCircleOutlined,
+  IdcardOutlined,
 } from "@ant-design/icons";
 
 const lookup = {
   Github: <GithubOutlined />,
   Pulls: <PullRequestOutlined />,
   CI: <CiCircleOutlined />,
+  MyPrs: <IdcardOutlined />,
 };
 function Repos() {
   const [other, setOther] = useState([]);
