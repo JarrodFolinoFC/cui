@@ -119,7 +119,7 @@ const sections = [
     components: [
       <Counter names={["Drink Water", "Pilates Workout", "Smoothie"]} />,
     ],
-    icon: <NumberOutlined />,
+    icon: <NumberOutlined style={{"color": "blue", "backgroundColor": "red"}} />,
   },
   {
     name: "Runs",

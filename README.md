@@ -1,6 +1,18 @@
 # todo
 
-Habit tracker
+## View Models
+
+- carousel
+- icons show app
+- fast scroll (with search)
+- infinite scroll
+- nav tree
+- tabs
+- collapsible
+
+
+## Features
+
 Info
 Long term diary
 Development

@@ -23,6 +23,13 @@ function DaysUntil({ previewAmount = 3, hideSensitive = true }) {
     return Math.ceil(diff / (1000 * 60 * 60 * 24));
   }
 
+  function getDayOfWeek(date) {
+    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const d = new Date(date);
+    return days[d.getDay()];
+
+  }
+
   function getData(data, hide, count) {
     if (hide === true) {
       data = data.filter((d) => {
@@ -32,7 +39,15 @@ function DaysUntil({ previewAmount = 3, hideSensitive = true }) {
 
     return data.slice(0, count).map((item) => {
       return {
-        label: `${getDaysUntil(item.date)} days`,
+        label: (
+          <>
+            <div>
+              {getDayOfWeek(item.date)}
+               {item.date}
+            </div>
+            <div>{getDaysUntil(item.date)} days</div>
+          </>
+        ),
         children: item.description,
       };
     });
@@ -41,7 +56,7 @@ function DaysUntil({ previewAmount = 3, hideSensitive = true }) {
   return (
     <PreviewCard
       title="Days Until"
-      content={<Timeline mode="left" items={getData(data, hide, 100)} />}
+      content={<Timeline  mode="left" items={getData(data, hide, 100)} />}
       preview={
         <Timeline mode="left" items={getData(data, hide, previewAmount)} />
       }
