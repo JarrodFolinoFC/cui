@@ -530,5 +530,17 @@
     "country": "England",
     "province": "South West",
     "place": "Bath"
+  },
+  {
+    "date": "2025-01-04",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "province": "Lisboa District"
+  },
+  {
+    "date": "2025-01-06",
+    "city": "Porto",
+    "country": "Portugal",
+    "province": "Porto District"
   }
 ]

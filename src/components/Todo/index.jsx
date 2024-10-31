@@ -51,11 +51,23 @@ function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
     storageDriver.setItem(name, JSON.stringify(editedTaskList));
   }
 
+  function markAsWip(id) {
+    const updatedTasks = tasks.map((task) => {
+      if (id === task.id) {
+        return { ...task, wip: !task.wip };
+      }
+      return task;
+    });
+    setTasks(updatedTasks);
+    storageDriver.setItem(name, JSON.stringify(updatedTasks));
+  }
+
   function addTask(taskName) {
     const newTask = {
       id: uuidv4(),
       name: taskName,
       completed: false,
+      wip: false,
     };
     const newTasks = [...tasks, newTask];
     setTasks(newTasks);
@@ -78,6 +90,8 @@ function App({ name = "tasks", storageDriver = asyncLocalStorage }) {
               toggleTaskCompleted={toggleTaskCompleted}
               isEditing={task.editing}
               editTask={editTask}
+              markAsWip={markAsWip}
+              wip={task.wip}
               deleteTask={deleteTask}
             />
           );

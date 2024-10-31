@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { Timeline } from "antd";
+import { Flex, Timeline, List, Typography } from "antd";
 
 import PreviewCard from "../PreviewCard";
 
@@ -23,11 +23,40 @@ function DaysUntil({ previewAmount = 3, hideSensitive = true }) {
     return Math.ceil(diff / (1000 * 60 * 60 * 24));
   }
 
+  function formatDate(dateString) {
+    const date = new Date(dateString);
+    const day = date.getDate();
+    const month = date.toLocaleString("default", { month: "long" });
+    const suffix = getDaySuffix(day);
+    return `${day}${suffix} ${month}`;
+  }
+
+  function getDaySuffix(day) {
+    if (day > 3 && day < 21) return "th";
+    switch (day % 10) {
+      case 1:
+        return "st";
+      case 2:
+        return "nd";
+      case 3:
+        return "rd";
+      default:
+        return "th";
+    }
+  }
+
   function getDayOfWeek(date) {
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
     const d = new Date(date);
     return days[d.getDay()];
-
   }
 
   function getData(data, hide, count) {
@@ -38,27 +67,35 @@ function DaysUntil({ previewAmount = 3, hideSensitive = true }) {
     }
 
     return data.slice(0, count).map((item) => {
-      return {
-        label: (
-          <>
+      return (
+        <div>
+          <Flex vertical gap={8} wrap="wrap">
             <div>
-              {getDayOfWeek(item.date)}
-               {item.date}
+              {`${getDayOfWeek(item.date)} ${formatDate(item.date)}`} (
+              {getDaysUntil(item.date)} days)
             </div>
-            <div>{getDaysUntil(item.date)} days</div>
-          </>
-        ),
-        children: item.description,
-      };
+
+            <div>{item.description}</div>
+          </Flex>
+        </div>
+      );
     });
   }
 
   return (
     <PreviewCard
       title="Days Until"
-      content={<Timeline  mode="left" items={getData(data, hide, 100)} />}
+      content={
+        <List
+          dataSource={getData(data, hide)}
+          renderItem={(item) => <List.Item>{item}</List.Item>}
+        />
+      }
       preview={
-        <Timeline mode="left" items={getData(data, hide, previewAmount)} />
+        <List
+          dataSource={getData(data, hide, 4)}
+          renderItem={(item) => <List.Item>{item}</List.Item>}
+        />
       }
     />
   );

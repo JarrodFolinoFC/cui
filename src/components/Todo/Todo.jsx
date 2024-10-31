@@ -1,21 +1,8 @@
-import { useEffect, useRef, useState } from "react";
-import { Input, Space, Form, Flex, Checkbox, Button } from "antd";
+import { useRef, useState } from "react";
+import { Input, Space, Form, Flex, Tag, Button } from "antd";
 import { List } from "antd-mobile";
-import {
-  EditOutlined,
-  SaveOutlined,
-  UndoOutlined,
-  DeleteOutlined,
-} from "@ant-design/icons";
+import { EditOutlined, SaveOutlined, DeleteOutlined } from "@ant-design/icons";
 import { SwipeAction } from "antd-mobile";
-
-function usePrevious(value) {
-  const ref = useRef(null);
-  useEffect(() => {
-    ref.current = value;
-  });
-  return ref.current;
-}
 
 function handleKeyPressSave(event) {
   if (event.key === "Enter") {
@@ -27,19 +14,13 @@ function handleKeyPressSave(event) {
 function Todo(props) {
   const [isEditing, setEditing] = useState(props.isEditing);
   const [newName, setNewName] = useState(props.name);
+  const [wip, setWip] = useState(props.wip);
 
   const editFieldRef = useRef(null);
 
   function handleChange(event) {
     setNewName(event.target.value);
   }
-
-  // function handleKeyPress(event) {
-  //   if (event.key === "Enter") {
-  //     props.editTask(props.id, newName);
-  //     setEditing(false);
-  //   }
-  // }
 
   function handleSubmit(event) {
     event.preventDefault();
@@ -75,7 +56,13 @@ function Todo(props) {
 
   const viewTemplate = (
     <SwipeAction
-      rightActions={[
+      leftActions={[
+        {
+          key: "delete",
+          text: <DeleteOutlined />,
+          onClick: () => props.deleteTask(props.id),
+          color: "danger",
+        },
         {
           key: "edit",
           text: <EditOutlined />,
@@ -84,22 +71,23 @@ function Todo(props) {
           },
           color: "primary",
         },
+      ]}
+      rightActions={[
         {
-          key: "delete",
-          text: <DeleteOutlined />,
-          onClick: () => deleteTask(task.id),
-          color: "danger",
+          key: "wip",
+          text: "WIP",
+          onClick: () => {
+            props.markAsWip(props.id);
+            setWip(!wip);
+          },
+          color: "primary",
         },
       ]}
     >
       <List.Item key={props.name} style={{ maxWidth: "80%" }}>
-        <Flex>
-          <Checkbox
-            checked={props.completed}
-            onChange={() => props.toggleTaskCompleted(props.id)}
-          >
-            {props.completed ? <strike>{newName}</strike> : newName}
-          </Checkbox>
+        <Flex gap={2} align="flex-start">
+          {wip && <Tag style={{ verticalAlign: "middle" }}>WIP</Tag>}
+          {newName}
         </Flex>
       </List.Item>
     </SwipeAction>

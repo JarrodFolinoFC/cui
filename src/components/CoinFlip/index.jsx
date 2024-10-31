@@ -17,7 +17,7 @@ const App = () => {
 
   return (
     <div className={`coin ${result}`} key={+new Date()}>
-      <div class="side-a" onClick={coinToss}>
+      <div className="side-a" onClick={coinToss}>
         <Avatar onClick={coinToss} size={96}>
           TAILS
         </Avatar>

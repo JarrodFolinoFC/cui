@@ -54,6 +54,7 @@ function MetricTracker({ name, storageDriver = localStorage }) {
             addonBefore="km"
             value={distance}
             min={0}
+            max={10}
             onChange={(value) => {
               setDistance(value);
             }}
@@ -66,6 +67,7 @@ function MetricTracker({ name, storageDriver = localStorage }) {
               width: "45%",
             }}
             min={0}
+            max={59}
             onChange={(value) => setMinutes(value)}
             value={minutes}
             addonBefore="m"
@@ -76,6 +78,7 @@ function MetricTracker({ name, storageDriver = localStorage }) {
               width: "45%",
             }}
             min={0}
+            max={59}
             onChange={(value) => setSeconds(value)}
             value={seconds}
             addonBefore="s"
