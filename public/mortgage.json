@@ -1,182 +1,349 @@
 [
   {
     "date": "2023-01-05",
-    "amount": 170254.87
+    "amount": 170254.87,
+    "category": "Actual"
   },
   {
     "date": "2023-01-06",
-    "amount": 172254.87
+    "amount": 172254.87,
+    "category": "Actual"
   },
   {
     "date": "2023-01-10",
-    "amount": 173024.46
+    "amount": 173024.46,
+    "category": "Actual"
   },
   {
     "date": "2023-02-10",
-    "amount": 173816.53
+    "amount": 173816.53,
+    "category": "Actual"
   },
   {
     "date": "2023-02-22",
-    "amount": 172074.01
+    "amount": 172074.01,
+    "category": "Actual"
   },
   {
     "date": "2023-03-03",
-    "amount": 168074.01
+    "amount": 168074.01,
+    "category": "Actual"
   },
   {
     "date": "2023-03-10",
-    "amount": 168804.61
+    "amount": 168804.61,
+    "category": "Actual"
   },
   {
     "date": "2023-03-21",
-    "amount": 169104.61
+    "amount": 169104.61,
+    "category": "Actual"
   },
   {
     "date": "2023-03-25",
-    "amount": 189104.61
+    "amount": 189104.61,
+    "category": "Actual"
   },
   {
     "date": "2023-04-10",
-    "amount": 189993.37
+    "amount": 189993.37,
+    "category": "Actual"
   },
   {
     "date": "2023-04-15",
-    "amount": 190986.37
+    "amount": 190986.37,
+    "category": "Actual"
   },
   {
     "date": "2023-04-15",
-    "amount": 189000.37
+    "amount": 189000.37,
+    "category": "Actual"
   },
   {
     "date": "2023-04-19",
-    "amount": 180000.37
+    "amount": 180000.37,
+    "category": "Actual"
   },
   {
     "date": "2023-05-04",
-    "amount": 170000
+    "amount": 170000,
+    "category": "Actual"
   },
   {
     "date": "2023-05-09",
-    "amount": 168100
+    "amount": 168100,
+    "category": "Actual"
   },
   {
     "date": "2023-05-10",
-    "amount": 168971.75
+    "amount": 168971.75,
+    "category": "Actual"
   },
   {
     "date": "2023-06-10",
-    "amount": 169847.12
+    "amount": 169847.12,
+    "category": "Actual"
   },
   {
     "date": "2023-06-10",
-    "amount": 169845.96
+    "amount": 169845.96,
+    "category": "Actual"
   },
   {
     "date": "2023-06-23",
-    "amount": 160000
+    "amount": 160000,
+    "category": "Actual"
   },
   {
     "date": "2023-06-23",
-    "amount": 159600
+    "amount": 159600,
+    "category": "Actual"
   },
   {
     "date": "2023-07-09",
-    "amount": 158500
+    "amount": 158500,
+    "category": "Actual"
   },
   {
     "date": "2023-07-10",
-    "amount": 159348.9
+    "amount": 159348.9,
+    "category": "Actual"
   },
   {
     "date": "2023-08-10",
-    "amount": 160213.71
+    "amount": 160213.71,
+    "category": "Actual"
   },
   {
     "date": "2023-08-16",
-    "amount": 159713.71
+    "amount": 159713.71,
+    "category": "Actual"
   },
   {
     "date": "2023-08-18",
-    "amount": 157999.71
+    "amount": 157999.71,
+    "category": "Actual"
   },
   {
     "date": "2023-08-26",
-    "amount": 149899.71
+    "amount": 149899.71,
+    "category": "Actual"
   },
   {
     "date": "2023-09-10",
-    "amount": 150737.04
+    "amount": 150737.04,
+    "category": "Actual"
   },
   {
     "date": "2023-09-29",
-    "amount": 149999.99
+    "amount": 149999.99,
+    "category": "Actual"
   },
   {
     "date": "2023-10-10",
-    "amount": 150790.12
+    "amount": 150790.12,
+    "category": "Actual"
   },
   {
     "date": "2023-10-13",
-    "amount": 148790.12
+    "amount": 148790.12,
+    "category": "Actual"
   },
   {
     "date": "2023-10-28",
-    "amount": 148600.12
+    "amount": 148600.12,
+    "category": "Actual"
   },
   {
     "date": "2023-11-10",
-    "amount": 147350.12
+    "amount": 147350.12,
+    "category": "Actual"
   },
   {
     "date": "2023-11-10",
-    "amount": 148157.64
+    "amount": 148157.64,
+    "category": "Actual"
   },
   {
     "date": "2023-11-15",
-    "amount": 146634.64
+    "amount": 146634.64,
+    "category": "Actual"
   },
   {
     "date": "2023-11-28",
-    "amount": 142834.64
+    "amount": 142834.64,
+    "category": "Actual"
   },
   {
     "date": "2023-12-07",
-    "amount": 139834.64
+    "amount": 139834.64,
+    "category": "Actual"
   },
   {
     "date": "2023-12-07",
-    "amount": 138834.64
+    "amount": 138834.64,
+    "category": "Actual"
   },
   {
     "date": "2023-12-10",
-    "amount": 139614.03
+    "amount": 139614.03,
+    "category": "Actual"
   },
   {
     "date": "2023-12-12",
-    "amount": 139597.03
+    "amount": 139597.03,
+    "category": "Actual"
   },
   {
     "date": "2023-12-15",
-    "amount": 138517.03
+    "amount": 138517.03,
+    "category": "Actual"
   },
   {
     "date": "2023-12-26",
-    "amount": 134999.9
+    "amount": 134999.9,
+    "category": "Actual"
   },
   {
     "date": "2024-01-21",
-    "amount": 132397
+    "amount": 132397,
+    "category": "Actual"
   },
   {
     "date": "2024-06-25",
-    "amount": 119800
+    "amount": 119800,
+    "category": "Actual"
   },
   {
     "date": "2024-07-26",
-    "amount": 118000
+    "amount": 118000,
+    "category": "Actual"
   },
   {
     "date": "2024-08-06",
-    "amount": 116000
+    "amount": 116000,
+    "category": "Actual"
+  },
+  {
+    "date": "2024-12-06",
+    "amount": 110527,
+    "category": "Actual"
+  },
+  {
+    "date": "2024-12-25",
+    "amount": 97141,
+    "category": "Actual"
+  },
+  {
+    "date": "2024-03-25",
+    "amount": 125000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-04-25",
+    "amount": 121000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-05-25",
+    "amount": 117000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-06-25",
+    "amount": 113000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-07-25",
+    "amount": 109000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-08-25",
+    "amount": 105000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-09-25",
+    "amount": 101000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-10-25",
+    "amount": 97000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2024-12-25",
+    "amount": 93000,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-01-25",
+    "amount": 89141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-02-25",
+    "amount": 85141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-03-25",
+    "amount": 81141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-04-25",
+    "amount": 77141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-05-25",
+    "amount": 73141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-06-25",
+    "amount": 69141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-07-25",
+    "amount": 65141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-08-25",
+    "amount": 61141,
+    "category": "Forcast"
+  }
+  ,
+  {
+    "date": "2025-09-25",
+    "amount": 57141,
+    "category": "Forcast"
+  },
+  {
+    "date": "2025-10-25",
+    "amount": 53141,
+    "category": "Forcast"
   }
 ]

@@ -5,12 +5,18 @@ import PreviewCard from "../PreviewCard";
 
 function SimpleLineChart({ dataUrl, unit = null }) {
   const [data, setData] = useState(null);
+
   useEffect(() => {
     fetch(dataUrl)
       .then((res) => res.json())
-      .then((data) => setData(data));
-  }, []);
+      .then((data) => {
+        // Sort the data by date
+        const sortedData = data.sort((a, b) => new Date(a.date) - new Date(b.date));
+        setData(sortedData);
+      });
+  }, [dataUrl]);
 
+  
   const config = {
     data,
     xField: "date",
@@ -27,6 +33,7 @@ function SimpleLineChart({ dataUrl, unit = null }) {
     style: {
       lineWidth: 2,
     },
+    colorField: 'category'
   };
   return (
     <PreviewCard

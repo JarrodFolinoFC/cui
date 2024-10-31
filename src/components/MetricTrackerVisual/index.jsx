@@ -11,19 +11,24 @@ function MetricTracker({ name, storageDriver = localStorage }) {
   const [modalOpen, setModalOpen] = useState(false);
   const [graphModalOpen, setGraphModalOpen] = useState(false);
 
-  useEffect(() => {
+  function loadRuns() {
     const runs = storageDriver.getItem(name);
     if (runs) {
       const parsedRuns = JSON.parse(runs);
       setRuns(parsedRuns);
       setGraphDistance(parsedRuns[parsedRuns.length - 1].distance);
     }
+  }
+
+  useEffect(() => {
+    loadRuns()
   }, []);
 
   return (
     <>
       <Button
         onClick={() => {
+          loadRuns()
           setModalOpen(true);
         }}
       >
@@ -31,6 +36,7 @@ function MetricTracker({ name, storageDriver = localStorage }) {
       </Button>
       <Button
         onClick={() => {
+          loadRuns()
           setGraphModalOpen(true);
         }}
       >
