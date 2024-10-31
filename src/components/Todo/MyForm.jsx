@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Input, Button, Space, Form } from "antd";
-import { SaveOutlined } from "@ant-design/icons";
+import { CheckOutlined } from "@ant-design/icons";
 function MyForm(props) {
   const [value, setValue] = useState("");
 
@@ -33,8 +33,13 @@ function MyForm(props) {
           onChange={handleChange}
           onKeyDown={handleKeyPress}
         />
-        <Button type="primary" onClick={handleSubmit}>
-          <SaveOutlined />
+        <Button
+          style={{ height: "auto" }}
+          type="primary"
+          onClick={handleSubmit}
+          disabled={value === ""}
+        >
+          <CheckOutlined/>
         </Button>
       </Space.Compact>
     </Form>

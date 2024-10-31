@@ -12,6 +12,7 @@ import CoinFlip from "../components/CoinFlip";
 import CountriesVisited from "../components/CountriesVisited";
 import StreakTracker from "../components/StreakTracker";
 import Counter from "../components/Counter";
+import ReadOnlyCounter from "../components/ReadOnlyCounter";
 import CurrencyConvertor from "../components/CurrencyConvertor";
 import UpcomingBirthdays from "../components/UpcomingBirthdays";
 import Weather from "../components/Weather";
@@ -113,13 +114,63 @@ const recalls = [
   />,
 ];
 
+const nameToIcon = {
+  NumberOutlined: <NumberOutlined />,
+  RightOutlined: <RightOutlined />,
+  FireOutlined: <FireOutlined />,
+  CloudOutlined: <CloudOutlined />,
+  UnorderedListOutlined: <UnorderedListOutlined />,
+  PoundCircleOutlined: <PoundCircleOutlined />,
+  GlobalOutlined: <GlobalOutlined />,
+  TransactionOutlined: <TransactionOutlined />,
+  CalendarOutlined: <CalendarOutlined />,
+  HomeOutlined: <HomeOutlined />,
+  TrademarkCircleOutlined: <TrademarkCircleOutlined />,
+  GiftOutlined: <GiftOutlined />,
+  DownloadOutlined: <DownloadOutlined />,
+};
+
+const createComponent = (componentName, config) => {
+  const lookup = {
+    Counter: Counter,
+    MetricTracker: MetricTracker,
+    MetricTrackerDisplay: MetricTrackerDisplay,
+    MetricTrackerVisual: MetricTrackerVisual,
+    CoinFlip: CoinFlip,
+    CountriesVisited: CountriesVisited,
+    StreakTracker: StreakTracker,
+    CurrencyConvertor: CurrencyConvertor,
+    DaysUntil: DaysUntil,
+    Recall: Recall,
+  };
+  const Component = lookup[componentName];
+  return React.createElement(Component, config);
+};
+
 const sections = [
   {
     name: "Counters",
     components: [
-      <Counter names={["Drink Water", "Pilates Workout", "Smoothie"]} />,
+      createComponent("Counter", {
+        names: [
+          "Drink Water",
+          "Smoothie",
+          "Pilates Workout",
+          "Reformer Pilates",
+        ],
+      }),
+      <ReadOnlyCounter
+        config={[
+          {
+            name: "Runs",
+            load: () => {
+              return JSON.parse(localStorage.getItem("runs")).length;
+            },
+          },
+        ]}
+      />,
     ],
-    icon: <NumberOutlined style={{"color": "blue", "backgroundColor": "red"}} />,
+    icon: "NumberOutlined",
   },
   {
     name: "Runs",
@@ -128,12 +179,12 @@ const sections = [
       <MetricTrackerDisplay name="runs" />,
       <MetricTrackerVisual name="runs" />,
     ],
-    icon: <RightOutlined />,
+    icon: "RightOutlined",
   },
   {
     name: "Streaks",
     components: [<StreakTracker name="DrinkWater" />],
-    icon: <FireOutlined />,
+    icon: "FireOutlined",
   },
 
   {
@@ -152,47 +203,47 @@ const sections = [
         timeInfo={"Australia/Melbourne"}
       />,
     ],
-    icon: <CloudOutlined />,
+    icon: "CloudOutlined",
   },
   {
     name: "Todo",
     components: [<Todo />, <Todo name="TechBooks" />],
-    icon: <UnorderedListOutlined />,
+    icon: "UnorderedListOutlined",
   },
   {
     name: "Coinflip",
     components: [<CoinFlip />],
-    icon: <PoundCircleOutlined />,
+    icon: "PoundCircleOutlined",
   },
   {
     name: "CountriesVisited",
     components: [<CountriesVisited />],
-    icon: <GlobalOutlined />,
+    icon: "GlobalOutlined",
   },
 
   {
     name: "CurrencyConvertor",
     components: [<CurrencyConvertor baseCurrency={"AUD"} />],
-    icon: <TransactionOutlined />,
+    icon: "TransactionOutlined",
   },
   {
     name: "DaysUntil",
     components: [<DaysUntil hideSensitive={true} />],
-    icon: <CalendarOutlined />,
+    icon: "CalendarOutlined",
   },
 
   // { name: "Recall", components: [recalls], icon: <TrademarkCircleOutlined /> },
   {
     name: "UpcomingBirthdays",
     components: [<UpcomingBirthdays />],
-    icon: <GiftOutlined />,
+    icon: "GiftOutlined",
   },
   // {
   //   name: "PomodoroTimer",
   //   components: [<PomodoroTimer />],
   //   icon: <ClockCircleOutlined />,
   // },
-  { name: "Backup", components: [<Backup />], icon: <DownloadOutlined /> },
+  { name: "Backup", components: [<Backup />], icon: "DownloadOutlined" },
 
   // {
   //   name: "SimpleLineChart",
@@ -208,11 +259,13 @@ export default () => {
         {sections.map((section) => {
           return (
             <IndexBar.Panel
-              brief={section?.icon || section.name}
+              brief={
+                (section?.icon && nameToIcon[section.icon]) || section.name
+              }
               index={section.name}
               title={
                 <Space>
-                  {section?.icon}
+                  {section?.icon && nameToIcon[section.icon]}
                   {section.name}
                 </Space>
               }
